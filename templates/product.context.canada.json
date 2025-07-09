@@ -1,0 +1,37 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "parent": "product.json",
+  "context": {
+    "market": "canada"
+  },
+  "sections": {
+    "product-details-tabs": {
+      "settings": {},
+      "blocks": {
+        "tab": {
+          "settings": {
+            "content": "<p><strong>Shipping</strong></p><p>Standard Shipping - 4-9 Business Days</p><p>Estimated CA$6.50</p><p>FREE CA shipping on orders of CA$65 or more </p><p><strong>Returns<br/></strong></p><ul><li>Returns receive full store credit or full refund (shipping and handling not included, customers are responsible for the return shipping cost).</li><li>All bikini bottoms, Vacation suncare products and sunglasses are not eligible for returns or exchanges. <br/><br/></li></ul><p><a href=\"https://calypsa.gorgias.help/en-US/canada-return-policy-12957\"><span style=\"text-decoration:underline\">Learn More About Our Return Policy</span></a></p><p><a href=\"https://help.calypsa.com/en-US\"><span style=\"text-decoration:underline\">Need More Help? </span></a>+1 (833) 988-3381</p>"
+          }
+        }
+      }
+    },
+    "icon_box_9UtNky": {
+      "settings": {},
+      "blocks": {
+        "iconbox_pJbJGA": {
+          "settings": {
+            "description": "<p>Enjoy FREE standard shipping on orders of $75+</p>"
+          }
+        }
+      }
+    }
+  }
+}

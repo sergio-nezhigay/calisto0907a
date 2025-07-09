@@ -1,0 +1,365 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "page",
+      "disabled": true,
+      "settings": {}
+    },
+    "custom_content_zkjTQF": {
+      "type": "custom-content",
+      "blocks": {
+        "text_j4UbTg": {
+          "type": "text",
+          "settings": {
+            "title": "",
+            "subheading": "Now Available On",
+            "text": "",
+            "width": "100%",
+            "alignment": "center",
+            "align_text": "center",
+            "text_size": "medium",
+            "text_color": "inherit",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "m-button--primary",
+            "button_size": "",
+            "block_custom_class": "",
+            "animations": "inherit"
+          }
+        },
+        "text_wLacN3": {
+          "type": "text",
+          "settings": {
+            "title": "",
+            "subheading": "Find us in store",
+            "text": "",
+            "width": "100%",
+            "alignment": "center",
+            "align_text": "center",
+            "text_size": "medium",
+            "text_color": "inherit",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "m-button--primary",
+            "button_size": "",
+            "block_custom_class": "",
+            "animations": "inherit"
+          }
+        },
+        "text_XcDb4T": {
+          "type": "text",
+          "settings": {
+            "title": "",
+            "subheading": "",
+            "text": "<p><strong>Tallulah's Swimwear</strong></p><p>1201 Indian River Drive<br/>Sebastian, FL 32958</p>",
+            "width": "50%",
+            "alignment": "center",
+            "align_text": "center",
+            "text_size": "medium",
+            "text_color": "black",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "m-button--primary",
+            "button_size": "",
+            "block_custom_class": "",
+            "animations": "inherit"
+          }
+        },
+        "text_hqRdMT": {
+          "type": "text",
+          "settings": {
+            "title": "",
+            "subheading": "",
+            "text": "<p><strong>Gilbert RV Campground</strong></p><p>36 Frost Street<br/>Gilbert, AR, 72636</p>",
+            "width": "50%",
+            "alignment": "center",
+            "align_text": "center",
+            "text_size": "medium",
+            "text_color": "black",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "m-button--primary",
+            "button_size": "",
+            "block_custom_class": "",
+            "animations": "inherit"
+          }
+        },
+        "text_aEijcp": {
+          "type": "text",
+          "settings": {
+            "title": "",
+            "subheading": "",
+            "text": "<p><strong>Merch 22</strong></p><p>206 Redfern Village<br/>St Simons Island, GA, 31522, USA</p>",
+            "width": "50%",
+            "alignment": "center",
+            "align_text": "center",
+            "text_size": "medium",
+            "text_color": "black",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "m-button--primary",
+            "button_size": "",
+            "block_custom_class": "",
+            "animations": "inherit"
+          }
+        },
+        "text_Vxhgke": {
+          "type": "text",
+          "settings": {
+            "title": "",
+            "subheading": "",
+            "text": "<p><strong>Amazing Grace</strong></p><p>182 Capital Plaza Cedar<br/>Bluff, VA 24609 , USA</p>",
+            "width": "50%",
+            "alignment": "center",
+            "align_text": "center",
+            "text_size": "medium",
+            "text_color": "black",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "m-button--primary",
+            "button_size": "",
+            "block_custom_class": "",
+            "animations": "inherit"
+          }
+        },
+        "text_hkHWJe": {
+          "type": "text",
+          "settings": {
+            "title": "",
+            "subheading": "",
+            "text": "<p><strong>Measured to Fit</strong></p><p>789 Sergeant Palmateer Way<br/>Wappingers Falls, NY, 12590, USA</p>",
+            "width": "50%",
+            "alignment": "center",
+            "align_text": "center",
+            "text_size": "medium",
+            "text_color": "black",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "m-button--primary",
+            "button_size": "",
+            "block_custom_class": "",
+            "animations": "inherit"
+          }
+        },
+        "text_yT3WYp": {
+          "type": "text",
+          "settings": {
+            "title": "",
+            "subheading": "",
+            "text": "<p><strong>Southern Modesty</strong></p><p>413 Broad St,<br/>Columbia, MS 39429, USA</p>",
+            "width": "50%",
+            "alignment": "center",
+            "align_text": "center",
+            "text_size": "medium",
+            "text_color": "black",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "m-button--primary",
+            "button_size": "",
+            "block_custom_class": "",
+            "animations": "inherit"
+          }
+        },
+        "text_ca7pmy": {
+          "type": "text",
+          "settings": {
+            "title": "",
+            "subheading": "",
+            "text": "<p><strong>Delaware Valley Farm & Garden Center Inc</strong></p><p>30 Viaduct Road<br/>Callicoon, NY 12723</p>",
+            "width": "50%",
+            "alignment": "center",
+            "align_text": "center",
+            "text_size": "medium",
+            "text_color": "black",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "m-button--primary",
+            "button_size": "",
+            "block_custom_class": "",
+            "animations": "inherit"
+          }
+        },
+        "text_DqxDz8": {
+          "type": "text",
+          "settings": {
+            "title": "",
+            "subheading": "",
+            "text": "<p><strong>Northwest Bras LLC</strong></p><p>755 W Washington ST,<br/>Suite E, Sequim, WA 98382</p>",
+            "width": "50%",
+            "alignment": "center",
+            "align_text": "center",
+            "text_size": "medium",
+            "text_color": "black",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "m-button--primary",
+            "button_size": "",
+            "block_custom_class": "",
+            "animations": "inherit"
+          }
+        }
+      },
+      "block_order": [
+        "text_j4UbTg",
+        "text_wLacN3",
+        "text_XcDb4T",
+        "text_hqRdMT",
+        "text_aEijcp",
+        "text_Vxhgke",
+        "text_hkHWJe",
+        "text_yT3WYp",
+        "text_ca7pmy",
+        "text_DqxDz8"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_size": "h3",
+        "subheading": "",
+        "description": "",
+        "header_alignment": "center",
+        "container": "container-fluid",
+        "color_scheme": "",
+        "content_color_scheme": "",
+        "enable_parallax": false,
+        "parallax_direction": "vertical",
+        "gap": 30,
+        "gap_mobile": 16,
+        "use_scroll_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "custom_class": ""
+      }
+    },
+    "empty_space_TT8akq": {
+      "type": "empty-space",
+      "settings": {
+        "container": "container-fluid",
+        "color_scheme": "",
+        "show_divider_line": true,
+        "divider_style": "solid",
+        "divider_height": 1,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "custom_class": ""
+      }
+    },
+    "custom_content_ciKkb3": {
+      "type": "custom-content",
+      "blocks": {
+        "text_ARH9cN": {
+          "type": "text",
+          "settings": {
+            "title": "",
+            "subheading": "Calypsa X Faire\n<br>\n<br>\nTry Our Products In Your Store, Risk-Free",
+            "text": "<ul><li>$100 off your first order*</li><li>1 year of free shipping</li><li>Buy now, pay 60 days later</li><li>Free returns on your first order</li></ul><p></p><p>* Available only for retailers who are new to Faire</p><p></p><h5><span style=\"text-decoration:underline\"><strong>Shop Wholesale Prices</strong></span></h5>",
+            "width": "50%",
+            "alignment": "center",
+            "align_text": "left",
+            "text_size": "medium",
+            "text_color": "black",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "m-button--primary",
+            "button_size": "",
+            "block_custom_class": "",
+            "animations": "inherit"
+          }
+        },
+        "image_card_MmyXJM": {
+          "type": "image_card",
+          "settings": {
+            "width": "50%",
+            "color_scheme": "",
+            "content_position": "center_center",
+            "content_alignment": "center",
+            "text_size": "medium",
+            "text_color": "inherit",
+            "image": "shopify://shop_images/DT_Wholesale_Page_1.png",
+            "mobile_image": "shopify://shop_images/MB_Wholesale_Page_1.png",
+            "link": "",
+            "title": "",
+            "subtitle": "",
+            "description": "",
+            "button_label": "",
+            "button_style": "m-button--primary",
+            "button_size": "",
+            "button_fixed": false,
+            "use_content_above": false,
+            "block_custom_class": "",
+            "animations": "inherit"
+          }
+        }
+      },
+      "block_order": [
+        "text_ARH9cN",
+        "image_card_MmyXJM"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "",
+        "heading_size": "h3",
+        "subheading": "",
+        "description": "",
+        "header_alignment": "center",
+        "container": "container-fluid",
+        "color_scheme": "",
+        "content_color_scheme": "",
+        "enable_parallax": false,
+        "parallax_direction": "vertical",
+        "gap": 30,
+        "gap_mobile": 16,
+        "use_scroll_mobile": false,
+        "padding_top": 50,
+        "padding_bottom": 0,
+        "custom_class": ""
+      }
+    },
+    "image_with_text_2_8BXcY3": {
+      "type": "image-with-text-2",
+      "settings": {
+        "color_scheme": "",
+        "container": "w-full",
+        "hero_size": "adapt",
+        "show_overlay": false,
+        "image": "shopify://shop_images/DT_Wholesale_Page_2.png",
+        "image_link": "https://calypsa.faire.com/",
+        "parallax": false,
+        "parallax_direction": "vertical",
+        "content_in_container": false,
+        "content_position": "center middle",
+        "text_alignment": "center",
+        "text_size": "medium",
+        "text_color": "white",
+        "title": "",
+        "subtitle": "",
+        "text": "",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "m-button--primary",
+        "button_size": "",
+        "text_alignment_mobile": "center",
+        "mb_image": "shopify://shop_images/MB_Wholesale_Page_2.png",
+        "use_content_above": false,
+        "custom_class": "",
+        "animations": "inherit",
+        "enable_bg_zoom_effect": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "custom_content_zkjTQF",
+    "empty_space_TT8akq",
+    "custom_content_ciKkb3",
+    "image_with_text_2_8BXcY3"
+  ]
+}

@@ -1,0 +1,36 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "collection-list-template",
+      "settings": {
+        "container": "container-fluid",
+        "display_type": "all",
+        "title": "All collection",
+        "description": "<h4><strong>Explore the full Calypsa collection — including fresh new arrivals and easy-to-shop swim bundles!</strong></h4><p>From modest swimwear and plus-size styles to activewear and accessories, every piece is designed for comfort, confidence, and movement. Sizes XS–6X, with sun protection you can count on.</p>",
+        "header_alignment": "center",
+        "items_per_row": 5,
+        "item_gap": 30,
+        "mobile_columns": "2",
+        "mobile_gap": 16,
+        "card_style": "inside-2",
+        "text_alignment": "center",
+        "hover_effect": "none",
+        "show_product_count": true,
+        "count_inline_title": true,
+        "image_rounded": true
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

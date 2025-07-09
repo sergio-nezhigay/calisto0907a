@@ -1,0 +1,565 @@
+{% liquid
+  assign enable_rtl = settings.enable_rtl
+  assign language_support_rtl = settings.language_support_rtl
+  if enable_rtl and language_support_rtl != blank
+    assign shop_locale = localization.language.iso_code
+    assign language_support_rtl_list = language_support_rtl | split: ','
+    assign is_rtl = language_support_rtl_list | where: shop_locale
+    if is_rtl.size > 0
+      assign enable_rtl = true
+    else
+      assign enable_rtl = false
+    endif
+  endif
+
+  assign body_classes = 'template-' | append: template.name | append: ' ' | append: template.suffix | append: ' m-gradient m-color-' | append: settings.default_color_scheme
+  if settings.page_transition
+    assign body_classes = body_classes | append: ' m:overflow-hidden'
+  endif
+  if template.suffix == 'about-us'
+    assign body_classes = body_classes | append: ' sf__page-about'
+  endif
+%}
+<!doctype html>
+<html
+  class="no-js {% if settings.page_transition %} m:overflow-hidden{% endif %}"
+  lang="{{ request.locale.iso_code }}"
+  data-template="{{ template.name }}"
+  {% if enable_rtl %}
+    dir="rtl"
+  {% endif %}
+>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% comment %}
+      {% render 'hyperspeed-imports' %}
+    {% endcomment %}
+    <meta charset="utf-8">
+    {%- liquid
+      assign should_noindex = false
+
+      if template.name == 'page'
+        if page.metafields.seo.noindex == true
+          assign should_noindex = true
+        endif
+      endif
+    -%}
+    {% if should_noindex %}
+      <meta name="robots" content="noindex,nofollow">
+    {% else %}
+      <meta name="robots" content="index,follow">
+    {% endif %}
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="theme-color" content="{{ settings.color_primary }}">
+
+    {%- liquid
+      render 'preload'
+      render 'SEO'
+      render 'social-meta-tags'
+      render 'font-face'
+    -%}
+
+    {% render 'critical-css' %}
+
+    {{ 'main.css' | asset_url | stylesheet_tag }}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    {% render 'style-tags' %}
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="{{ 'vendor.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'theme-global.js' | asset_url }}" defer="defer"></script>
+    {%- if settings.animations != 'none' -%}
+      <script src="{{ 'animations.js' | asset_url }}" defer="defer"></script>
+    {%- endif -%}
+    {%- if request.design_mode -%}
+      <script src="{{ 'theme-editor.js' | asset_url }}" defer="defer"></script>
+    {%- endif -%}
+
+    {{ content_for_header }}
+
+    <script>
+      document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+      if (Shopify.designMode) {
+        document.documentElement.classList.add('shopify-design-mode');
+      }
+    </script>
+    {% render 'theme-data' %}
+    {% render 'custom-code-head' %}
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+
+    {% if template == 'collection' %}
+      <script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "Organization",
+          "name": "Calypsa",
+          "logo": "https://{{ shop.domain }}/cdn/shop/files/Calypsa_PNG-09.png?v=1722335190&width=1726",
+          "sameAs": [
+            "https://twitter.com/Calypsa_",
+            "https://www.facebook.com/CalypsabyModLi/",
+            "https://www.pinterest.com/CalypsaStyle/",
+            "https://www.instagram.com/calypsa/",
+            "https://www.youtube.com/channel/UCZclyAg717ix5XU98geyVoQ"
+          ],
+          "url": "https://{{ shop.domain }}"
+        }
+      </script>
+
+      <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "ProductCollection",
+          "name": "3/4 Sleeve Swim Tops",
+          "url": "https://{{ shop.domain }}/collections/3-4-sleeve-swim-tops",
+          "description11": "Shop 3/4 sleeve swim tops for modest coverage and sun protection. Available in various styles, sizes XXS to 6XL, and made with UPF 50+ fabrics.",
+          "mainEntity": [
+            {
+              "@type": "Product",
+              "name": "Margaux Swim Top - Round Neck",
+              "url": "https://{{ shop.domain }}/products/margaux-swim-top-round-neck",
+              "image": "https://images.hyperspeed.me/https://{{ shop.domain }}/cdn/shop/files/nav_1-modli-cropped-1001-511-2627-2786.jpg?v=1739706126&width=1626",
+              "description": "\n\n\n\n\n\n\n\n\n\n\n\n\nMargaux Swim Top\nFit \u0026amp; Sizing\n\nTight Fit\nSleeve Length 16.25” (Size S)\nTop Length 26.2” (Size S)\nIf you are between sizes, or in doubt, please size up.\n\nFeatures\n\n3\/4 Sleeve\nHigh\/Closed Round Neckline\nDoes not feature a Built-in Bra\nSide ruching creates a flattering cinched look\n\nUPF 50+ Sun Protection Swimwear\nQuick Dry\n\nCare\n\nRinse in cold water to wash off any chemicals, chlorinated water or saltwater\nMachine wash in cold water on gentle cycle\nLay flat to dry in the shade\n\nMaterial\n\n82% Nylon 18% Spandex\nRecycled colors - 83% Recycled Nylon, 17% Extra life lycra elastane\n\nThis round neck, 3\/4 sleeve swim top is a must have for a day in the sun. Complete with side ruching and UPF 50+ sun protection, the Margaux Swim Top is perfect for swimming, hanging by the water and water sports. Sold as top only. Pair with your favorite swim bottom to complete the look.\n\n\n\n\n\n\n\n\n\n\n\n\n\nThis round neck, 3\/4 sleeve swim top is a must have for a day in the sun. Complete with side ruching and UPF 50+ sun protection, the Margaux Swim Top is perfect for swimming, hanging by the water and water sports. Get this top with the perfect bottom to complete the set. Shop sets\n\n\n\n\n\n\n\n\n\n\n \n\n\n",
+              "sku": "7297583117581",
+              "brand": {
+                "@type": "Brand",
+                "name": "Calypsa"
+              },
+              "offers": {
+                "@type": "Offer",
+                "price": 26.0,
+                "priceCurrency": "USD"
+              }
+            },
+            {
+              "@type": "Product",
+              "name": "Loose Fit Margaux Swim Top",
+              "url": "https://{{ shop.domain }}/products/loose-fit-margaux-swim-top",
+              "image": "https://images.hyperspeed.me/https://{{ shop.domain }}/cdn/shop/files/DSC_5865p.jpg?v=1746693461&width=1131",
+              "description": "\n\n\n\n\nThe Loose Fit Margaux Swim Top gives you extra coverage without compromising style. We love the relaxed fit, 3\/4 length raglan sleeves and round neckline but one of the best features of this swim top is its slimming contrasting side panels. Sold as top only. Pair with your favorite swim bottom to complete the look.\nFeatures\n\n3\/4 Sleeve\nRound Neckline\nDoes not feature a Built-in Bra\nSide panels create a slimming effect for a flattering look\n\nUPF 50+ Sun Protection Swimwear\nQuick Dry\n\nFit \u0026amp; Sizing\n\nLoose Fit for freedom of movement\nSleeve Length 16.25” (Size S)\nTop Length 26.2” (Size S)\n\nMaterial\n\n82% Nylon 18% Spandex\n\n\n\n",
+              "sku": "7297583091133",
+              "brand": {
+                "@type": "Brand",
+                "name": "Calypsa"
+              },
+              "offers": {
+                "@type": "Offer",
+                "price": 46.0,
+                "priceCurrency": "USD"
+              }
+            },
+            {
+              "@type": "Product",
+              "name": "Betty Swim Dress",
+              "url": "https://{{ shop.domain }}/products/betty-swim-dress",
+              "image": "https://images.hyperspeed.me/https://{{ shop.domain }}/cdn/shop/files/final-3-8305_100000040814-modli-cropped-670-1450-2571-4092.jpg?v=1738790700&width=1901",
+              "description": "\n\n\n\n\nBetty Swim Dress\nFit \u0026amp; Sizing\n\nRelaxed Fit, Slight A-line\nSleeve Length 10.75” (Size S)\nDress Length 34.75” (Size S)\n\nFeatures\n\nElbow-length Sleeve\nRound Neckline\nDoes not feature a Built-in Bra\n\nUPF 50+ Sun Protection Swimwear\nQuick Dry\n\nCare\n\nRinse in cold water to wash off any chemicals, chlorinated water or saltwater\nMachine wash in cold water on gentle cycle\nLay flat to dry in the shade\n\nMaterial\n\n82% Nylon 18% Spandex\n\nBack by popular demand. This 3\/4 sleeve swim dress is perfect for long beach days. Pair it with your favorite swim bottoms to complete the look.\n\n\n",
+              "sku": "7297583060238",
+              "brand": {
+                "@type": "Brand",
+                "name": "Calypsa"
+              },
+              "offers": {
+                "@type": "Offer",
+                "price": 56.0,
+                "priceCurrency": "USD"
+              }
+            },
+            {
+              "@type": "Product",
+              "name": "Margaux Swim Top - Round Neck",
+              "url": "https://{{ shop.domain }}/products/margaux-swim-top-round-neck",
+              "image": "https://images.hyperspeed.me/https://{{ shop.domain }}/cdn/shop/files/nav_1-modli-cropped-1001-511-2627-2786.jpg?v=1739706126&width=1626",
+              "description": "\n\n\n\n\n\n\n\n\n\n\n\n\nMargaux Swim Top\nFit \u0026amp; Sizing\n\nTight Fit\nSleeve Length 16.25” (Size S)\nTop Length 26.2” (Size S)\nIf you are between sizes, or in doubt, please size up.\n\nFeatures\n\n3\/4 Sleeve\nHigh\/Closed Round Neckline\nDoes not feature a Built-in Bra\nSide ruching creates a flattering cinched look\n\nUPF 50+ Sun Protection Swimwear\nQuick Dry\n\nCare\n\nRinse in cold water to wash off any chemicals, chlorinated water or saltwater\nMachine wash in cold water on gentle cycle\nLay flat to dry in the shade\n\nMaterial\n\n82% Nylon 18% Spandex\nRecycled colors - 83% Recycled Nylon, 17% Extra life lycra elastane\n\nThis round neck, 3\/4 sleeve swim top is a must have for a day in the sun. Complete with side ruching and UPF 50+ sun protection, the Margaux Swim Top is perfect for swimming, hanging by the water and water sports. Sold as top only. Pair with your favorite swim bottom to complete the look.\n\n\n\n\n\n\n\n\n\n\n\n\n\nThis round neck, 3\/4 sleeve swim top is a must have for a day in the sun. Complete with side ruching and UPF 50+ sun protection, the Margaux Swim Top is perfect for swimming, hanging by the water and water sports. Get this top with the perfect bottom to complete the set. Shop sets\n\n\n\n\n\n\n\n\n\n\n \n\n\n",
+              "sku": "7297583117581",
+              "brand": {
+                "@type": "Brand",
+                "name": "Calypsa"
+              },
+              "offers": {
+                "@type": "Offer",
+                "price": 26.0,
+                "priceCurrency": "USD"
+              }
+            },
+            {
+              "@type": "Product",
+              "name": "Gia Swim Tunic",
+              "url": "https://{{ shop.domain }}/products/gia-swim-tunic",
+              "image": "https://images.hyperspeed.me/https://{{ shop.domain }}/cdn/shop/files/dsc_2830-modli-cropped-969-644-2487-2768.jpg?v=1746691759&width=1518",
+              "description": "\n\n\nBreezy, flattering, and sun-safe — the Gia Swim Tunic is your go-to for effortless beach days. With its relaxed A-line fit, ¾ sleeves, and round neckline, it offers stylish coverage without weighing you down. Made from quick-dry fabric and featuring UPF 50+ sun protection, this swim tunic is perfect for layering over your favorite bikini bottom with comfort and confidence.\n\n\n\n\n\n\nFeatures\n\n3\/4 Sleeve\nRound Neckline\nDoes not feature a Built-in Bra\nUPF 50+ sun protection\nQuick Dry\nSold as top only. Shop separate bottoms to complete your look\n\nFit \u0026amp; Sizing\n\nRelaxed Fit, Slight A-line\nSleeve Length 16.57 inches (Size S)\nSwim Tunic Length 30.61 inches (Size S)\nIf you are between sizes, or in doubt, please size up.\n\nMaterial\n\n82% Nylon 18% Spandex\nUPF 50+ sun protection\n\n\n\n",
+              "sku": "7297583167500",
+              "brand": {
+                "@type": "Brand",
+                "name": "Calypsa"
+              },
+              "offers": {
+                "@type": "Offer",
+                "price": 47.0,
+                "priceCurrency": "USD"
+              }
+            },
+            {
+              "@type": "Product",
+              "name": "Loose Fit Margaux Swim Top | Plus Size",
+              "url": "https:\/\/{{ shop.domain }}\/products\/loose-fit-margaux-swim-top-plus-size",
+              "image": "https://images.hyperspeed.me/https://{{ shop.domain }}/cdn/shop/files/Copy_of_Plus_1.jpg?v=1742818989&width=1818",
+              "description": "\n\n\n\n\nThe Loose Fit Margaux Swim Top gives you extra coverage without compromising style. We love the relaxed fit, 3\/4 length raglan sleeves and round neckline but one of the best features of this swim top is its slimming contrasting side panels. Sold as top only. Pair with your favorite swim bottom to complete the look.\nFeatures\n\n3\/4 Sleeve\nRound Neckline\nDoes not feature a Built-in Bra\nSide panels create a slimming effect for a flattering look\n\nUPF 50+ Sun Protection Swimwear\nQuick Dry\n\nFit \u0026amp; Sizing\n\nLoose Fit for freedom of movement\nSleeve Length 16.25” (Size S)\nTop Length 26.2” (Size S)\n\nMaterial\n\n82% Nylon 18% Spandex\n\n\n\n",
+              "sku": "7297583183692",
+              "brand": {
+                "@type": "Brand",
+                "name": "Calypsa"
+              },
+              "offers": {
+                "@type": "Offer",
+                "price": 46.0,
+                "priceCurrency": "USD"
+              }
+            },
+            {
+              "@type": "Product",
+              "name": "Margaux Swim Top | Plus Size",
+              "url": "https://{{ shop.domain }}/products/margaux-swim-top-plus-size",
+              "image": "https://images.hyperspeed.me/https://{{ shop.domain }}/cdn/shop/files/Copy_of_Edited-3562.jpg?v=1741707276&width=1363",
+              "description": "\n\n\n\nThis round neck, 3\/4 sleeve swim top is a must-have for a day in the sun. Complete with side ruching and UPF 50+ sun protection, the Margaux Swim Top is perfect for swimming, hanging by the water and water sports. Sold as top only. Pair with your favorite swim bottom to complete the look.\nFeatures\n\n3\/4 Sleeve\nHigh\/Closed Round Neckline\nDoes not feature a Built-in Bra\nSide ruching creates a flattering cinched look\n\nUPF 50+ Sun Protection Swimwear\nQuick Dry\n\nFit \u0026amp; Sizing\n\nTight Fit\nSleeve Length 16.25” (Size S)\nTop Length 26.2” (Size S)\nIf you are between sizes, or in doubt, please size up.\n\nMaterial\n\n82% Nylon 18% Spandex\nRecycled colors - 83% Recycled Nylon, 17% Extra life lycra elastane\n\n\n\n",
+              "sku": "7297583182503",
+              "brand": {
+                "@type": "Brand",
+                "name": "Calypsa"
+              },
+              "offers": {
+                "@type": "Offer",
+                "price": 48.0,
+                "priceCurrency": "USD"
+              }
+            },
+            {
+              "@type": "Product",
+              "name": "Gia Swim Tunic | Plus Size",
+              "url": "https://{{ shop.domain }}/products/gia-swim-tunic-plus-size",
+              "image": "https://images.hyperspeed.me/https://{{ shop.domain }}/cdn/shop/files/calypsa_may_2024_edited-140l_3-modli-cropped-824-959-1804-2330_ffe888be-a509-4304-8c0a-9344962566b5.jpg?v=1739706232&width=980",
+              "description": "\n\n\nBreezy, flattering, and sun-safe — the Gia Swim Tunic is your go-to for effortless beach days. With its relaxed A-line fit, ¾ sleeves, and round neckline, it offers stylish coverage without weighing you down. Made from quick-dry fabric and featuring UPF 50+ sun protection, this swim tunic is perfect for layering over your favorite bikini bottom with comfort and confidence.\n\n\n\n\n\n\nFeatures\n\n3\/4 Sleeve\nRound Neckline\nDoes not feature a Built-in Bra\nUPF 50+ sun protection\nQuick Dry\nSold as top only. Shop separate bottoms to complete your look\n\nFit \u0026amp; Sizing\n\nRelaxed Fit, Slight A-line\nSleeve Length 16.57 inches (Size S)\nSwim Tunic Length 30.61 inches (Size S)\nIf you are between sizes, or in doubt, please size up.\n\nMaterial\n\n82% Nylon 18% Spandex\nUPF 50+ sun protection\n\n\n\n",
+              "sku": "7297583167883",
+              "brand": {
+                "@type": "Brand",
+                "name": "Calypsa"
+              },
+              "offers": {
+                "@type": "Offer",
+                "price": 47.0,
+                "priceCurrency": "USD"
+              }
+            }
+          ]
+        }
+      </script>
+
+      <script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": "1",
+              "name": "Calypsa | Women's swimwear made for YOU",
+              "item": "https://{{ shop.domain }}/"
+            },
+            {
+              "@type": "ListItem",
+              "position": "2",
+              "name": "3/4 Sleeve Swim Tops"
+            }
+          ]
+        }
+      </script>
+    {% endif %}
+
+    {% if template == 'product' %}
+      <script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "Organization",
+          "name": "Calypsa",
+
+          "logo": "https://{{ shop.domain }}/cdn/shop/files/Calypsa_PNG-09.png?v=1722335190&width=1726",
+
+          "sameAs": [
+            "https://twitter.com/Calypsa_",
+            "https://www.facebook.com/CalypsabyModLi/",
+            "https://www.pinterest.com/CalypsaStyle/",
+            "https://www.instagram.com/calypsa/",
+            "https://www.youtube.com/channel/UCZclyAg717ix5XU98geyVoQ"
+          ],
+          "url": "https://{{ shop.domain }}"
+        }
+      </script>
+
+      <script type="application/ld+json">
+        {
+          "@context": "http://schema.org/",
+          "@type": "Product",
+          "name": "11\" Lycra® Bike Shorts",
+          "url": "https:\/\/{{ shop.domain }}\/products\/11-lycra-bike-shorts",
+          "image": "https://{{ shop.domain }}/cdn/shop/files/edited-1162_1-modli-cropped-437-40-2156-2445.jpg?v=1738787146&width=1719",
+          "description": "\n\n\n11\" Lycra® Bike Shorts\n\n\n\n\n\nFit \u0026amp; Sizing\n\nInseam Length 11\" (Size S)\nIf you are between sizes, or in doubt, please choose one size bigger than your usual size.\n\nFeatures\n\nOn-seam side pockets at hips\nStretchy\nLightweight\nDurable\n\nAbrasion resistant\n\nCare\n\nRinse in cold water to wash off any chemicals, chlorinated water or saltwater\nMachine wash in cold water on gentle cycle\nLay flat to dry in the shade \n\nMaterial\n\n75% Nylon 25% Lycra\nUPF 50+\n\n\n\n\n\n\n\nComfortable and fashionable athletic bike shorts perfect for indoor and outdoor workout. Move easily and comfortably when doing yoga, pilates, running, or when you're just on the go!\n\n\n",
+          "sku": "7297583115624",
+          "brand": {
+            "@type": "Brand",
+            "name": "Calypsa"
+          },
+          "offers": [
+            {
+              "@type": "Offer",
+              "sku": "7297583115624",
+              "gtin13": 7297583115624,
+              "availability": "http://schema.org/InStock",
+              "price": 15.0,
+              "priceCurrency": "USD",
+              "url": "https:\/\/{{ shop.domain }}\/products\/11-lycra-bike-shorts?variant=49007359295735"
+            },
+            {
+              "@type": "Offer",
+              "sku": "7297583115532",
+              "gtin13": 7297583115532,
+              "availability": "http://schema.org/OutOfStock",
+              "price": 15.0,
+              "priceCurrency": "USD",
+              "url": "https:\/\/{{ shop.domain }}\/products\/11-lycra-bike-shorts?variant=49007359328503"
+            },
+            {
+              "@type": "Offer",
+              "sku": "7297583115631",
+              "gtin13": 7297583115631,
+              "availability": "http://schema.org/InStock",
+              "price": 15.0,
+              "priceCurrency": "USD",
+              "url": "https:\/\/{{ shop.domain }}\/products\/11-lycra-bike-shorts?variant=49007359361271"
+            },
+            {
+              "@type": "Offer",
+              "sku": "7297583115549",
+              "gtin13": 7297583115549,
+              "availability": "http://schema.org/OutOfStock",
+              "price": 15.0,
+              "priceCurrency": "USD",
+              "url": "https:\/\/{{ shop.domain }}\/products\/11-lycra-bike-shorts?variant=49007359394039"
+            },
+            {
+              "@type": "Offer",
+              "sku": "7297583115648",
+              "gtin13": 7297583115648,
+              "availability": "http://schema.org/OutOfStock",
+              "price": 15.0,
+              "priceCurrency": "USD",
+              "url": "https:\/\/{{ shop.domain }}\/products\/11-lycra-bike-shorts?variant=49007359426807"
+            },
+            {
+              "@type": "Offer",
+              "sku": "7297583115556",
+              "gtin13": 7297583115556,
+              "availability": "http://schema.org/InStock",
+              "price": 15.0,
+              "priceCurrency": "USD",
+              "url": "https:\/\/{{ shop.domain }}\/products\/11-lycra-bike-shorts?variant=49007359459575"
+            },
+            {
+              "@type": "Offer",
+              "sku": "7297583115655",
+              "gtin13": 7297583115655,
+              "availability": "http://schema.org/OutOfStock",
+              "price": 15.0,
+              "priceCurrency": "USD",
+              "url": "https:\/\/{{ shop.domain }}\/products\/11-lycra-bike-shorts?variant=49007359492343"
+            },
+            {
+              "@type": "Offer",
+              "sku": "7297583115563",
+              "gtin13": 7297583115563,
+              "availability": "http://schema.org/OutOfStock",
+              "price": 15.0,
+              "priceCurrency": "USD",
+              "url": "https:\/\/{{ shop.domain }}\/products\/11-lycra-bike-shorts?variant=49007359525111"
+            },
+            {
+              "@type": "Offer",
+              "sku": "7297583115662",
+              "gtin13": 7297583115662,
+              "availability": "http://schema.org/OutOfStock",
+              "price": 15.0,
+              "priceCurrency": "USD",
+              "url": "https:\/\/{{ shop.domain }}\/products\/11-lycra-bike-shorts?variant=49007359557879"
+            },
+            {
+              "@type": "Offer",
+              "sku": "7297583115570",
+              "gtin13": 7297583115570,
+              "availability": "http://schema.org/OutOfStock",
+              "price": 15.0,
+              "priceCurrency": "USD",
+              "url": "https:\/\/{{ shop.domain }}\/products\/11-lycra-bike-shorts?variant=49007359590647"
+            },
+            {
+              "@type": "Offer",
+              "sku": "7297583115679",
+              "gtin13": 7297583115679,
+              "availability": "http://schema.org/OutOfStock",
+              "price": 15.0,
+              "priceCurrency": "USD",
+              "url": "https:\/\/{{ shop.domain }}\/products\/11-lycra-bike-shorts?variant=49007359623415"
+            },
+            {
+              "@type": "Offer",
+              "sku": "7297583115587",
+              "gtin13": 7297583115587,
+              "availability": "http://schema.org/OutOfStock",
+              "price": 15.0,
+              "priceCurrency": "USD",
+              "url": "https:\/\/{{ shop.domain }}\/products\/11-lycra-bike-shorts?variant=49007359656183"
+            },
+            {
+              "@type": "Offer",
+              "sku": "7297583115594",
+              "gtin13": 7297583115594,
+              "availability": "http://schema.org/OutOfStock",
+              "price": 15.0,
+              "priceCurrency": "USD",
+              "url": "https:\/\/{{ shop.domain }}\/products\/11-lycra-bike-shorts?variant=49007359688951"
+            }
+          ],
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.7",
+            "ratingCount": "10",
+            "reviewCount": "4"
+          },
+          "review": [
+            {
+              "@type": "Review",
+              "name": "5 out of 5 stars. Good quality materials however, they run very big and I have to return them",
+              "reviewBody": "Good quality materials however, they run very big and I have to return them.",
+              "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+              },
+              "datePublished": "2024-05-01",
+              "author": { "@type": "Person", "name": "ANENE KWENTOH" }
+            },
+            {
+              "@type": "Review",
+              "name": "5 out of 5 stars. Best bike shorts ever",
+              "reviewBody": "Best bike shorts ever. I ordered another pair she I would order these in other colors if they had them. So soft, so comfy, smoothing without being a compression style and they are the perfect length - couple inches above the knee for me.",
+              "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+              },
+              "datePublished": "2024-05-04",
+              "author": { "@type": "Person", "name": "Anonymous" }
+            },
+            {
+              "@type": "Review",
+              "name": "The short have a tendency to ride down in the back",
+              "reviewBody": "The short have a tendency to ride down in the back, would be nice if there was a bit more fabric so it wouldn't do that!",
+              "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "4"
+              },
+              "datePublished": "2023-07-05",
+              "author": { "@type": "Person", "name": "Anonymous" }
+            },
+            {
+              "@type": "Review",
+              "name": "As described, quick delivery, very nice item",
+              "reviewBody": "As described, quick delivery, very nice item. Will enjoy.",
+              "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+              },
+              "datePublished": "2023-04-21",
+              "author": { "@type": "Person", "name": "LINDA BULGER Bulger" }
+            }
+          ]
+        }
+      </script>
+
+      <script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": "1",
+              "name": "Calypsa | Women's swimwear made for YOU",
+              "item": "https://{{ shop.domain }}/"
+            },
+            {
+              "@type": "ListItem",
+              "position": "2",
+              "name": "Active tops for women | Calypsa",
+              "item": "https://{{ shop.domain }}/collections/activewear"
+            },
+            {
+              "@type": "ListItem",
+              "position": "3",
+              "name": "11&quot; Lycra® Bike Shorts. Calypsa by ModLi"
+            }
+          ]
+        }
+      </script>
+    {% endif %}
+  </head>
+
+  <body
+    id="m-theme"
+    class="{{ body_classes }}"
+    {% if template.name == 'product' %}
+      data-product-id="{{ product.id }}"
+    {% endif %}
+  >
+    {% render 'page-transition' %}
+    {%- liquid
+      render 'scroll-top-button'
+      sections 'header-group'
+    -%}
+
+    <main role="main" id="MainContent">
+      {{ content_for_layout }}
+    </main>
+
+    {%- sections 'footer-group' -%}
+
+    {% render 'script-tags' %}
+    {% render 'cookie-banner' %}
+    {% render 'custom-code-body' %}
+
+    <script src="{{ 'product-quick-view.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'wishlist.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'compare-product.js' | asset_url }}" defer="defer"></script>
+
+    {%- if settings.enable_predictive_search -%}
+      <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
+    {%- endif -%}
+
+    {%- if linklists['gift-wrapping'].links != blank
+      and linklists['gift-wrapping'].links.first.type == 'product_link'
+    -%}
+      <script src="{{ 'gift-wrapping.js' | asset_url }}" defer="defer"></script>
+    {%- endif -%}
+
+    {%- if settings.show_swatch_option -%}
+      <script src="{{ 'product-card-swatch.js' | asset_url }}" defer="defer"></script>
+    {%- endif -%}
+
+    {%- if settings.enable_cart_drawer and template != 'cart' -%}
+      {% render 'cart-drawer' %}
+    {%- endif -%}
+    {%- if settings.enable_size_guide -%}
+      {% render 'product-size-guide-modal', section: section %}
+    {%- endif -%}
+    {% render 'samita-custom' %}
+  </body>
+</html>

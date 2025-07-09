@@ -1,0 +1,476 @@
+{% liquid
+  assign enable_size_guide = settings.enable_size_guide
+
+  assign inch_title = settings.inch_title
+  assign centimeter_title = settings.centimeter_title
+  assign measure_title = settings.measure_title
+
+  assign inch_img = settings.inch_img
+  assign centimeter_img = settings.centimeter_img
+  assign measure_img = settings.measure_img
+%}
+
+{% if enable_size_guide %}
+<div class="size-chart-guide info_modal" id="mySizeModal_{{ section.id }}">
+
+{{ 'tabs.css' | asset_url | stylesheet_tag }}
+<style>
+  .size-chart-guide {
+    padding-block: 20px;
+  }
+  .size-chart-guide .info_modal-content {
+    max-width: 900px;
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+  }
+  .info_modal .size_guide_icon span {
+    font-size: 18px;
+  }
+  .size-chart-guide .m-tabs__header {
+    border-bottom: 0;
+  }
+  .size-chart-guide .m-tabs__header-inner {
+    width: 100%;
+    justify-content: space-around;
+  }
+  .size-chart-guide .m-tabs__header-inner .m-tab-header {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 5px 30px;
+  }
+  .size-chart-guide .m-tab-header:after {
+    transition: none;
+  }
+  .size-chart-guide .m-tab-header:hover,
+  .size-chart-guide .m-tab-header.active {
+    color: #15abba;
+  }
+  .top-leave-bar {
+    margin-top: 25px;
+  }
+  .top-leave-bar .heading {
+    color: #000000;
+    margin: 0;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.1;
+  }
+  .top-leave-bar .rte-txt {
+    color: #000000;
+    margin: 0;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.1;
+  }
+  .top-leave-bar .scrolled-image {
+    margin-top: 30px;
+    overflow-x: auto;
+  }
+  .top-leave-bar .scrolled-image img {
+    width: 793px;
+    max-width: max-content;
+  }
+  .size-images {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+  }
+  .size-images > div:not(.top-leave-bar) img {
+    width: 100%;
+  }
+  .size-title {
+    color: #000000;
+    margin: 0;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.1;
+    margin-bottom: 28px;
+  }
+  .size-banner-image img {
+    width: 100%;
+  }
+  .size-product-grid {
+    margin-top: 60px;
+  }
+  .size-product-grid-row {
+    margin: -20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .size-product-grid-row > * {
+    width: 25%;
+    padding: 20px;
+  }
+  .size-product-grid-item img {
+    width: 100%;
+  }
+  .size-modal-wrapper {
+    margin-top: 50px;
+  }
+  .size-modal-wrapper .title {
+    color: #023338;
+    font-size: 32px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.2;
+    margin: 0;
+  }
+  .size-modal-wrapper .model-txt {
+    color: #023338;
+    font-size: 11px;
+    margin: 0;
+    text-align: center;
+    line-height: 1.2;
+    font-weight: 400;
+  }
+  .size-modal-slider-wrapper {
+    margin-top: 30px;
+  }
+  .size-chart-guide .m-tabs__content {
+    padding-top: 15px;
+  }
+  .size-modal-slider .swiper-wrapper .swiper-slide img {
+    width: 100%;
+  }
+  .size-modal-slider .swiper-pagination {
+    position: relative;
+    bottom: auto;
+  }
+  .size-modal-slider .swiper-pagination .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    background: #d1d1d1;
+  }
+  .size-modal-slider .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+     background: #1c1918;
+  }
+  .size-modal-slider .swiper-pagination .swiper-pagination-bullet:after,
+  .size-modal-slider .swiper-pagination .swiper-pagination-bullet:before {
+    display: none;
+  }
+  @media (max-width: 991px) {
+    .size-chart-guide {
+      padding: 0;
+      bottom: 0;
+    }
+    .size-chart-guide .info_modal-content {
+      max-height: 90%;
+      padding: 20px 0;
+      width: 100%;
+      margin-bottom: 0;
+      position: absolute;
+      bottom: 0;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+    .size-chart-guide .modal-header {
+      padding: 0 10px;
+    }
+    .size-chart-guide .info_modal-content m-product-details-tabs {
+      flex: 1 1 auto;
+      overflow-y: auto;
+      padding: 0 10px;
+    }
+    .size-chart-guide .info_modal-content .container {
+      padding: 0;
+    }
+    .size-chart-guide .m-tabs__header-inner {
+      justify-content: flex-start;
+      gap: 5px;
+      margin-top: 10px;
+      margin-inline: -10px;
+      width: fit-content;
+    }
+    .size-chart-guide .m-tabs__header-inner .m-tab-header {
+      padding: 5px 20px;
+    }
+    .top-leave-bar .rte-txt {
+      font-size: 10px;
+    }
+    .top-leave-bar .scrolled-image {
+      margin-top: 20px;
+      margin-inline: -10px;
+      padding-inline: 10px;
+    }
+    .size-images {
+      gap: 20px;
+    }
+    .size-title {
+      margin-bottom: 10px;
+    }
+    .size-product-grid {
+      margin-top: 20px;
+    }
+    .size-product-grid-row {
+      margin: -10px;
+    }
+    .size-product-grid-row > * {
+      width: 50%;
+      padding: 10px;
+    }
+    .size-modal-wrapper {
+      margin-top: 20px;
+    }
+    .size-modal-wrapper .title {
+      font-size: 30px;
+    }
+    .top-leave-bar .scrolled-image img {
+      width: 760px;
+    }
+  }
+  @media (min-width:992px) {
+    .size-modal-slider .swiper-wrapper {
+      display: flex;
+      transform: none !important;
+      flex-wrap: wrap;
+      width: auto;
+      margin: -4px;
+    }
+    .size-modal-slider .swiper-wrapper .swiper-slide {
+      width: 50%;
+      padding: 4px;
+    }
+  }
+  @media (min-width: 1000px) {
+    .size-chart-guide .info_modal-content {
+      padding: 30px;
+    }
+    .size-chart-guide .modal-header {
+      margin-bottom: 40px;
+    }
+  }
+</style>
+<script src="{{ 'product-details-tabs.js' | asset_url }}" defer="defer"></script>
+  <div class="info_modal-content">
+    <div class="modal-header">
+      <h2 class="modal-title h2">
+        <div class="size_guide_icon">
+          <svg class="sizeguideButton-modalTitleIcon-39O sizeguideButton-icon-y5I" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><path d="M5.125 8.66667V12M7.875 8.66667V12M10.625 8.66667V13.3333M13.375 8.66667V12M16.125 8.66667V12M18.875 8.66667V13.3333M2.375 8H21.625C21.9897 8 22.3394 8.14048 22.5973 8.39052C22.8551 8.64057 23 8.97971 23 9.33333V14.6667C23 15.0203 22.8551 15.3594 22.5973 15.6095C22.3394 15.8595 21.9897 16 21.625 16H2.375C2.01033 16 1.66059 15.8595 1.40273 15.6095C1.14487 15.3594 1 15.0203 1 14.6667V9.33333C1 8.97971 1.14487 8.64057 1.40273 8.39052C1.66059 8.14048 2.01033 8 2.375 8Z" stroke="#15ABBA" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+          <span>{{ settings.size_guide_main_text }}</span>
+        </div>
+      </h2>
+      <button class="info_modal_close"><svg width="18" height="18" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 18"><path d="M2.41423 3.21073C2.36193 3.15843 2.32044 3.09634 2.29214 3.02801C2.26384 2.95968 2.24927 2.88644 2.24927 2.81248C2.24927 2.73852 2.26384 2.66528 2.29214 2.59695C2.32044 2.52861 2.36193 2.46653 2.41423 2.41423C2.46653 2.36193 2.52861 2.32044 2.59695 2.29214C2.66528 2.26384 2.73852 2.24927 2.81248 2.24927C2.88644 2.24927 2.95968 2.26384 3.02801 2.29214C3.09634 2.32044 3.15843 2.36193 3.21073 2.41423L8.99998 8.2046L14.7892 2.41423C14.8415 2.36193 14.9036 2.32044 14.9719 2.29214C15.0403 2.26384 15.1135 2.24927 15.1875 2.24927C15.2614 2.24927 15.3347 2.26384 15.403 2.29214C15.4713 2.32044 15.5334 2.36193 15.5857 2.41423C15.638 2.46653 15.6795 2.52861 15.7078 2.59695C15.7361 2.66528 15.7507 2.73852 15.7507 2.81248C15.7507 2.88644 15.7361 2.95968 15.7078 3.02801C15.6795 3.09634 15.638 3.15843 15.5857 3.21073L9.79535 8.99998L15.5857 14.7892C15.638 14.8415 15.6795 14.9036 15.7078 14.9719C15.7361 15.0403 15.7507 15.1135 15.7507 15.1875C15.7507 15.2614 15.7361 15.3347 15.7078 15.403C15.6795 15.4713 15.638 15.5334 15.5857 15.5857C15.5334 15.638 15.4713 15.6795 15.403 15.7078C15.3347 15.7361 15.2614 15.7507 15.1875 15.7507C15.1135 15.7507 15.0403 15.7361 14.9719 15.7078C14.9036 15.6795 14.8415 15.638 14.7892 15.5857L8.99998 9.79535L3.21073 15.5857C3.15843 15.638 3.09634 15.6795 3.02801 15.7078C2.95968 15.7361 2.88644 15.7507 2.81248 15.7507C2.73852 15.7507 2.66528 15.7361 2.59695 15.7078C2.52861 15.6795 2.46653 15.638 2.41423 15.5857C2.36193 15.5334 2.32044 15.4713 2.29214 15.403C2.26384 15.3347 2.24927 15.2614 2.24927 15.1875C2.24927 15.1135 2.26384 15.0403 2.29214 14.9719C2.32044 14.9036 2.36193 14.8415 2.41423 14.7892L8.2046 8.99998L2.41423 3.21073Z" fill="currentColor"></path></svg></button>
+    </div>
+    <m-product-details-tabs id="m-section-template--size-chart-guide" class="m-section m-product-details-tabs m:block m-gradient m-color-default" data-section-type="product-details-tabs" data-section-id="template--size-chart-guide">
+      <div class="container">
+        <div class="m-tabs m-scroll-trigger animate--fade-in-up">
+          <div class="m-tabs__header m:display-flex m:justify-center">
+            <div class="m-tabs__header-inner">
+    
+                {% if inch_title != blank %}
+                <div class="m-tab-header active" data-block-type="{{ inch_title | handleize }}" data-index="0">
+                  {{ inch_title }}
+                </div>
+                {% endif %}
+              
+                {% if centimeter_title != blank %}
+                <div class="m-tab-header" data-block-type="{{ centimeter_title | handleize }}" data-index="1">
+                  {{ centimeter_title }}
+                </div>
+                {% endif %}
+    
+                {% if measure_title != blank %}
+                  <div class="m-tab-header" data-block-type="{{ measure_title | handleize }}" data-index="2">
+                    {{ measure_title }}
+                  </div>
+                {% endif %}
+            </div>
+          </div>
+          <div class="m-tabs__content m-product-collapsible">
+              {% if inch_title != blank or inch_img != blank %}
+              <div class="m-tab-content--{{ inch_title | handleize }} m-tab-content active" data-block-type="{{ inch_title | handleize }}" style="opacity: 1;">
+                <div class="m-tab-content__inner size-images">
+                  <div class="top-leave-bar">
+                    <h2 class="heading">SWIM BRAS</h2>
+                    <div class="rte-txt">Use the chart below to convert your regular bra size into letter size (XXS - 6X)</div>
+                    <div class="scrolled-image">
+                      <picture>
+                        <source media="(min-width:991px)" srcset="https://cdn.shopify.com/s/files/1/0680/5939/8391/files/b4993a12bec4565b4925b39820aba1fbe0687f33_1.png?v=1745407541">
+                        <source media="(min-width:300px)" srcset="https://cdn.shopify.com/s/files/1/0680/5939/8391/files/Bra_Table_Size-Updated-01_1_4.png?v=1745422873">
+                        <img src="https://cdn.shopify.com/s/files/1/0680/5939/8391/files/Bra_Table_Size-Updated-01_1_4.png?v=1745422873" alt="Flowers">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="second-leave-bar">
+                    <h2 class="size-title">SWIM TOPS</h2>
+                    <picture>
+                        <source media="(min-width:991px)" srcset="https://cdn.shopify.com/s/files/1/0680/5939/8391/files/78268916fdfac197ed31081622a1273b34bf66e2.png?v=1745407671">
+                        <source media="(min-width:300px)" srcset="https://cdn.shopify.com/s/files/1/0680/5939/8391/files/Group_41.png?v=1745423114">
+                        <img src="https://cdn.shopify.com/s/files/1/0680/5939/8391/files/Group_41.png?v=1745423114" alt="Flowers">
+                    </picture>
+                  </div>
+                  <div class="third-leave-bar">
+                    <h2 class="size-title">SWIM BOTTOMS</h2>
+                    <picture>
+                        <source media="(min-width:991px)" srcset="https://cdn.shopify.com/s/files/1/0680/5939/8391/files/116567b256d143d20a868653708c8b7855d560e5.png?v=1745407738">
+                        <source media="(min-width:300px)" srcset="https://cdn.shopify.com/s/files/1/0680/5939/8391/files/Group_42.png?v=1745423183">
+                        <img src="https://cdn.shopify.com/s/files/1/0680/5939/8391/files/Group_42.png?v=1745423183" alt="Flowers">
+                    </picture>
+                  </div>
+                  <div class="fourth-leave-bar">
+                    <h2 class="size-title">International Size Conversion</h2>
+                    <picture>
+                        <source media="(min-width:991px)" srcset="https://cdn.shopify.com/s/files/1/0680/5939/8391/files/cf008fb6f7424ea0785c934a3f38db0cea997a2c.png?v=1745407749">
+                        <source media="(min-width:300px)" srcset="https://cdn.shopify.com/s/files/1/0680/5939/8391/files/Group_43.png?v=1745423253">
+                        <img src="https://cdn.shopify.com/s/files/1/0680/5939/8391/files/Group_43.png?v=1745423253" alt="Flowers">
+                    </picture>
+                  </div>
+                </div>
+              </div>
+              {% endif %}
+            
+              {% if centimeter_title != blank or centimeter_img != blank %}
+              <div class="m-tab-content--{{ centimeter_title | handleize }} m-tab-content" data-block-type="{{ centimeter_title | handleize }}">
+               <div class="m-tab-content__inner size-images">
+                  <div class="top-leave-bar">
+                    <h2 class="heading">SWIM BRAS</h2>
+                    <div class="rte-txt">Use the chart below to convert your regular bra size into letter size (XXS - 6X)</div>
+                    <div class="scrolled-image">
+                      <picture>
+                        <source media="(min-width:991px)" srcset="https://cdn.shopify.com/s/files/1/0680/5939/8391/files/b4993a12bec4565b4925b39820aba1fbe0687f33_2.png?v=1745408909">
+                        <source media="(min-width:300px)" srcset="https://cdn.shopify.com/s/files/1/0680/5939/8391/files/Bra_Table_Size-Updated-01_1_4_1.png?v=1745423348">
+                        <img src="https://cdn.shopify.com/s/files/1/0680/5939/8391/files/Bra_Table_Size-Updated-01_1_4_1.png?v=1745423348" alt="Flowers">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="second-leave-bar">
+                    <h2 class="size-title">SWIM TOPS</h2>
+                    <picture>
+                      <source media="(min-width:991px)" srcset="https://cdn.shopify.com/s/files/1/0680/5939/8391/files/fd5eec1f3d9a29bfa357e49ac267a7396617cd05.png?v=1745408920">
+                      <source media="(min-width:300px)" srcset="https://cdn.shopify.com/s/files/1/0680/5939/8391/files/Group_46.png?v=1745423418">
+                      <img src="https://cdn.shopify.com/s/files/1/0680/5939/8391/files/Group_46.png?v=1745423418" alt="Flowers">
+                    </picture>
+                  </div>
+                  <div class="third-leave-bar">
+                    <h2 class="size-title">SWIM BOTTOMS</h2>
+                    <picture>
+                      <source media="(min-width:991px)" srcset="https://cdn.shopify.com/s/files/1/0680/5939/8391/files/59d463d7f353aacad7870561ed11395b1f8ee5e8.png?v=1745408933">
+                      <source media="(min-width:300px)" srcset="https://cdn.shopify.com/s/files/1/0680/5939/8391/files/Group_47.png?v=1745423479">
+                      <img src="https://cdn.shopify.com/s/files/1/0680/5939/8391/files/Group_47.png?v=1745423479" alt="Flowers">
+                    </picture>
+                  </div>
+                  <div class="fourth-leave-bar">
+                    <h2 class="size-title">International Size Conversion</h2>
+                    <picture>
+                      <source media="(min-width:991px)" srcset="https://cdn.shopify.com/s/files/1/0680/5939/8391/files/47dfea0f5118a212069cd1e829eccd62af670bb3.png?v=1745408948">
+                      <source media="(min-width:300px)" srcset="https://cdn.shopify.com/s/files/1/0680/5939/8391/files/Group_43_1.png?v=1745423530">
+                      <img src="https://cdn.shopify.com/s/files/1/0680/5939/8391/files/Group_43_1.png?v=1745423530" alt="Flowers">
+                    </picture>
+                  </div>
+                </div>
+              </div>
+              {% endif %}
+    
+              {% if measure_title != blank or measure_img != blank %}
+              <div class="m-tab-content--{{ measure_title | handleize }} m-tab-content" data-block-type="{{ measure_title | handleize }}">
+                <div class="m-tab-content__inner">
+                  <div class="size-banner-image">
+                    <picture>
+                      <source media="(min-width:991px)" srcset="https://cdn.shopify.com/s/files/1/0680/5939/8391/files/43caf5f630ae9b08d53876a5b5052bdd0582b9f6.png?v=1745409526">
+                      <source media="(min-width:300px)" srcset="https://cdn.shopify.com/s/files/1/0680/5939/8391/files/image_12.png?v=1745423597">
+                      <img src="https://cdn.shopify.com/s/files/1/0680/5939/8391/files/image_12.png?v=1745423597" alt="Flowers">
+                    </picture>
+                    <img src="" />
+                  </div>
+                  <div class="size-product-grid">
+                    <div class="size-product-grid-row">
+                      <div class="size-product-grid-item">
+                        <img src="https://cdn.shopify.com/s/files/1/0680/5939/8391/files/1889eba78b8f3e1992cf2d61e42175c15aa49c90.png?v=1745409601" />
+                      </div>
+                      <div class="size-product-grid-item">
+                        <img src="https://cdn.shopify.com/s/files/1/0680/5939/8391/files/92fc87203fd244534d81b5e9fd4e0a400ef5fb8e_2.png?v=1745409677" />
+                      </div>
+                      <div class="size-product-grid-item">
+                        <img src="https://cdn.shopify.com/s/files/1/0680/5939/8391/files/87e87b004544e0421772b1f2dc0a148bd24bc1b3.png?v=1745409604" />
+                      </div>
+                      <div class="size-product-grid-item">
+                        <img src="https://cdn.shopify.com/s/files/1/0680/5939/8391/files/052adf22cc52a138605cb5fd2df101994eaf378b.png?v=1745409607" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="size-modal-wrapper">
+                    <h2 class="title">OUR MODELS</h2>
+                    <div class="model-txt">View our models below for sizing reference</div>
+                    <div class="size-modal-slider-wrapper">
+                      <div class="swiper swiper-container size-modal-slider">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide"> 
+                            <img src="https://cdn.shopify.com/s/files/1/0680/5939/8391/files/MB_Slide_04_5.png?v=1745410673" />
+                          </div>
+                          <div class="swiper-slide"> 
+                            <img src="https://cdn.shopify.com/s/files/1/0680/5939/8391/files/MB_Slide_05_5.png?v=1745410673" />
+                          </div>
+                          <div class="swiper-slide"> 
+                            <img src="https://cdn.shopify.com/s/files/1/0680/5939/8391/files/MB_slide_06_5.png?v=1745410675" />
+                          </div>
+                          <div class="swiper-slide"> 
+                            <img src="https://cdn.shopify.com/s/files/1/0680/5939/8391/files/MB_Slide_07_5.png?v=1745410675" />
+                          </div>
+                          
+                        </div>
+                        <div class="swiper-pagination size-modal-slider-pagination"></div>
+                      </div>
+                    </div>
+
+                    <script>
+                      if (window.matchMedia("(max-width: 991px)").matches) {
+                        var swiper = new Swiper(".size-modal-slider", {
+                          pagination: {
+                            el: ".size-modal-slider-pagination",
+                             clickable: true,
+                          },
+                        });
+                      }
+                    </script>
+                  </div>
+                </div>
+              </div>
+              {% endif %}
+          </div>
+        </div>
+      </div>
+    </m-product-details-tabs>
+  </div>
+  <script>
+
+  // Get the button that opens the modal
+  var modalBtn = document.querySelectorAll(".size_guide_icon button");
+  
+  modalBtn.forEach(btn =>{
+    let modalBox = btn.closest("body");
+    let findModal = modalBox.querySelector(".info_modal");
+    btn.onclick = function() {
+      findModal.style.display = "block";
+      document.querySelector("html").style.overflowY = "hidden";
+    }
+  
+    let findClose = findModal.querySelector(".info_modal-content button.info_modal_close");
+    // When the user clicks on <span> (x), close the modal
+    findClose.onclick = function() {
+      findModal.style.display = "none";
+      document.querySelector("html").style.overflowY = "scroll";
+    }
+  
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == findModal) {
+        findModal.style.display = "none";
+        document.querySelector("html").style.overflowY = "scroll";
+      }
+    }
+  
+  });
+  
+  </script>
+</div>
+{% endif %}

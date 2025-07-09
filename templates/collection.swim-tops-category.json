@@ -1,0 +1,306 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_with_text_2_jJgDLb": {
+      "type": "image-with-text-2",
+      "settings": {
+        "color_scheme": "",
+        "container": "w-full",
+        "hero_size": "adapt",
+        "show_overlay": false,
+        "image": "shopify://shop_images/DT_FREEHAT_STRip.png",
+        "image_link": "shopify://products/bucket-hat",
+        "parallax": false,
+        "parallax_direction": "vertical",
+        "content_in_container": false,
+        "content_position": "center middle",
+        "text_alignment": "center",
+        "text_size": "medium",
+        "text_color": "white",
+        "title": "",
+        "subtitle": "",
+        "text": "",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "m-button--primary",
+        "button_size": "",
+        "text_alignment_mobile": "center",
+        "mb_image": "shopify://shop_images/MB_FREEHAT_STRip.png",
+        "use_content_above": false,
+        "custom_class": "",
+        "animations": "inherit",
+        "enable_bg_zoom_effect": true
+      }
+    },
+    "rich_text_HYhaAe": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_dz4ena": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "heading_dz4ena"
+      ],
+      "settings": {
+        "container": "container",
+        "color_scheme": "",
+        "content_alignment": "center",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "rich_text_4ihp8T": {
+      "type": "rich-text",
+      "settings": {
+        "container": "container",
+        "color_scheme": "",
+        "content_alignment": "center",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "brands_list_RyMbnM": {
+      "type": "brands-list",
+      "blocks": {
+        "image_ynQ4Uf": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Tankinis_3.png",
+            "image_by_url": "",
+            "image_link": "shopify://collections/tankini1",
+            "max_width": "275px"
+          }
+        },
+        "image_JanAdU": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/short_sleeve_3.png",
+            "image_by_url": "",
+            "image_link": "shopify://collections/short-sleeve-swim-tops1",
+            "max_width": "275px"
+          }
+        },
+        "image_FWnky3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Long_Sleeve_Swim_Tops_3.png",
+            "image_by_url": "",
+            "image_link": "shopify://collections/long-sleeve-swim-tops1",
+            "max_width": "275px"
+          }
+        },
+        "image_ywi4rQ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/built_in_bra_styles_3.png",
+            "image_by_url": "",
+            "image_link": "shopify://collections/built-in-bra-style",
+            "max_width": "275px"
+          }
+        },
+        "image_6T83NX": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/multi_way_wear_3.png",
+            "image_by_url": "",
+            "image_link": "shopify://collections/multi-way-wear",
+            "max_width": "275px"
+          }
+        },
+        "image_Mr3TLn": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Loose_Fit_Swim_Tops_2.png",
+            "image_by_url": "",
+            "image_link": "shopify://collections/long-sleeve-swim-tops1",
+            "max_width": "275px"
+          }
+        },
+        "image_azdCP6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/swim_bras_3.png",
+            "image_by_url": "",
+            "image_link": "shopify://collections/swim-bras1",
+            "max_width": "275px"
+          }
+        },
+        "image_eJk7ND": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/swim_tunics_3.png",
+            "image_by_url": "",
+            "image_link": "shopify://collections/swim-tunics-dresses1",
+            "max_width": "275px"
+          }
+        }
+      },
+      "block_order": [
+        "image_ynQ4Uf",
+        "image_JanAdU",
+        "image_FWnky3",
+        "image_ywi4rQ",
+        "image_6T83NX",
+        "image_Mr3TLn",
+        "image_azdCP6",
+        "image_eJk7ND"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_size": "h3",
+        "subheading": "",
+        "header_alignment": "center",
+        "container": "container-fluid",
+        "color_scheme": "",
+        "item_per_row": 5,
+        "column_gap": 10,
+        "row_gap": 5,
+        "column_gap_mobile": 5,
+        "row_gap_mobile": 5,
+        "enable_slider": true,
+        "show_nav": true,
+        "show_pagination": false,
+        "autorotate": false,
+        "autorotate_speed": 3,
+        "padding_top": 30,
+        "padding_bottom": 0,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "collection-header": {
+      "type": "collection-page-header",
+      "blocks": {
+        "banner_h89WQ3": {
+          "type": "banner",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "banner_h89WQ3"
+      ],
+      "settings": {
+        "color_scheme": "default",
+        "container": "container-fluid",
+        "layout": "inside",
+        "image_position": "background",
+        "enable_parallax": false,
+        "parallax_direction": "vertical",
+        "text_alignment": "center",
+        "text_color": "inherit",
+        "upper_title": false,
+        "show_desc": true,
+        "collection_all_desc": "",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "enable_bg_zoom_effect": true
+      }
+    },
+    "main": {
+      "type": "main-collection-product-grid",
+      "blocks": {
+        "banner_promotion_KppNc9": {
+          "type": "banner_promotion",
+          "disabled": true,
+          "settings": {
+            "color_scheme": "dark",
+            "text_size": "medium",
+            "text_color": "white",
+            "link": "",
+            "content_position": "bottom_center",
+            "content_alignment": "center",
+            "title": "SALE UP TO 25% OFF",
+            "subtitle": "Online Exclusive",
+            "button_label": "Shop The Sale",
+            "button_style": "m-button--primary",
+            "button_size": "",
+            "button_fixed": false
+          }
+        }
+      },
+      "block_order": [
+        "banner_promotion_KppNc9"
+      ],
+      "custom_css": [
+        ".m-banner-promotion {order: 3 !important; margin-top: 30px; margin-bottom: 0;}",
+        ".m-collection-filters-form {margin-bottom: 0;}"
+      ],
+      "settings": {
+        "container": "container-full",
+        "grid_layout": "grid",
+        "grid_columns": "4",
+        "show_columns_switcher": false,
+        "pagination_limit": 48,
+        "paginate_type": "paginate",
+        "show_sorting": true,
+        "show_filter": true,
+        "filters_type": "tags_filter",
+        "sidebar": "rightColumn",
+        "sidebar_title": "",
+        "limit_height_widget": true,
+        "limit_height": 300,
+        "change_product_variant_on_fitlering": true,
+        "show_product_count": true,
+        "collapsed_groups": "Product type, Brand, Vendor",
+        "color_swatches": "color,colour,couleur,farbe",
+        "color_swatches_design": "inline",
+        "plus_collections": "plus-size-swimwear,plus-size-bras,plus-size-swim-skorts,plus-size-swim-bottoms,plus-size-swim-tops,plus-size-swim-tunics-dresses"
+      }
+    },
+    "recent-viewed": {
+      "type": "recent-viewed-products",
+      "settings": {
+        "container": "container-fluid",
+        "color_scheme": "",
+        "heading": "Recently Viewed Products",
+        "heading_size": "h3",
+        "text_align": "left",
+        "limit": 8,
+        "columns": 5,
+        "column_gap": 30,
+        "pcard_layout": "",
+        "pcard_image_ratio": "",
+        "show_vendor": false,
+        "hide_title": false,
+        "enable_slider": true,
+        "show_pagination": false,
+        "show_navigation": false,
+        "mobile_disable_slider": false,
+        "use_scroll_mobile": true,
+        "item_gap_mobile": 16,
+        "padding_top": 40,
+        "padding_bottom": 100,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    }
+  },
+  "order": [
+    "image_with_text_2_jJgDLb",
+    "rich_text_HYhaAe",
+    "rich_text_4ihp8T",
+    "brands_list_RyMbnM",
+    "collection-header",
+    "main",
+    "recent-viewed"
+  ]
+}

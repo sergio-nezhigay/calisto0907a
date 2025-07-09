@@ -1,0 +1,633 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "breadcrumb": {
+      "type": "breadcrumb",
+      "settings": {
+        "container": "container",
+        "text_alignment": "left",
+        "hide_current": false,
+        "hide_on_mb": false,
+        "animations": "inherit"
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "badge_ChqgGj": {
+          "type": "badge",
+          "settings": {}
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "custom_liquid_NU7eWn": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% assign selected_variant = product.variants | where: \"option1\", \"M\" | first %}\n{% if selected_variant == blank %}\n  {% assign selected_variant = product.variants | first %}\n{% endif %}\n\n<div data-bv-show=\"rating_summary\" data-bv-product-id=\"{{ selected_variant.sku }}\"></div>"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_saving": true,
+            "sale_badge_type": "percentage"
+          }
+        },
+        "custom_text_XeBWTQ": {
+          "type": "custom_text",
+          "settings": {
+            "content": "<p>FREE Bucket Hat On Orders Of $60+  | Code: FREEHAT</p>"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "size_title": "Size"
+          }
+        },
+        "visitors_9KDqCb": {
+          "type": "visitors",
+          "settings": {
+            "color_scheme": "",
+            "live_views_text": "{count_number} people are viewing this right now",
+            "live_views_range": "20-30",
+            "live_view_duration": "10",
+            "live_view_icon_blinks": true
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": false,
+            "show_atc_button": true,
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": true
+          }
+        },
+        "shipping_VBJFtx": {
+          "type": "shipping",
+          "disabled": true,
+          "settings": {
+            "show_delivery_times": false,
+            "deliver_text": "Estimated Delivery:",
+            "deliver_days": "5",
+            "date_format": "%b %d",
+            "show_shipping_text": true,
+            "shipping_text": "<p>Free Shipping On all orders over $50</p>"
+          }
+        },
+        "image_akwzqL": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/US_2_2.png",
+            "image_link": "",
+            "image_width": 100,
+            "image_alignment": "start"
+          }
+        },
+        "trust_badge_NyBMd4": {
+          "type": "trust_badge",
+          "settings": {
+            "trust_badges_text": "<p>Guarantee safe & secure checkout</p>",
+            "trust_badges_image_width": "60%",
+            "position": "below"
+          }
+        },
+        "complementary_mRcJ94": {
+          "type": "complementary",
+          "settings": {
+            "block_heading": "Pairs well with",
+            "make_collapsible_row": false,
+            "product_list_limit": 10,
+            "products_per_page": 2,
+            "pcard_image_ratio": "1/1",
+            "enable_variant_options": true,
+            "enable_quick_view": true,
+            "enable_quick_add": false,
+            "enable_compare": false,
+            "enable_wishlist": false
+          }
+        },
+        "foxkit_sales_boost_product_bundle_Dj7YkA": {
+          "type": "shopify://apps/foxkit-sales-boost/blocks/product-bundle/13f41957-6b79-47c1-99a2-e52431f06fff",
+          "settings": {
+            "product": "{{product}}"
+          }
+        }
+      },
+      "block_order": [
+        "badge_ChqgGj",
+        "title",
+        "custom_liquid_NU7eWn",
+        "price",
+        "custom_text_XeBWTQ",
+        "variant_picker",
+        "visitors_9KDqCb",
+        "buy_buttons",
+        "shipping_VBJFtx",
+        "image_akwzqL",
+        "trust_badge_NyBMd4",
+        "complementary_mRcJ94",
+        "foxkit_sales_boost_product_bundle_Dj7YkA"
+      ],
+      "settings": {
+        "container": "container",
+        "layout": "layout-6",
+        "show_atwl": false,
+        "enable_history_state": true,
+        "enable_variant_group_images": true,
+        "disable_selected_variant_default": true,
+        "show_featured_media": true,
+        "show_zoom_button": true,
+        "enable_video_autoplay": true,
+        "show_nav_media_mobile": true,
+        "show_pagination_mobile": false,
+        "use_sticky_atc": false,
+        "use_sticky_atc_on_mobile": false,
+        "enable_dynamic_checkout": false,
+        "sticky_atc_wishtlist": false,
+        "sticky_atc_compare": true
+      }
+    },
+    "product-details-tabs": {
+      "type": "product-details-tabs",
+      "blocks": {
+        "description": {
+          "type": "description",
+          "settings": {
+            "header": "Product description"
+          }
+        },
+        "tab": {
+          "type": "tab",
+          "settings": {
+            "header": "Shipping & Return",
+            "content": "<p><strong>Shipping</strong></p><ul><li>FREE standard shipping on orders of $50 or more</li><li>$2.95 flat rate on orders under $50</li><li>Expedited shipping: exclusions apply, not all items are eligible for expedited shipping. Available shipping methods will be shown at checkout.</li></ul><p><strong>Returns</strong></p><p><strong>We offer three (3) easy options:</strong></p><ul><li>Exchange for the same item in another size or color. Use our free prepaid return label to keep things simple.</li><li>Receive a Calypsa store credit for the full price of your purchase using our free prepaid return label.</li><li>Receive a refund for your order. A flat fee of $5.95 for the prepaid shipping label will be deducted from your refund.</li></ul><p>* All bikini bottoms, Vacation suncare products and sunglasses are not eligible for returns or exchanges.</p><p><a href=\"https://calypsa.gorgias.help/en-US/us-returns-and-exchanges-12955\"><span style=\"text-decoration:underline\">Learn More About Our Return Policy</span></a></p><p><a href=\"https://help.calypsa.com/en-US\"><span style=\"text-decoration:underline\">Need More Help?</span></a> 1-877-957-2883</p><p></p>",
+            "content_page": ""
+          }
+        }
+      },
+      "block_order": [
+        "description",
+        "tab"
+      ],
+      "custom_css": [
+        ".m-tabs__header {justify-content: flex-start;}"
+      ],
+      "settings": {
+        "container": "container",
+        "color_scheme": "",
+        "default_open": true,
+        "padding_top": 0,
+        "padding_bottom": 50,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "product_info_content_LaYBaE": {
+      "type": "product-info-content",
+      "settings": {
+        "heading": "{{ product.metafields.custom.product_info_section_title | metafield_tag }}",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "bv_reviews_aFKWRE": {
+      "type": "bv-reviews",
+      "settings": {}
+    },
+    "product_recommendations_8jde8E": {
+      "type": "product-recommendations",
+      "settings": {
+        "container": "container",
+        "color_scheme": "",
+        "remove_params": false,
+        "heading": "You Might Also Like",
+        "heading_size": "h3",
+        "text_align": "left",
+        "limit": 8,
+        "columns": 4,
+        "column_gap": 30,
+        "enable_slider": true,
+        "use_scroll_mobile": true,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "icon_box_9UtNky": {
+      "type": "icon-box",
+      "blocks": {
+        "iconbox_pJbJGA": {
+          "type": "iconbox",
+          "settings": {
+            "image": "shopify://shop_images/6831000.png",
+            "image_by_url": "",
+            "title": "FREE U.S. SHIPPING",
+            "description": "<p>Enjoy FREE standard shipping on orders of $50+</p>",
+            "link": "",
+            "button_label": "Learn more [arrow]",
+            "button_link": "",
+            "button_style": "m-button--plain",
+            "button_size": ""
+          }
+        },
+        "iconbox_RW46nE": {
+          "type": "iconbox",
+          "settings": {
+            "image": "shopify://shop_images/360_F_538639833_bzLDFDuegFpgHEiYPwf5QYWQgwsORvmv.jpg",
+            "image_by_url": "",
+            "title": "1-YEAR QUALITY PROMISE",
+            "description": "<p>We’ve got you covered for a full year against normal wear and tear – just follow our care instructions and enjoy worry-free wear!</p>",
+            "link": "",
+            "button_label": "Learn more [arrow]",
+            "button_link": "",
+            "button_style": "m-button--plain",
+            "button_size": ""
+          }
+        },
+        "iconbox_EiwgTg": {
+          "type": "iconbox",
+          "settings": {
+            "image": "shopify://shop_images/360_F_340670061_WRjF6YeXinZNpFxCCvPvt0E96z30aGHw.jpg",
+            "image_by_url": "",
+            "title": "Exceptional Customer Support",
+            "description": "<p>Our team is here to assist you every step of the way – we're just a message away!</p>",
+            "link": "",
+            "button_label": "Learn more [arrow]",
+            "button_link": "",
+            "button_style": "m-button--plain",
+            "button_size": ""
+          }
+        }
+      },
+      "block_order": [
+        "iconbox_pJbJGA",
+        "iconbox_RW46nE",
+        "iconbox_EiwgTg"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".m-icon-box__heading {font-weight: 400;}"
+      ],
+      "settings": {
+        "heading": "Why Calypsa?",
+        "heading_size": "h3",
+        "subheading": "",
+        "description": "",
+        "header_alignment": "center",
+        "container": "container",
+        "color_scheme": "",
+        "item_per_row": 3,
+        "item_gap": 30,
+        "item_gap_mobile": 10,
+        "card_color_scheme": "",
+        "card_style": "vertical",
+        "image_max_width": "70px",
+        "content_alignment": "center",
+        "hover_effect": "scaling-up",
+        "enable_slider": false,
+        "show_pagination": false,
+        "show_navigation": false,
+        "use_scroll_mobile": true,
+        "use_grid_column_mb": false,
+        "padding_top": 100,
+        "padding_bottom": 0,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "container": "container-fluid",
+        "color_scheme": "",
+        "remove_params": false,
+        "heading": "You Might Also Like",
+        "heading_size": "h3",
+        "text_align": "center",
+        "limit": 8,
+        "columns": 5,
+        "column_gap": 30,
+        "enable_slider": true,
+        "use_scroll_mobile": true,
+        "padding_top": 100,
+        "padding_bottom": 100,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "recent-viewed-products": {
+      "type": "recent-viewed-products",
+      "settings": {
+        "container": "container-fluid",
+        "color_scheme": "",
+        "heading": "Recently Viewed Products",
+        "heading_size": "h3",
+        "text_align": "center",
+        "limit": 8,
+        "columns": 5,
+        "column_gap": 30,
+        "pcard_layout": "",
+        "pcard_image_ratio": "",
+        "show_vendor": false,
+        "hide_title": false,
+        "enable_slider": true,
+        "show_pagination": false,
+        "show_navigation": false,
+        "mobile_disable_slider": false,
+        "use_scroll_mobile": true,
+        "item_gap_mobile": 16,
+        "padding_top": 0,
+        "padding_bottom": 100,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "brands_list_tBFUAq": {
+      "type": "brands-list",
+      "blocks": {
+        "image_NccpH8": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Group_95_2.png",
+            "image_by_url": "",
+            "image_link": "",
+            "max_width": "150px"
+          }
+        },
+        "image_NkTY7q": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Group_100_92590ed1-1673-4011-9c4f-5e48e915a874.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/maya-swim-top",
+            "max_width": "200px"
+          }
+        },
+        "image_LLwtH7": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Group_101_44116aa0-7353-4b74-932f-092173f308b9.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/maya-swim-top-with-removable-cups",
+            "max_width": "200px"
+          }
+        },
+        "image_PHrJ8t": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Group_102_fe2dfd2f-be8f-4b1c-bf60-cf1ff579e69b.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/closed-back-maya-swim-top",
+            "max_width": "200px"
+          }
+        },
+        "image_7X37qW": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Group_105_df4bf0c3-51c6-4f48-a16e-7261cc074044.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/racerback-swim-bra",
+            "max_width": "200px"
+          }
+        },
+        "image_TKJ3PK": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Group_104_27c37660-93df-437f-b330-d0aa7db485a6.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/adele-swim-top",
+            "max_width": "200px"
+          }
+        },
+        "image_jewEy7": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Group_103.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/loose-fit-adele-swim-top-1",
+            "max_width": "200px"
+          }
+        },
+        "image_rcJy3E": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Group_106_efec0c18-f2e5-4d11-aa7c-d991a4e95164.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/margaux-swim-top",
+            "max_width": "200px"
+          }
+        }
+      },
+      "block_order": [
+        "image_NccpH8",
+        "image_NkTY7q",
+        "image_LLwtH7",
+        "image_PHrJ8t",
+        "image_7X37qW",
+        "image_TKJ3PK",
+        "image_jewEy7",
+        "image_rcJy3E"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_size": "h3",
+        "subheading": "Compare Best Selling Tops",
+        "header_alignment": "center",
+        "container": "container",
+        "color_scheme": "",
+        "item_per_row": 5,
+        "column_gap": 0,
+        "row_gap": 0,
+        "column_gap_mobile": 0,
+        "row_gap_mobile": 0,
+        "enable_slider": true,
+        "show_nav": true,
+        "show_pagination": false,
+        "autorotate": false,
+        "autorotate_speed": 3,
+        "padding_top": 30,
+        "padding_bottom": 0,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "brands_list_kn6DCb": {
+      "type": "brands-list",
+      "blocks": {
+        "image_9pKTB4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Group_107.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/mid-thigh-swim-shorts",
+            "max_width": "200px"
+          }
+        },
+        "image_K8tb3w": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Group_108.png",
+            "image_by_url": "",
+            "image_link": "",
+            "max_width": "200px"
+          }
+        },
+        "image_tjiRAG": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Group_109.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/7-board-shorts",
+            "max_width": "200px"
+          }
+        },
+        "image_EmiVmi": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Group_110_d72c2e41-5fb2-45e7-9aa6-7873f7119295.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/flowy-swim-skort",
+            "max_width": "200px"
+          }
+        },
+        "image_PMrEUD": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Group_111_db9fa543-4567-432c-a1c8-7edea9e624fd.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/midi-swim-skort",
+            "max_width": "200px"
+          }
+        },
+        "image_G87JgD": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Group_112_2cfbb089-d5f1-4084-aa83-ab308be669c0.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/long-swim-skort-1",
+            "max_width": "200px"
+          }
+        }
+      },
+      "block_order": [
+        "image_9pKTB4",
+        "image_K8tb3w",
+        "image_tjiRAG",
+        "image_EmiVmi",
+        "image_PMrEUD",
+        "image_G87JgD"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_size": "h3",
+        "subheading": "Compare Best Selling Bottoms",
+        "header_alignment": "center",
+        "container": "container",
+        "color_scheme": "",
+        "item_per_row": 5,
+        "column_gap": 0,
+        "row_gap": 0,
+        "column_gap_mobile": 0,
+        "row_gap_mobile": 0,
+        "enable_slider": true,
+        "show_nav": true,
+        "show_pagination": false,
+        "autorotate": false,
+        "autorotate_speed": 3,
+        "padding_top": 60,
+        "padding_bottom": 0,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "collapsible_tabs_JndiBV": {
+      "type": "collapsible-tabs",
+      "blocks": {
+        "item_bHzngY": {
+          "type": "item",
+          "settings": {
+            "header": "What size should I order?",
+            "text_size": "h5",
+            "content": "<p>We recommend checking our <a href=\"/pages/size-guide\" title=\"Size Guide\">size chart</a> for detailed measurements to help you find the perfect fit. If you’re between sizes, consider your fit preference—size down for a more snug fit or size up for extra comfort. Our swimwear is available in sizes <strong>XS–6X</strong>, with a variety of styles designed to fit and flatter different body types. If you’re looking for curvier fits, you can also explore our <a href=\"/collections/plus-size-swimwear\" title=\"Plus Size Swimwear\">plus-size collection</a><strong> </strong>for styles tailored specifically for plus-size figures.</p>",
+            "content_page": "",
+            "open": true
+          }
+        },
+        "item_nceVP8": {
+          "type": "item",
+          "settings": {
+            "header": "Is your swimwear chlorine-resistant?",
+            "text_size": "h5",
+            "content": "<p>Yes! Our swimwear is designed to handle both chlorine and saltwater, so you can swim, splash, and soak up the sun without worrying about wear and tear. Plus, all of our swimsuits are made with <strong>UPF 50+ fabric</strong>, giving you built-in sun protection while you enjoy your time in the water.</p>",
+            "content_page": "",
+            "open": false
+          }
+        },
+        "item_eNDqWN": {
+          "type": "item",
+          "settings": {
+            "header": "What is your shipping policy?",
+            "text_size": "h5",
+            "content": "<p><strong>Shipping</strong></p><ul><li>FREE standard shipping on orders of $50 or more</li><li>$2.95 flat rate on orders under $50</li><li><strong>Standard shipping:</strong> Typically arrives within <strong>3–6 business days</strong>.</li><li><strong>Expedited shipping:</strong> Available on select items—eligible options will be shown at checkout.</li></ul><p>For more details, check out our <a href=\"https://help.calypsa.com/en-US/us-shipping-rates-12960\" title=\"https://help.calypsa.com/en-US/us-shipping-rates-12960\"><strong>Shipping Policy</strong></a>.</p>",
+            "content_page": "",
+            "open": false
+          }
+        }
+      },
+      "block_order": [
+        "item_bHzngY",
+        "item_nceVP8",
+        "item_eNDqWN"
+      ],
+      "custom_css": [
+        ".m-collapsible--button {font-weight: 400;}",
+        ".m-collapsible + .m-collapsible {margin-top: 20px; display: block;}",
+        ".m-collapsible--content__inner {padding-bottom: 0; color: rgb(var(--color-foreground-secondary));}"
+      ],
+      "settings": {
+        "container": "container",
+        "color_scheme": "",
+        "image_position": "left",
+        "column_gap": 100,
+        "heading": "FAQ",
+        "heading_size": "h3",
+        "subheading": "",
+        "description": "",
+        "header_alignment": "center",
+        "padding_top": 100,
+        "padding_bottom": 0,
+        "animations": "inherit",
+        "custom_class": ""
+      }
+    }
+  },
+  "order": [
+    "breadcrumb",
+    "main",
+    "product-details-tabs",
+    "product_info_content_LaYBaE",
+    "bv_reviews_aFKWRE",
+    "product_recommendations_8jde8E",
+    "icon_box_9UtNky",
+    "product-recommendations",
+    "recent-viewed-products",
+    "brands_list_tBFUAq",
+    "brands_list_kn6DCb",
+    "collapsible_tabs_JndiBV"
+  ]
+}

@@ -1,0 +1,169 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "page",
+      "disabled": true,
+      "settings": {}
+    },
+    "slider_wTzXyX": {
+      "type": "slider",
+      "blocks": {
+        "slider_item_f6eRPk": {
+          "type": "slider_item",
+          "settings": {
+            "background": "shopify://shop_images/MODLI_EDITED_1_9_of_179_1_1.png",
+            "mb_background": "shopify://shop_images/MODLI_EDITED_1_9_of_179_1_1.png",
+            "content_in_container": false,
+            "content_position": "center middle",
+            "text_alignment": "center",
+            "text_size": "medium",
+            "text_color": "black",
+            "subheading": "",
+            "title": "",
+            "description": "",
+            "image_link": "",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "m-button--primary",
+            "button_size": "",
+            "second_button_text": "",
+            "second_button_link": "",
+            "second_button_style": "m-button--primary",
+            "second_button_size": "",
+            "show_footer": false,
+            "footer_alignment": "end",
+            "footer_text": "New Collection",
+            "footer_button": "Shop Now",
+            "footer_link": ""
+          }
+        },
+        "slider_item_f6fDEf": {
+          "type": "slider_item",
+          "settings": {
+            "background": "shopify://shop_images/MODLI_EDITED_1_84_of_179_1_1__1.png",
+            "mb_background": "shopify://shop_images/MODLI_EDITED_1_84_of_179_1_1__1.png",
+            "content_in_container": false,
+            "content_position": "center middle",
+            "text_alignment": "center",
+            "text_size": "medium",
+            "text_color": "black",
+            "subheading": "",
+            "title": "",
+            "description": "",
+            "image_link": "",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "m-button--primary",
+            "button_size": "",
+            "second_button_text": "",
+            "second_button_link": "",
+            "second_button_style": "m-button--primary",
+            "second_button_size": "",
+            "show_footer": false,
+            "footer_alignment": "end",
+            "footer_text": "New Collection",
+            "footer_button": "Shop Now",
+            "footer_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "slider_item_f6eRPk",
+        "slider_item_f6fDEf"
+      ],
+      "settings": {
+        "container": "w-full",
+        "slideshow_height": "adapt",
+        "show_overlay": false,
+        "dots_position": "bottom",
+        "dots_color": "dark",
+        "show_dots": true,
+        "show_arrows": false,
+        "autorotate": true,
+        "autorotate_speed": 3,
+        "use_content_above": false,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "custom_content_wzPtji": {
+      "type": "custom-content",
+      "blocks": {
+        "text_qTXdyD": {
+          "type": "text",
+          "settings": {
+            "title": "",
+            "subheading": "Our Eco-Friendly Returns Initiative",
+            "text": "",
+            "width": "100%",
+            "alignment": "center",
+            "align_text": "center",
+            "text_size": "medium",
+            "text_color": "inherit",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "m-button--primary",
+            "button_size": "",
+            "block_custom_class": "",
+            "animations": "inherit"
+          }
+        },
+        "text_kfzHiW": {
+          "type": "text",
+          "settings": {
+            "title": "",
+            "subheading": "",
+            "text": "<p>In the world of e-commerce, the environmental impact of product returns is a growing concern that cannot be ignored. Recent studies have highlighted the alarming consequences of this often overlooked aspect of online shopping. The environmental impact is staggering: landfills, which are the third largest source of human-produced methane emissions, receive an estimated 9.5 billion pounds of waste and 24 million metric tons of carbon emissions annually, equivalent to the emissions of 5.1 million cars each year​​. Additionally, less than half of the returned merchandise resells at full price, contributing significantly to waste​​.</p><p>Our Commitment to Minimizing Environmental Impact<br/>In light of these facts, our company is taking proactive steps to minimize the environmental impact of returns. We understand that returns are not just a financial burden but also a major ecological concern. By addressing this issue, we are committed to not only improving our sustainability but also enhancing the overall customer experience.</p><p></p><p><strong>How Our Initiative Works</strong><br/>Our new initiative is straightforward and impactful. We are encouraging our customers to participate in an eco-friendly return process. Instead of sending items back to us, we are inviting our customers to donate these items locally. This approach significantly reduces the environmental impact associated with shipping and repackaging returned items. To appreciate and encourage this positive action, we will offer customers who choose to donate their choice of free replacement item(s) from our catalog. </p><p>Here’s how you can participate in our initiative:</p><ol><li><strong>Submit Your Return Request:</strong> Fill out a simple form on our website - List the item(s) you're donating, include the product name, size, and color.</li><li><strong>Request Your New Product(s): </strong>Specify the product name, color, and size of the item(s) you'd like in exchange.</li><li><strong>Receive Your New Item(s): </strong>We'll process your request and send you a confirmation for the replacement order.</li><li><strong>Donate Locally: </strong>Take your item(s) to a local charity or organization of your choice.</li></ol><p></p><p><strong>Where to Donate</strong><br/>We understand that finding a place to donate can be challenging. Therefore, we have provided a list of suggested donation locations, which include local charities, women's shelters, community centers, and non-profit organizations. These organizations are known for their positive impact on communities and their commitment to sustainability:<br/><br/><strong>Local Homeless Shelters:</strong> These shelters often need clothing donations to support individuals facing homelessness.<br/><a href=\"https://www.goodwill.org/locator/\"><strong>Goodwill</strong></a><strong>:</strong> A well-known charity that accepts clothing donations and operates thrift stores across the country.<br/><a href=\"https://satruck.org/dropoff\"><strong>The Salvation Army</strong></a><strong>: </strong>They accept a range of donations, including clothing, and have numerous drop-off locations nationwide.<br/><a href=\"https://www.planetaid.org/get-involved/donate-clothes\"><strong>Planet Aid</strong></a><strong>:</strong> An organization that collects and recycles used clothing and shoes, supporting sustainable development programs worldwide.<br/><a href=\"https://thearc.org/get-involved/ways-give/donate-physical-items/\"><strong>The Arc</strong></a><strong>:</strong> Aims to support individuals with intellectual and developmental disabilities, with many local chapters operating thrift stores for clothing donations.<br/> <br/>We hope this list helps you find a suitable place for your donation, however, we want to emphasize that customers are free to choose any organization for their donations. The key is to reduce the environmental impact and support communities, regardless of the specific donation destination. In addition, customers do not need to provide us with proof of donation. </p><p>This initiative represents a significant step towards reducing the environmental impact of e-commerce returns. By choosing to donate instead of returning, our customers can play a vital role in this effort. We believe that together, we can make a substantial difference in fostering a more sustainable and responsible e-commerce environment.</p>",
+            "width": "100%",
+            "alignment": "center",
+            "align_text": "left",
+            "text_size": "medium",
+            "text_color": "black",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "m-button--primary",
+            "button_size": "",
+            "block_custom_class": "",
+            "animations": "inherit"
+          }
+        }
+      },
+      "block_order": [
+        "text_qTXdyD",
+        "text_kfzHiW"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_size": "h3",
+        "subheading": "",
+        "description": "",
+        "header_alignment": "center",
+        "container": "container-fluid",
+        "color_scheme": "",
+        "content_color_scheme": "",
+        "enable_parallax": false,
+        "parallax_direction": "vertical",
+        "gap": 0,
+        "gap_mobile": 0,
+        "use_scroll_mobile": false,
+        "padding_top": 50,
+        "padding_bottom": 0,
+        "custom_class": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "slider_wTzXyX",
+    "custom_content_wzPtji"
+  ]
+}

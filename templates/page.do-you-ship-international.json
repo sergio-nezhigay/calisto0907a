@@ -1,0 +1,87 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "page",
+      "disabled": true,
+      "settings": {}
+    },
+    "custom_content_wzPtji": {
+      "type": "custom-content",
+      "blocks": {
+        "text_qTXdyD": {
+          "type": "text",
+          "settings": {
+            "title": "",
+            "subheading": "Do you ship internationally?",
+            "text": "",
+            "width": "100%",
+            "alignment": "center",
+            "align_text": "center",
+            "text_size": "medium",
+            "text_color": "inherit",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "m-button--primary",
+            "button_size": "",
+            "block_custom_class": "",
+            "animations": "inherit"
+          }
+        },
+        "text_kfzHiW": {
+          "type": "text",
+          "settings": {
+            "title": "",
+            "subheading": "",
+            "text": "<p>Yes! Shipping costs vary. Shipping times and rates are calculated at checkout.</p><p>Make sure to set your location at the top left of the website (on a desktop device), to view shipping rates to your destination of choice.</p><p>You can also view shipping rates on each product page, under \"shipping info\".</p><p>Our customer service team would be happy to help you place your order- Give us a call at 1-877-957-2883, <a href=\"mailto:hello@calypsa.com\">leave us a message</a>, or chat with us live.</p>",
+            "width": "100%",
+            "alignment": "center",
+            "align_text": "left",
+            "text_size": "medium",
+            "text_color": "black",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "m-button--primary",
+            "button_size": "",
+            "block_custom_class": "",
+            "animations": "inherit"
+          }
+        }
+      },
+      "block_order": [
+        "text_qTXdyD",
+        "text_kfzHiW"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_size": "h3",
+        "subheading": "",
+        "description": "",
+        "header_alignment": "center",
+        "container": "container-fluid",
+        "color_scheme": "",
+        "content_color_scheme": "",
+        "enable_parallax": false,
+        "parallax_direction": "vertical",
+        "gap": 0,
+        "gap_mobile": 0,
+        "use_scroll_mobile": false,
+        "padding_top": 50,
+        "padding_bottom": 0,
+        "custom_class": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "custom_content_wzPtji"
+  ]
+}

@@ -1,0 +1,199 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "page",
+      "disabled": true,
+      "settings": {}
+    },
+    "your_own_bundle_bzCiMK": {
+      "type": "your-own-bundle",
+      "blocks": {
+        "product_LNtHmK": {
+          "type": "product-list",
+          "settings": {
+            "product_indicator_icon": "shopify://shop_images/Group.svg",
+            "product_indicator_text": "Top first: choose color & size",
+            "featured_product": "racerback-swim-bra",
+            "enable_review_icon": true,
+            "info_icon_1": "shopify://shop_images/Ellipse_1.png",
+            "info_title_1": "No Underwire",
+            "info_content_1": "For a free natural, unrestricted feel",
+            "info_icon_2": "shopify://shop_images/Ellipse_2.png",
+            "info_title_2": "Extra Support",
+            "info_content_2": "Racerback design provides support for the bust",
+            "info_icon_3": "shopify://shop_images/Ellipse_3.png",
+            "info_title_3": "Sew or Removable cups",
+            "info_content_3": "Customize your level of padding according to your preferences"
+          }
+        },
+        "product_33VaMi": {
+          "type": "product-list",
+          "settings": {
+            "product_indicator_icon": "shopify://shop_images/Group_14.svg",
+            "product_indicator_text": "Then match your bottom",
+            "featured_product": "girls-bikini-bottom",
+            "enable_review_icon": true,
+            "info_icon_1": "shopify://shop_images/Ellipse_1_1.png",
+            "info_title_1": "Elastic Material",
+            "info_content_1": "For a free natural, unrestricted feel",
+            "info_icon_2": "shopify://shop_images/Ellipse_3_1.png",
+            "info_title_2": "Extra Support",
+            "info_content_2": "Design that provides support",
+            "info_icon_3": "shopify://shop_images/Ellipse_1_1.png",
+            "info_title_3": "Chlorine resistant",
+            "info_content_3": "Keep your skin free of harmful chemicals in the water"
+          }
+        }
+      },
+      "block_order": [
+        "product_LNtHmK",
+        "product_33VaMi"
+      ],
+      "settings": {
+        "page_title": "",
+        "header_discount_code_text": "Extra 25% off sitewide | Code: SPRING25",
+        "bottom_saving_message": "You are saving 25% with bundle builder",
+        "scroll_text": "Scroll to pick your bottom",
+        "container": "container",
+        "column_gap": 100,
+        "column_gap_mobile": 30,
+        "image_placement": "left",
+        "show_thumbnails": true,
+        "accordion_title_1": "Top Details",
+        "accordion_text_1": "<p>SKU:230-105617</p><p><strong>Racerback Swim Bra</strong></p><p><strong>Fit & Sizing</strong></p><ul><li>If you are between sizes, or in doubt, please size up.</li><li>For more fit and sizing info, check out our Size Chart.</li></ul><p><strong>Features</strong></p><ul><li>No Underwire</li><li>Racerback</li><li>Round Neckline</li><li>Available with sewn in or removable cups</li></ul><p><strong>Care</strong></p><ul><li>Rinse in cold water to wash off any chemicals, chlorinated water or saltwater</li><li>Machine wash in cold water on gentle cycle</li><li>Lay flat to dry in the shade</li></ul><p><strong>Material</strong></p><ul><li>82% Nylon 18% Spandex</li><li>Lining 100% Polyester</li><li><a href=\"https://calypsa.com/sun-protection\">UPF50+ Sun Protection</a></li></ul><p></p>",
+        "accordion_title_2": "Bottom Details",
+        "accordion_text_2": "<p><strong>Full Coverage Bikini Bottom</strong></p><p><strong>Fit & Sizing</strong></p><ul><li>Hipster</li><li>Full Coverage</li></ul><p><strong>Features</strong></p><ul><li>Center-back ruching detail</li><li>Fully lined</li><li><a href=\"https://calypsa.com/sun-protection\">UPF 50+ Sun Protection</a> Swimwear</li><li>Quick Dry</li><li>Includes hygienic sticker</li></ul><p><strong>Care</strong></p><ul><li>Rinse in cold water to wash off any chemicals, chlorinated water or saltwater</li><li>Machine wash in cold water on gentle cycle</li><li>Lay flat to dry in the shade</li></ul><p><strong>Material</strong></p><ul><li>82% Nylon 18% Spandex</li></ul><p><strong>Textured Collection</strong></p><p>Our limited edition collection is made from high quality, unique textured materials. This super soft material, has a nice stretch, giving you a comfortable fit.<br/>The gentle, alluring colors add a touch of femininity and elegance.</p><p><strong>Material</strong></p><ul><li>Sky Blue (Textured): 96% Nylon, 4% Spandex</li><li>Primrose Pink (Textured): 95% Nylon , 5% Spandex</li><li>Buttercup (Textured): 92% Polyester, 8% Spandex</li></ul><p><strong>*All bikini bottoms are not eligible for returns or exchanges.</strong></p><p>These Full Coverage Bikini Bottoms are exactly what you need to finish off your swim look. Featuring a ruching detail at the back, these bottoms are both fashionable and comfortable! Pair these bikini bottoms with a <a href=\"https://calypsa.com/swim-tops.html\">swim-top</a> for a summer must-have!</p>",
+        "accordion_title_3": "Shipping and return",
+        "accordion_text_3": "<p><strong>Shipping</strong></p><ul><li>FREE standard shipping on orders of $50 or more</li><li>$2.95 flat rate on orders under $50</li><li>Expedited shipping: exclusions apply, not all items are eligible for expedited shipping. Available shipping methods will be shown at checkout.</li></ul><p><strong>Returns</strong></p><p><strong>We offer three (3) easy options:</strong></p><ul><li>Exchange for the same item in another size or color. Use our free prepaid return label to keep things simple.</li><li>Receive a Calypsa store credit for the full price of your purchase using our free prepaid return label.</li><li>Receive a refund for your order. A flat fee of $5.95 for the prepaid shipping label will be deducted from your refund.</li></ul><p>* All bikini bottoms, Vacation suncare products and sunglasses are not eligible for returns or exchanges.</p><p><a href=\"https://calypsa.gorgias.help/en-US/us-returns-and-exchanges-12955\"><span style=\"text-decoration:underline\">Learn More About Our Return Policy</span></a></p><p><a href=\"https://help.calypsa.com/en-US\"><span style=\"text-decoration:underline\">Need More Help?</span></a> 1-877-957-2883</p>",
+        "accordion_title_4": "Care",
+        "accordion_text_4": "<p>Keep your Maya swim set always looking its best with our effortless care tips:</p><ul><li>Rinse & Refresh: A quick rinse with cool water after every dip keeps colors vibrant.</li><li>Gentle Hand Wash: Use a mild, delicate cleanser to preserve the fabric’s flawless fit.</li><li>Air Dry Naturally: Lay flat in the shade—no machine, no fuss—to maintain shape and luxurious feel.<br/></li></ul><p>Enjoy long-lasting style that works as hard as you do. Every care step keeps you ready for more adventures!</p>",
+        "shipping_info_icon_1": "shopify://shop_images/Vector_6.svg",
+        "shipping_info_title_1": "Free US Shipping",
+        "shipping_info_content_1": "Standard shipping on orders of $50+",
+        "shipping_info_icon_2": "shopify://shop_images/Vector_5.svg",
+        "shipping_info_title_2": "1-YEAR QUALITY GUARANTEE",
+        "shipping_info_content_2": "We cover normal wear and tear for a year. Terms & conditions apply",
+        "shipping_info_icon_3": "shopify://shop_images/Vector_4.svg",
+        "shipping_info_title_3": "TOP RETAILERS LOVE CALYPSA",
+        "shipping_info_content_3": "Find our swimwear online at Kohls', Macy's, Target and Sears",
+        "show_quantity_selector": false,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "bv_reviews_EzJR8W": {
+      "type": "bv-reviews",
+      "disabled": true,
+      "settings": {}
+    },
+    "icon_with_text_QAKw7Y": {
+      "type": "icon-with-text",
+      "blocks": {
+        "content_khkngP": {
+          "type": "content",
+          "settings": {
+            "icon_img": "shopify://shop_images/Sun.svg",
+            "sub_heading": "UPF 50+ Sun Protection"
+          }
+        },
+        "content_YTtbmW": {
+          "type": "content",
+          "settings": {
+            "icon_img": "shopify://shop_images/Drop_1.svg",
+            "sub_heading": "Chlorine Resistant"
+          }
+        },
+        "content_cqgm6r": {
+          "type": "content",
+          "settings": {
+            "icon_img": "shopify://shop_images/ShieldCheck_2.svg",
+            "sub_heading": "1 year Guarantee*"
+          }
+        }
+      },
+      "block_order": [
+        "content_khkngP",
+        "content_YTtbmW",
+        "content_cqgm6r"
+      ],
+      "settings": {
+        "bg_img": "shopify://shop_images/Frame_21.png",
+        "mobile_bg_img": "shopify://shop_images/Frame_21_fb34dec4-12a8-4660-8d22-4b97f20ec832.png",
+        "heading": "Why Calypsa swimwear is different",
+        "sub_text": "<p>Discover our game-changing swimwear: <strong>no tugging, no adjusting,</strong> just perfect fit and comfort.<strong> Quality and style</strong> - experience the difference for yourself</p>",
+        "sub_paragrap": "<p>*Our guarantee covers normal wear and tear if the garment is looked after according to the care instructions</p>"
+      }
+    },
+    "review_video_section_FAy3yK": {
+      "type": "review-video-section",
+      "blocks": {
+        "video_q8CV4w": {
+          "type": "video",
+          "settings": {
+            "video_poster": "shopify://shop_images/Rectangle_11_074eccb9-3e04-4fb5-8819-7ddb4e01944a.png"
+          }
+        },
+        "video_QmkhNe": {
+          "type": "video",
+          "settings": {
+            "video_poster": "shopify://shop_images/iPhone_16_Pro_-_2_2.png",
+            "video": "shopify://files/videos/Video-3.mp4"
+          }
+        },
+        "video_WErxYy": {
+          "type": "video",
+          "settings": {
+            "video_poster": "shopify://shop_images/iPhone_16_Pro_-_1_2.png",
+            "video": "shopify://files/videos/Looking for the PERFECT girly swim top   So was I! Let me tell you why I love this one- ONE-SIDED STRAP- flirty and fun but still secures everything in place   BUILT IN BRA OPTION- sick of pads twisting and coming out in the wash 🫧  same.mp4"
+          }
+        },
+        "video_gGFAGP": {
+          "type": "video",
+          "settings": {
+            "video_poster": "shopify://shop_images/Rectangle_11_2.png"
+          }
+        },
+        "video_fPmdCF": {
+          "type": "video",
+          "settings": {
+            "video_poster": "shopify://shop_images/iPhone_16_Pro_-_1_3.png",
+            "video": "shopify://files/videos/video-1.mp4"
+          }
+        }
+      },
+      "block_order": [
+        "video_q8CV4w",
+        "video_QmkhNe",
+        "video_WErxYy",
+        "video_gGFAGP",
+        "video_fPmdCF"
+      ],
+      "settings": {
+        "background": "#15ABBA0D",
+        "txt_color": "#000000",
+        "review_image": "shopify://shop_images/Trustpilot_ratings_4halfstar-RGB.png",
+        "review_text": "<strong>Excellent</strong> Rated 4.6 / 5 based on 1<a href=\"https://www.trustpilot.com/review/calypsa.com\" title=\"https://www.trustpilot.com/review/calypsa.com\">3,875 reviews</a> on Trustpilot ",
+        "heading": "1 Million women got in the picture",
+        "txt": "<p>Discover it by yourself</p>",
+        "btn_txt": "COMPLETE YOUR BUNDLE",
+        "btn_url": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "your_own_bundle_bzCiMK",
+    "bv_reviews_EzJR8W",
+    "icon_with_text_QAKw7Y",
+    "review_video_section_FAy3yK"
+  ]
+}

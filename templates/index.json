@@ -1,0 +1,705 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slider_fgh8c4": {
+      "type": "slider",
+      "blocks": {
+        "slider_item_jYDe8P": {
+          "type": "slider_item",
+          "settings": {
+            "background": "shopify://shop_images/4TH_SALE_DESKTOP_72cd615d-5176-4cbf-aa77-85b00165043f.png",
+            "mb_background": "shopify://shop_images/4TH_SALE_mobile.png",
+            "content_in_container": false,
+            "content_position": "left top",
+            "text_alignment": "left",
+            "text_size": "large",
+            "text_color": "white",
+            "subheading": "",
+            "title": "",
+            "description": "",
+            "image_link": "shopify://collections/summer-vibes",
+            "button_text": "",
+            "button_link": "shopify://collections/all-swimwear",
+            "button_style": "sf__btn-secondary",
+            "button_size": "",
+            "second_button_text": "",
+            "second_button_link": "",
+            "second_button_style": "m-button--primary",
+            "second_button_size": "",
+            "show_footer": true,
+            "footer_alignment": "end",
+            "footer_text": "",
+            "footer_button": "Shop Now",
+            "footer_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "slider_item_jYDe8P"
+      ],
+      "disabled": true,
+      "settings": {
+        "container": "w-full",
+        "slideshow_height": "adapt",
+        "show_overlay": false,
+        "dots_position": "right",
+        "dots_color": "dark",
+        "show_dots": true,
+        "show_arrows": false,
+        "autorotate": true,
+        "autorotate_speed": 4,
+        "use_content_above": false,
+        "custom_class": "sf-home__slideshow",
+        "animations": "inherit"
+      }
+    },
+    "empty_space_FfxTtJ": {
+      "type": "empty-space",
+      "settings": {
+        "container": "container-fluid",
+        "color_scheme": "",
+        "show_divider_line": true,
+        "divider_style": "dashed",
+        "divider_height": 1,
+        "padding_top": 26,
+        "padding_bottom": 0,
+        "custom_class": ""
+      }
+    },
+    "slider_x4XYdb": {
+      "type": "slider",
+      "blocks": {
+        "slider_item_yteFzb": {
+          "type": "slider_item",
+          "settings": {
+            "background": "shopify://shop_images/Hero_HP_banner_9baf2f92-6eb2-4cb3-bbe0-75194d63e793.png",
+            "mb_background": "shopify://shop_images/Hero_MO_banner_f3e1eba1-18ea-4e96-ab58-bd56146989e4.png",
+            "content_in_container": false,
+            "content_position": "left top",
+            "text_alignment": "left",
+            "text_size": "large",
+            "text_color": "white",
+            "subheading": "",
+            "title": "",
+            "description": "",
+            "image_link": "shopify://collections/all-swimwear",
+            "button_text": "",
+            "button_link": "shopify://collections/all-swimwear",
+            "button_style": "sf__btn-secondary",
+            "button_size": "",
+            "second_button_text": "",
+            "second_button_link": "",
+            "second_button_style": "m-button--primary",
+            "second_button_size": "",
+            "show_footer": true,
+            "footer_alignment": "end",
+            "footer_text": "",
+            "footer_button": "Shop Now",
+            "footer_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "slider_item_yteFzb"
+      ],
+      "settings": {
+        "container": "w-full",
+        "slideshow_height": "adapt",
+        "show_overlay": false,
+        "dots_position": "right",
+        "dots_color": "dark",
+        "show_dots": true,
+        "show_arrows": false,
+        "autorotate": true,
+        "autorotate_speed": 4,
+        "use_content_above": false,
+        "custom_class": "sf-home__slideshow",
+        "animations": "inherit"
+      }
+    },
+    "1621243260e1af0c20": {
+      "type": "slider",
+      "blocks": {
+        "slider_item_qEJd6T": {
+          "type": "slider_item",
+          "settings": {
+            "background": "shopify://shop_images/HERO_MAY.png",
+            "content_in_container": false,
+            "content_position": "center top",
+            "text_alignment": "center",
+            "text_size": "medium",
+            "text_color": "black",
+            "subheading": "",
+            "title": "",
+            "description": "",
+            "image_link": "",
+            "button_text": "Shop Tops",
+            "button_link": "shopify://collections/swim-tops",
+            "button_style": "m-button--primary",
+            "button_size": "m-button--large",
+            "second_button_text": "Shop Bottoms",
+            "second_button_link": "",
+            "second_button_style": "m-button--primary",
+            "second_button_size": "m-button--large",
+            "show_footer": false,
+            "footer_alignment": "end",
+            "footer_text": "New Collection",
+            "footer_button": "Shop Now",
+            "footer_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "slider_item_qEJd6T"
+      ],
+      "disabled": true,
+      "settings": {
+        "container": "w-full",
+        "slideshow_height": "adapt",
+        "show_overlay": false,
+        "dots_position": "right",
+        "dots_color": "dark",
+        "show_dots": true,
+        "show_arrows": false,
+        "autorotate": true,
+        "autorotate_speed": 4,
+        "use_content_above": false,
+        "custom_class": "sf-home__slideshow",
+        "animations": "inherit"
+      }
+    },
+    "16225316461d1cff80": {
+      "type": "collection-list",
+      "blocks": {
+        "collection_block_Vh9abq": {
+          "type": "collection_block",
+          "settings": {
+            "collection": "new-arrivals",
+            "title": "New Arrivals",
+            "item_image": "shopify://shop_images/New.png"
+          }
+        },
+        "16225316461d1cff80-1": {
+          "type": "collection_block",
+          "settings": {
+            "collection": "swim-bras-tankini",
+            "title": "Tankinis & Bras",
+            "item_image": "shopify://shop_images/swim_tankinis.png"
+          }
+        },
+        "6d4abb37-5aa2-4499-a2b0-5d85f0d36eec": {
+          "type": "collection_block",
+          "settings": {
+            "collection": "plus-size-swimwear",
+            "title": "Plus Size",
+            "item_image": "shopify://shop_images/Plus_size.png"
+          }
+        },
+        "65e38235-f03b-43c9-8590-38c9c656e51c": {
+          "type": "collection_block",
+          "settings": {
+            "collection": "swim-tunics-dresses",
+            "title": "Swim Dresses",
+            "item_image": "shopify://shop_images/swim_dresses.png"
+          }
+        },
+        "collection_block_RfdFA9": {
+          "type": "collection_block",
+          "settings": {
+            "collection": "swim-bottoms",
+            "title": "Swim Bottoms",
+            "item_image": "shopify://shop_images/Swim_Bottoms.png"
+          }
+        },
+        "694c01c9-a95f-4c09-9cf0-ec75f0131e98": {
+          "type": "collection_block",
+          "settings": {
+            "collection": "sleeved-swim-tops",
+            "title": "With Sleeves",
+            "item_image": "shopify://shop_images/DSC09648.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "collection_block_Vh9abq",
+        "16225316461d1cff80-1",
+        "6d4abb37-5aa2-4499-a2b0-5d85f0d36eec",
+        "65e38235-f03b-43c9-8590-38c9c656e51c",
+        "collection_block_RfdFA9",
+        "694c01c9-a95f-4c09-9cf0-ec75f0131e98"
+      ],
+      "custom_css": [
+        ".m-collection-card__title {font-weight: 400;}",
+        "@media (max-width: 767px) {.m-slider-controls[class*=\"-bottom-left\"], .m-section__header {text-align: center; }}"
+      ],
+      "settings": {
+        "heading": "Shop by Categories",
+        "heading_size": "h3",
+        "subheading": "",
+        "description": "",
+        "header_alignment": "center",
+        "color_scheme": "scheme-78b22557-0c3c-4e84-972c-05bc312c2dcc",
+        "container": "w-full",
+        "layout": "grid",
+        "expanded": true,
+        "card_style": "inside-2",
+        "text_alignment": "center",
+        "hover_effect": "none",
+        "show_product_count": false,
+        "count_inline_title": true,
+        "image_rounded": false,
+        "items_per_row": 4,
+        "item_gap": 40,
+        "enable_slider": true,
+        "show_pagination": false,
+        "show_navigation": true,
+        "autorotate": true,
+        "autorotate_speed": 4,
+        "mobile_disable_slider": false,
+        "use_scroll_mobile": true,
+        "mobile_gap": 7,
+        "hidden_slide_control_mobile": true,
+        "padding_top": 100,
+        "padding_bottom": 0,
+        "custom_class": "sf-home__collection-list",
+        "animations": "inherit"
+      }
+    },
+    "16225125199f82d8fe": {
+      "type": "icon-box",
+      "blocks": {
+        "16225125199f82d8fe-0": {
+          "type": "iconbox",
+          "settings": {
+            "image": "shopify://shop_images/Retailers.png",
+            "image_by_url": "",
+            "title": "Sold By Leading Retailers",
+            "title_tag": "h4",
+            "description": "<p>Target, Macy's, Kohl's, Premium Outlets and more.</p>",
+            "link": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "sf__btn-link",
+            "button_size": ""
+          }
+        },
+        "16225125199f82d8fe-1": {
+          "type": "iconbox",
+          "settings": {
+            "image": "shopify://shop_images/QUALITY_PROMISE.png",
+            "image_by_url": "",
+            "title": "1 Year Quality Guarentee",
+            "title_tag": "h4",
+            "description": "<p>We’ve got you covered for a full year against normal wear and tear.</p>",
+            "link": "",
+            "button_label": "",
+            "button_link": "https://help.calypsa.com/en-US/us-returns-and-exchanges-12955",
+            "button_style": "sf__btn-link",
+            "button_size": ""
+          }
+        },
+        "16225125199f82d8fe-2": {
+          "type": "iconbox",
+          "settings": {
+            "image": "shopify://shop_images/free_shipping.png",
+            "image_by_url": "",
+            "title": "FREE U.S. SHIPPING",
+            "title_tag": "h4",
+            "description": "<p>Enjoy FREE standard shipping on orders of $50+</p>",
+            "link": "https://help.calypsa.com/en-US/us-shipping-rates-12960",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "sf__btn-link",
+            "button_size": ""
+          }
+        }
+      },
+      "block_order": [
+        "16225125199f82d8fe-0",
+        "16225125199f82d8fe-1",
+        "16225125199f82d8fe-2"
+      ],
+      "custom_css": [
+        ".m-icon-box__icon {margin-right: 12px;}"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_tag": "h2",
+        "heading_size": "h3",
+        "subheading_tag": "p",
+        "subheading": "",
+        "description": "",
+        "header_alignment": "center",
+        "container": "container",
+        "color_scheme": "",
+        "item_per_row": 3,
+        "item_gap": 30,
+        "item_gap_mobile": 10,
+        "card_color_scheme": "",
+        "card_style": "vertical",
+        "image_max_width": "60px",
+        "content_alignment": "center",
+        "hover_effect": "none",
+        "enable_slider": false,
+        "show_pagination": true,
+        "show_navigation": true,
+        "use_scroll_mobile": true,
+        "use_grid_column_mb": false,
+        "padding_top": 46,
+        "padding_bottom": 46,
+        "custom_class": "m-icon-box--small",
+        "animations": "inherit"
+      }
+    },
+    "slider_7V76cU": {
+      "type": "slider",
+      "blocks": {
+        "slider_item_TgWfmF": {
+          "type": "slider_item",
+          "settings": {
+            "background": "shopify://shop_images/New_banner.png",
+            "mb_background": "shopify://shop_images/Mobile_Banner.png",
+            "content_in_container": true,
+            "content_position": "right bottom",
+            "text_alignment": "center",
+            "text_size": "medium",
+            "text_color": "white",
+            "subheading": "",
+            "title": "Real Women, Real Confidence",
+            "description": "",
+            "image_link": "shopify://collections/new-arrivals",
+            "button_text": "Shop now",
+            "button_link": "shopify://collections/new-arrivals",
+            "button_style": "m-button--white",
+            "button_size": "",
+            "second_button_text": "",
+            "second_button_link": "shopify://collections/all-1",
+            "second_button_style": "m-button--primary",
+            "second_button_size": "",
+            "show_footer": false,
+            "footer_alignment": "end",
+            "footer_text": "New Collection",
+            "footer_button": "Shop Now",
+            "footer_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "slider_item_TgWfmF"
+      ],
+      "settings": {
+        "container": "w-full",
+        "slideshow_height": "adapt",
+        "show_overlay": false,
+        "dots_position": "bottom",
+        "dots_color": "dark",
+        "show_dots": true,
+        "show_arrows": false,
+        "autorotate": false,
+        "autorotate_speed": 5,
+        "use_content_above": false,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "162251092958fcda7c": {
+      "type": "product-tabs",
+      "blocks": {
+        "162251092958fcda7c-0": {
+          "type": "tab",
+          "settings": {
+            "title": "Swim Tops",
+            "collection": "swim-tops"
+          }
+        },
+        "162251092958fcda7c-1": {
+          "type": "tab",
+          "settings": {
+            "title": "Swim Bottoms",
+            "collection": "swim-bottoms"
+          }
+        },
+        "tab_tYPQKa": {
+          "type": "tab",
+          "settings": {
+            "title": "Tankinis & Swim Bras",
+            "collection": "swim-bras-tankini"
+          }
+        },
+        "tab_KQGjrN": {
+          "type": "tab",
+          "settings": {
+            "title": "Medium Coverage Tops",
+            "collection": "medium-coverage-tops"
+          }
+        }
+      },
+      "block_order": [
+        "162251092958fcda7c-0",
+        "162251092958fcda7c-1",
+        "tab_tYPQKa",
+        "tab_KQGjrN"
+      ],
+      "custom_css": [
+        ".m-section__header {--m-section-header-spacing-bottom: 60px;}"
+      ],
+      "settings": {
+        "heading": "Best Sellers",
+        "heading_size": "h3",
+        "subheading": "",
+        "description": "",
+        "header_alignment": "center",
+        "container": "container-fluid",
+        "color_scheme": "default",
+        "tab_header": "horizontal",
+        "limit": 5,
+        "show_button": true,
+        "button_type": "link",
+        "button_label": "View All",
+        "button_style": "m-button--primary",
+        "button_size": "",
+        "pcard_layout": "",
+        "pcard_image_ratio": "",
+        "show_vendor": false,
+        "items_per_row": 4,
+        "item_gap": 30,
+        "enable_slider": true,
+        "show_navigation": true,
+        "show_pagination": false,
+        "mobile_disable_slider": false,
+        "use_scroll_mobile": true,
+        "item_gap_mobile": 16,
+        "padding_top": 100,
+        "padding_bottom": 10,
+        "custom_class": "sf-home__product-tab",
+        "animations": "inherit"
+      }
+    },
+    "rich_text_nFd44W": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_cNYnM4": {
+          "type": "heading",
+          "settings": {
+            "heading": "1 MILLION WOMEN GOT IN THE PICTURE",
+            "heading_size": "h2"
+          }
+        },
+        "text_UYJtbb": {
+          "type": "text",
+          "settings": {
+            "text": "<h3><strong>IT’S YOUR TURN</strong></h3>"
+          }
+        },
+        "button_YFU6VB": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Shop Collection",
+            "button_link": "",
+            "button_style": "m-button--link",
+            "button_size": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_cNYnM4",
+        "text_UYJtbb",
+        "button_YFU6VB"
+      ],
+      "settings": {
+        "container": "container-full",
+        "color_scheme": "",
+        "content_alignment": "left",
+        "padding_top": 16,
+        "padding_bottom": 0,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "slider_DYmTLt": {
+      "type": "slider",
+      "blocks": {
+        "slider_item_jeniWW": {
+          "type": "slider_item",
+          "settings": {
+            "background": "shopify://shop_images/trusted.png",
+            "mb_background": "shopify://shop_images/trusted_mobile.png",
+            "content_in_container": true,
+            "content_position": "right bottom",
+            "text_alignment": "center",
+            "text_size": "medium",
+            "text_color": "white",
+            "subheading": "",
+            "title": "",
+            "description": "",
+            "image_link": "shopify://collections/all-swimwear",
+            "button_text": "",
+            "button_link": "shopify://collections/new-arrivals",
+            "button_style": "m-button--link",
+            "button_size": "",
+            "second_button_text": "",
+            "second_button_link": "shopify://collections/all-1",
+            "second_button_style": "m-button--primary",
+            "second_button_size": "",
+            "show_footer": false,
+            "footer_alignment": "end",
+            "footer_text": "New Collection",
+            "footer_button": "Shop Now",
+            "footer_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "slider_item_jeniWW"
+      ],
+      "settings": {
+        "container": "w-full",
+        "slideshow_height": "adapt",
+        "show_overlay": false,
+        "dots_position": "bottom",
+        "dots_color": "dark",
+        "show_dots": true,
+        "show_arrows": false,
+        "autorotate": false,
+        "autorotate_speed": 5,
+        "use_content_above": false,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "bundle_list_slider_rYnDKc": {
+      "type": "bundle-list-slider",
+      "blocks": {
+        "product_wMDAaD": {
+          "type": "product",
+          "settings": {
+            "heading": "Short Sleeve Adele Swim Top + Midi Swim Skort With Bike Shorts",
+            "link": "shopify://pages/short-sleeve-adele-swim-top-midi-swim-skort-with-bike-shorts"
+          }
+        },
+        "product_NkLPTN": {
+          "type": "product",
+          "settings": {
+            "heading": "",
+            "link": ""
+          }
+        },
+        "product_QCqGpJ": {
+          "type": "product",
+          "settings": {
+            "heading": "",
+            "link": ""
+          }
+        },
+        "product_L7JBQX": {
+          "type": "product",
+          "settings": {
+            "heading": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "product_wMDAaD",
+        "product_NkLPTN",
+        "product_QCqGpJ",
+        "product_L7JBQX"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "",
+        "enable_arrows": true,
+        "enable_dots": true
+      }
+    },
+    "empty_space_f8fLbn": {
+      "type": "empty-space",
+      "settings": {
+        "container": "container",
+        "color_scheme": "",
+        "show_divider_line": true,
+        "divider_style": "dotted",
+        "divider_height": 1,
+        "padding_top": 22,
+        "padding_bottom": 22,
+        "custom_class": ""
+      }
+    },
+    "1747575451fc251cf3": {
+      "type": "apps",
+      "blocks": {
+        "instafeed_app_block_epXeA9": {
+          "type": "shopify://apps/instafeed/blocks/app-block/c447db20-095d-4a10-9725-b5977662c9d5",
+          "disabled": true,
+          "settings": {
+            "title": "",
+            "title_color": "",
+            "title_size_v2": 0,
+            "alignment": "center",
+            "instafeed_margin_top": 0,
+            "instafeed_margin_bottom": 0,
+            "instafeed_margin_sides": 0,
+            "show_instagram_link": false,
+            "link_alignment": "left",
+            "link_color": "#000000",
+            "background_color": "",
+            "feed_id": "",
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "instafeed_app_block_epXeA9"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_size": "h3",
+        "subheading": "",
+        "header_alignment": "center",
+        "container": "container",
+        "background_color": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "custom_class": ""
+      }
+    },
+    "empty_space_ghmj3B": {
+      "type": "empty-space",
+      "settings": {
+        "container": "container",
+        "color_scheme": "",
+        "show_divider_line": true,
+        "divider_style": "solid",
+        "divider_height": 1,
+        "padding_top": 46,
+        "padding_bottom": 0,
+        "custom_class": ""
+      }
+    }
+  },
+  "order": [
+    "slider_fgh8c4",
+    "empty_space_FfxTtJ",
+    "slider_x4XYdb",
+    "1621243260e1af0c20",
+    "16225316461d1cff80",
+    "16225125199f82d8fe",
+    "slider_7V76cU",
+    "162251092958fcda7c",
+    "rich_text_nFd44W",
+    "slider_DYmTLt",
+    "bundle_list_slider_rYnDKc",
+    "empty_space_f8fLbn",
+    "1747575451fc251cf3",
+    "empty_space_ghmj3B"
+  ]
+}

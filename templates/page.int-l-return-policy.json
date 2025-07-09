@@ -1,0 +1,87 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "page",
+      "disabled": true,
+      "settings": {}
+    },
+    "custom_content_wzPtji": {
+      "type": "custom-content",
+      "blocks": {
+        "text_qTXdyD": {
+          "type": "text",
+          "settings": {
+            "title": "",
+            "subheading": "International Return Policy",
+            "text": "",
+            "width": "100%",
+            "alignment": "center",
+            "align_text": "center",
+            "text_size": "medium",
+            "text_color": "inherit",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "m-button--primary",
+            "button_size": "",
+            "block_custom_class": "",
+            "animations": "inherit"
+          }
+        },
+        "text_kfzHiW": {
+          "type": "text",
+          "settings": {
+            "title": "",
+            "subheading": "",
+            "text": "<p>Not in love with your order? We want our customers to be 100% satisfied! If you're not, we'd be happy to help you return your item.</p><h4><a href=\"https://form.typeform.com/to/LR9PXDMR\" target=\"_blank\"><span style=\"text-decoration:underline\">Initiate a Return</span></a></h4><h3><strong>We offer 2 easy options:</strong></h3><ul><li>Receive store credit for the full price of your purchase, plus we'll add an extra $15 to that credit! </li><li>Receive a refund for your order.*</li></ul><p>* Shipping and handling not included. Customers are responsible for the return shipping cost. Most returns need to be shipped to our warehouse in the USA.</p><p>Your refund or store credit will be processed once the returned item is received.</p><h3><strong>Eligibility:</strong></h3><p>Merchandise in their original condition (unworn and unwashed) may be returned. Product tags must be intact. All bikini bottoms, Vacation suncare products, sunglasses and items marked final sale are not eligible for returns or exchanges. </p><p>We accept returns from unregistered or Silver rewards members within 30 days of purchase. Gold and Platinum rewards members enjoy extended returns, and can return their orders within 45 days from the date of purchase! To find out more about our rewards program, <a href=\"https://calypsa.com/signup\">click here</a>.</p><h2><strong>How to return an item:</strong></h2><ul><li>Step 1: <a href=\"https://form.typeform.com/to/LR9PXDMR\" target=\"_blank\">Initiate a Return</a></li><li>Step 2: We'll email you with return instructions.</li></ul><p> Please allow 5 to 10 business days for package transit, plus an additional 5 to 7 business days for refund to appear in your account.</p><h4><a href=\"https://form.typeform.com/to/LR9PXDMR\" target=\"_blank\"><span style=\"text-decoration:underline\">Initiate a Return</span></a></h4><p>The above return policy is for international (non-US) customers only. If you are shopping from the US, follow this link to our <a href=\"https://calypsa.gorgias.help/en-US/us-returns-and-exchanges-12955\" target=\"_blank\">US return policy</a>.</p>",
+            "width": "100%",
+            "alignment": "center",
+            "align_text": "left",
+            "text_size": "medium",
+            "text_color": "black",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "m-button--primary",
+            "button_size": "",
+            "block_custom_class": "",
+            "animations": "inherit"
+          }
+        }
+      },
+      "block_order": [
+        "text_qTXdyD",
+        "text_kfzHiW"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_size": "h3",
+        "subheading": "",
+        "description": "",
+        "header_alignment": "center",
+        "container": "container-fluid",
+        "color_scheme": "",
+        "content_color_scheme": "",
+        "enable_parallax": false,
+        "parallax_direction": "vertical",
+        "gap": 0,
+        "gap_mobile": 0,
+        "use_scroll_mobile": false,
+        "padding_top": 50,
+        "padding_bottom": 0,
+        "custom_class": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "custom_content_wzPtji"
+  ]
+}

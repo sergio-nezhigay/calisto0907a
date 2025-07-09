@@ -1,0 +1,340 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "page-about-us",
+      "disabled": true,
+      "custom_css": [],
+      "settings": {}
+    },
+    "image_with_text_2_cHbjUW": {
+      "type": "image-with-text-2",
+      "settings": {
+        "color_scheme": "",
+        "container": "w-full",
+        "hero_size": "adapt",
+        "show_overlay": false,
+        "image": "shopify://shop_images/our_story.png",
+        "image_link": "shopify://collections",
+        "parallax": false,
+        "parallax_direction": "vertical",
+        "content_in_container": true,
+        "content_position": "center bottom",
+        "text_alignment": "center",
+        "text_size": "medium",
+        "text_color": "inherit",
+        "title": "Redefining Swimwear for Real Women",
+        "subtitle": "",
+        "text": "",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "m-button--primary",
+        "button_size": "",
+        "text_alignment_mobile": "right",
+        "mb_image": "shopify://shop_images/MODLI_EDITED_1_1_of_179_3.png",
+        "use_content_above": false,
+        "custom_class": "",
+        "animations": "inherit",
+        "enable_bg_zoom_effect": true
+      }
+    },
+    "rich_text_rhkWdW": {
+      "type": "rich-text",
+      "blocks": {
+        "text_XHHcMe": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At <strong>Calypsa</strong>, we believe swimwear should empower—not limit—you. Too often, women feel uncomfortable, self-conscious, or left out because their swimsuit just doesn’t fit right. Whether it’s tugging straps, worrying about coverage, or missing out on the moment, traditional swimwear has fallen short.</p><p>We’re here to change that.</p><p>Our mission is to create <strong>modest, flattering, and comfortable swimwear</strong> that supports real women in real life. From <strong>long-sleeve swim tops</strong> and <strong>swim skirts</strong> to <strong>tankinis</strong>, <strong>leggings</strong>, and <strong>dresses</strong>, our styles are made to move with you. With <strong>UPF 50+ sun protection</strong>, inclusive sizing (XS–6X), and designs that stay in place, Calypsa makes it easy to feel confident—whether you're diving into waves, chasing kids, or just soaking up the sun.</p><h4><strong>Why Calypsa Is Different?</strong></h4><p>We don’t follow one-size-fits-all trends. Instead, we design swimwear with real bodies and real life in mind. Our pieces offer a thoughtful balance of <strong>coverage, comfort, and style</strong>—so you never have to choose between feeling confident and being yourself.</p><h4><strong>Confidence Is Life-Changing</strong></h4><p>Wearing the right swimsuit can be transformative. It means saying yes to the ocean, showing up in family photos, and feeling amazing in your own skin. At Calypsa, we call it a “confidence checkup”—and it’s at the heart of everything we do.</p><h4><strong>Our Story & Commitment</strong></h4><p>With over <strong>1 million women worldwide</strong> choosing Calypsa, we’re proud to lead the way in <strong>modest swimwear</strong>. Founded by <strong>Nava Brief Fried</strong>, our brand is built on the belief that no woman should have to compromise between looking great and feeling comfortable.</p><p>We’re based in the United States and dedicated to high-quality design, inclusive sizing, and thoughtful customer care—from concept to checkout.</p><h4><strong>Join the Calypsa Movement</strong></h4><p>If you’ve ever felt let down by swimwear, you’re not alone. It’s time to rediscover the joy of swimwear that fits, flatters, and lets you fully live the moment.</p><p><strong>Calypsa: Modest swimwear designed for real women—redefining beach days, one splash at a time.</strong></p>"
+          }
+        },
+        "button_gCNrND": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Now | Explore Our Swimwear",
+            "button_link": "shopify://collections/all-swimwear",
+            "button_style": "m-button--primary",
+            "button_size": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_XHHcMe",
+        "button_gCNrND"
+      ],
+      "settings": {
+        "container": "container-full",
+        "color_scheme": "",
+        "content_alignment": "left",
+        "padding_top": 12,
+        "padding_bottom": 12,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "rich_text_JacUdC": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_eBn8Wj": {
+          "type": "heading",
+          "settings": {
+            "heading": "What We Stand For",
+            "heading_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "heading_eBn8Wj"
+      ],
+      "settings": {
+        "container": "container-full",
+        "color_scheme": "",
+        "content_alignment": "left",
+        "padding_top": 24,
+        "padding_bottom": 24,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "custom_liquid_xtFqhM": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"four-columns\">\n    <div class=\"column\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0680/5939/8391/files/MODLI_EDITED_1_143_of_179_2.png?v=1738669967\" alt=\"Image 1\">\n        <p class=\"title\"><strong>Comfort is Non-Negotiable</strong></p>\n        <p class=\"text\">We believe you should be able to move, swim, play, and live without constantly adjusting or second-guessing your swimsuit.</p>\n    </div>\n    <div class=\"column\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0680/5939/8391/files/MODLI_EDITED_127_of_182_2.png?v=1738669967\" alt=\"Image 2\">\n        <p class=\"title\"><strong>Confidence is Powerful</strong></p>\n        <p class=\"text\">Every woman deserves to feel proud of who she is and how she looks—especially when enjoying a day at the beach or pool with friends and family.</p>\n    </div>\n    <div class=\"column\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0680/5939/8391/files/MODLI_EDITED_1_140_of_179_2.png?v=1738669967\" alt=\"Image 3\">\n        <p class=\"title\"><strong>Coverage is a Choice</strong></p>\n        <p class=\"text\">It’s not about hiding; it’s about giving you options to feel completely at ease wherever you go. With Calypsa, you decide what works best for your body and your style.</p>\n    </div>\n</div>\n\n<style>\n    .four-columns {\n        display: flex;\n        justify-content: space-between;\n        margin: 0 10px; /* Add margin on the sides of the entire container */\n    }\n    .column {\n        flex: 1;\n        text-align: left;  /* Align text to the left */\n        padding: 10px;\n        margin: 0 10px; /* Add margin on the sides of each column */\n    }\n    .column img {\n        max-width: 100%;\n        height: auto;\n        margin-bottom: 15px; /* Adds space between image and text */\n    }\n    .title {\n        margin-bottom: 10px; /* Adds spacing between the title and text */\n    }\n    .text {\n        margin-top: 10px;\n    }\n\n    /* Media query for mobile view */\n    @media (max-width: 768px) {\n        .four-columns {\n            flex-direction: column; /* Stack columns vertically */\n        }\n        .column {\n            margin: 10px 0; /* Add vertical margin between stacked columns */\n        }\n    }\n</style>",
+        "custom_class": ""
+      }
+    },
+    "empty_space_gbkJeh": {
+      "type": "empty-space",
+      "disabled": true,
+      "settings": {
+        "container": "container-fluid",
+        "color_scheme": "",
+        "show_divider_line": true,
+        "divider_style": "solid",
+        "divider_height": 1,
+        "padding_top": 30,
+        "padding_bottom": 30,
+        "custom_class": ""
+      }
+    },
+    "image_with_text_2_rCqNDm": {
+      "type": "image-with-text-2",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "container": "w-full",
+        "hero_size": "adapt",
+        "show_overlay": false,
+        "image": "shopify://shop_images/modli_3_edited_96_of_129_2.png",
+        "image_link": "",
+        "parallax": false,
+        "parallax_direction": "vertical",
+        "content_in_container": false,
+        "content_position": "center middle",
+        "text_alignment": "center",
+        "text_size": "medium",
+        "text_color": "white",
+        "title": "",
+        "subtitle": "",
+        "text": "",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "m-button--primary",
+        "button_size": "",
+        "text_alignment_mobile": "center",
+        "mb_image": "shopify://shop_images/modli_3_edited_96_of_129_2.png",
+        "use_content_above": false,
+        "custom_class": "",
+        "animations": "inherit",
+        "enable_bg_zoom_effect": true
+      }
+    },
+    "empty_space_WxPNHP": {
+      "type": "empty-space",
+      "settings": {
+        "container": "container-fluid",
+        "color_scheme": "",
+        "show_divider_line": true,
+        "divider_style": "solid",
+        "divider_height": 1,
+        "padding_top": 30,
+        "padding_bottom": 30,
+        "custom_class": ""
+      }
+    },
+    "rich_text_tRteN3": {
+      "type": "rich-text",
+      "blocks": {
+        "text_PFbCJG": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p><strong>How We’re Different</strong></p><p>Instead of focusing on one-size-fits-all trends, we design for real women with real lives. Our styles range from long-sleeve tops and swim skirts to leggings and tankinis, so you can find the perfect balance of coverage and freedom of movement. Each piece is crafted to stay put and move with you—whether you’re chasing kids on the shore, kayaking with friends, or just lying in the sun.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_PFbCJG"
+      ],
+      "settings": {
+        "container": "container-full",
+        "color_scheme": "",
+        "content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "rich_text_pGhByd": {
+      "type": "rich-text",
+      "blocks": {
+        "text_Kq9WWQ": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>A New Way Forward</strong></p><p>Think of it as your own “confidence checkup.” We understand that feeling good in your swimsuit can be life-changing—it lets you show up in photos, plunge into the ocean, laugh without worry, and build memories you’ll cherish. We’re here to make that possible.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_Kq9WWQ"
+      ],
+      "disabled": true,
+      "settings": {
+        "container": "container-full",
+        "color_scheme": "",
+        "content_alignment": "left",
+        "padding_top": 32,
+        "padding_bottom": 32,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "rich_text_ADKnGi": {
+      "type": "rich-text",
+      "blocks": {
+        "text_Nj8ViW": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Our Commitment to You</strong></p><p>We’re proud to have over 1 million customers who have trusted us to redefine their swimwear experience. Based in the United States, our team works tirelessly to maintain high-quality standards and a personal touch—from design to delivery. Our founder, Nava Brief Fried, built Calypsa on the belief that no woman should ever have to compromise between feeling comfortable and looking great. That belief fuels everything we do, and it’s what makes Calypsa more than just another swimwear brand—it’s a promise to stand by every woman, every day.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_Nj8ViW"
+      ],
+      "disabled": true,
+      "settings": {
+        "container": "container-full",
+        "color_scheme": "",
+        "content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 32,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "rich_text_dWKkMy": {
+      "type": "rich-text",
+      "blocks": {
+        "text_RN9XdT": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Join UsI</strong></p><p>f you’ve ever felt let down by swimwear, we get it. It’s time to redefine what a swimsuit can be. We invite you to explore our collections, find your perfect fit, and discover the freedom to truly enjoy every moment.Calypsa: Swimwear designed for real women, redefining the beach day—one splash at a time. Shop Now | Explore Our CollectionsWe’re more than just a brand—we’re your partner in rediscovering joy and confidence. Let’s dive in together.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_RN9XdT"
+      ],
+      "disabled": true,
+      "settings": {
+        "container": "container-full",
+        "color_scheme": "",
+        "content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "rich_text_byh8KM": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Ut7Gge": {
+          "type": "heading",
+          "settings": {
+            "heading": "Our Milestones",
+            "heading_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Ut7Gge"
+      ],
+      "settings": {
+        "container": "container-full",
+        "color_scheme": "",
+        "content_alignment": "left",
+        "padding_top": 24,
+        "padding_bottom": 24,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "image_with_text_2_9UKfN8": {
+      "type": "image-with-text-2",
+      "settings": {
+        "color_scheme": "",
+        "container": "container-fluid",
+        "hero_size": "adapt",
+        "show_overlay": false,
+        "image": "shopify://shop_images/Group_2.png",
+        "image_link": "shopify://collections",
+        "parallax": false,
+        "parallax_direction": "vertical",
+        "content_in_container": false,
+        "content_position": "center middle",
+        "text_alignment": "center",
+        "text_size": "medium",
+        "text_color": "white",
+        "title": "",
+        "subtitle": "",
+        "text": "",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "m-button--primary",
+        "button_size": "",
+        "text_alignment_mobile": "center",
+        "mb_image": "shopify://shop_images/Group_5.png",
+        "use_content_above": false,
+        "custom_class": "",
+        "animations": "inherit",
+        "enable_bg_zoom_effect": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_with_text_2_cHbjUW",
+    "rich_text_rhkWdW",
+    "rich_text_JacUdC",
+    "custom_liquid_xtFqhM",
+    "empty_space_gbkJeh",
+    "image_with_text_2_rCqNDm",
+    "empty_space_WxPNHP",
+    "rich_text_tRteN3",
+    "rich_text_pGhByd",
+    "rich_text_ADKnGi",
+    "rich_text_dWKkMy",
+    "rich_text_byh8KM",
+    "image_with_text_2_9UKfN8"
+  ]
+}

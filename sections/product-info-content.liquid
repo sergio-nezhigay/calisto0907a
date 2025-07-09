@@ -1,0 +1,130 @@
+{% if product.metafields.custom.product_info_content_images != blank %}
+<style>
+    #m-section--{{ section.id }} {
+    --section-padding-top: {{ section.settings.padding_top }}px;
+    --section-padding-bottom: {{ section.settings.padding_bottom }}px;
+  }
+  .product-info-content-row {
+    color: #17334C;
+    display: grid;
+    gap: 41px;
+  }
+  .container.product-info-content-wrapper h2 {
+    font-size: 24px;
+    line-height: 42.12px;
+    text-align: center;
+    margin-bottom: 34px;
+    font-weight: 600;
+    color: #17334C;
+  }
+  .product-info-content-wrapper{
+    padding-top: var(--section-padding-top);
+    padding-bottom: var(--section-padding-bottom);
+    user-select: none;
+  }
+  .product-info-content-item-image img {
+    width: 100%;
+}
+.product-info-content-item-text ul {
+    list-style: disc;
+    padding-inline-start: 20px;
+}
+.product-info-content-item-text strong {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 31.59px;
+    text-align: left;
+    padding-bottom: 10px;
+    display: block;
+}
+  .product-info-content-item-text br {
+    display: none;
+}
+  .product-info-content-item-text {
+    padding-top: 18px;
+}
+.product-info-content-item-text p, .product-info-content-item-text li {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 25.83px;
+}
+@media(min-width: 1024px){
+   .product-info-content-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 41px;
+  }
+}
+</style>
+<section
+  id="m-section--{{ section.id }}"
+>
+  
+<div class="container product-info-content-wrapper">
+<h2>{{ section.settings.heading }}</h2>
+<div class="product-info-content-row">
+{% for image in product.metafields.custom.product_info_content_images.value limit: 3 %}
+  <div  class="product-info-content-item">
+    {% if image != blank %}
+      {% assign image_url = image | image_url %}
+      <div class="product-info-content-item-image">
+        <img src="{% render 'hs-image-transform' with img: image_url %}" width="" height="" />
+      </div>
+    {% endif %}
+    {% case forloop.index %}
+      {% when 1 %}
+      {% if product.metafields.custom.product_info_content_s_text_of_first_columns != blank %}<div class="product-info-content-item-text">{{ product.metafields.custom.product_info_content_s_text_of_first_columns | metafield_tag }}</div>{% endif %}
+      {% when 2 %}
+        {% if product.metafields.custom.product_info_content_s_text_of_second_column != blank %}<div class="product-info-content-item-text">{{ product.metafields.custom.product_info_content_s_text_of_second_column | metafield_tag }}</div>{% endif %}
+      {% when 3 %}
+        {% if product.metafields.custom.product_info_content_s_text_of_third_column != blank %}<div class="product-info-content-item-text">{{ product.metafields.custom.product_info_content_s_text_of_third_column | metafield_tag }}</div>{% endif %}
+    {% endcase %}
+  </div>
+  
+{% endfor %}
+</div>
+</div>
+</section>
+{% endif %}
+
+{% schema %}
+  {
+    "name": "Product Info Section",
+    "settings": [
+      {
+        "type": "richtext",
+        "id": "heading",
+        "label": "Heading"
+      },
+      {
+      "type": "header",
+      "content": "Section Padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Padding Top",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Padding Bottom",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px"
+    },
+    ],
+    "presets": [
+      {
+        "name": "Product Info Section",
+      }
+    ]
+  }
+{% endschema %}

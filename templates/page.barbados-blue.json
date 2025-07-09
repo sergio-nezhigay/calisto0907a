@@ -1,0 +1,263 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "page",
+      "disabled": true,
+      "settings": {}
+    },
+    "slider_wTzXyX": {
+      "type": "slider",
+      "blocks": {
+        "slider_item_f6eRPk": {
+          "type": "slider_item",
+          "settings": {
+            "background": "shopify://shop_images/Hero_banner.png",
+            "mb_background": "shopify://shop_images/Hero_banner_1.png",
+            "content_in_container": false,
+            "content_position": "center middle",
+            "text_alignment": "center",
+            "text_size": "medium",
+            "text_color": "black",
+            "subheading": "",
+            "title": "",
+            "description": "",
+            "image_link": "",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "m-button--primary",
+            "button_size": "",
+            "second_button_text": "",
+            "second_button_link": "",
+            "second_button_style": "m-button--primary",
+            "second_button_size": "",
+            "show_footer": false,
+            "footer_alignment": "end",
+            "footer_text": "New Collection",
+            "footer_button": "Shop Now",
+            "footer_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "slider_item_f6eRPk"
+      ],
+      "settings": {
+        "container": "w-full",
+        "slideshow_height": "adapt",
+        "show_overlay": false,
+        "dots_position": "bottom",
+        "dots_color": "dark",
+        "show_dots": true,
+        "show_arrows": false,
+        "autorotate": true,
+        "autorotate_speed": 3,
+        "use_content_above": false,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "brands_list_ji3WQ4": {
+      "type": "brands-list",
+      "blocks": {
+        "image_4LKWdV": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Adele_Swim_Top_With_Midi_Swim_Skort_1__1.png",
+            "image_by_url": "",
+            "image_link": "",
+            "max_width": "350px"
+          }
+        },
+        "image_hnjdrx": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Maya_Swim_Top_1_ce75b8e8-a1f5-4f17-80aa-05bbe9d312bb.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/maya-swim-top",
+            "max_width": "350px"
+          }
+        },
+        "image_8KKTzp": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Adjustable_Strap_Maya_Swim_Top_With_A-line_Swim_Skort_1.png",
+            "image_by_url": "",
+            "image_link": "",
+            "max_width": "350px"
+          }
+        },
+        "image_4HDfLY": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Adele_Swim_Top_1__1.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/adele-swim-top",
+            "max_width": "350px"
+          }
+        }
+      },
+      "block_order": [
+        "image_4LKWdV",
+        "image_hnjdrx",
+        "image_8KKTzp",
+        "image_4HDfLY"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_size": "h3",
+        "subheading": "",
+        "header_alignment": "center",
+        "container": "container-fluid",
+        "color_scheme": "",
+        "item_per_row": 4,
+        "column_gap": 30,
+        "row_gap": 30,
+        "column_gap_mobile": 10,
+        "row_gap_mobile": 10,
+        "enable_slider": false,
+        "show_nav": false,
+        "show_pagination": false,
+        "autorotate": false,
+        "autorotate_speed": 3,
+        "padding_top": 70,
+        "padding_bottom": 70,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "brands_list_xkWKxE": {
+      "type": "brands-list",
+      "blocks": {
+        "image_9gmDCe": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/banner_Adjustable_Strap_Maya.png",
+            "image_by_url": "",
+            "image_link": "",
+            "max_width": "740px"
+          }
+        },
+        "image_A7P4gn": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Banner_margaux_Swim_Top.png",
+            "image_by_url": "",
+            "image_link": "",
+            "max_width": "740px"
+          }
+        }
+      },
+      "block_order": [
+        "image_9gmDCe",
+        "image_A7P4gn"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_size": "h3",
+        "subheading": "",
+        "header_alignment": "center",
+        "container": "container-fluid",
+        "color_scheme": "",
+        "item_per_row": 2,
+        "column_gap": 30,
+        "row_gap": 30,
+        "column_gap_mobile": 10,
+        "row_gap_mobile": 10,
+        "enable_slider": false,
+        "show_nav": false,
+        "show_pagination": false,
+        "autorotate": false,
+        "autorotate_speed": 2,
+        "padding_top": 50,
+        "padding_bottom": 70,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "brands_list_hTKUrP": {
+      "type": "brands-list",
+      "blocks": {
+        "image_KAWQii": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Product_1.png",
+            "image_by_url": "",
+            "image_link": "",
+            "max_width": "350px"
+          }
+        },
+        "image_TiBBcw": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Product-1_1.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/riley-knotted-swim-top",
+            "max_width": "350px"
+          }
+        },
+        "image_QHfREn": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Product-2_1.png",
+            "image_by_url": "",
+            "image_link": "",
+            "max_width": "350px"
+          }
+        },
+        "image_angg9E": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Product-3_1.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/margaux-swim-top",
+            "max_width": "350px"
+          }
+        }
+      },
+      "block_order": [
+        "image_KAWQii",
+        "image_TiBBcw",
+        "image_QHfREn",
+        "image_angg9E"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_size": "h3",
+        "subheading": "",
+        "header_alignment": "center",
+        "container": "container-fluid",
+        "color_scheme": "",
+        "item_per_row": 4,
+        "column_gap": 30,
+        "row_gap": 30,
+        "column_gap_mobile": 10,
+        "row_gap_mobile": 10,
+        "enable_slider": false,
+        "show_nav": false,
+        "show_pagination": false,
+        "autorotate": false,
+        "autorotate_speed": 3,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "slider_wTzXyX",
+    "brands_list_ji3WQ4",
+    "brands_list_xkWKxE",
+    "brands_list_hTKUrP"
+  ]
+}

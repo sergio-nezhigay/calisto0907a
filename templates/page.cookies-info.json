@@ -1,0 +1,87 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "page",
+      "disabled": true,
+      "settings": {}
+    },
+    "custom_content_wzPtji": {
+      "type": "custom-content",
+      "blocks": {
+        "text_qTXdyD": {
+          "type": "text",
+          "settings": {
+            "title": "",
+            "subheading": "",
+            "text": "",
+            "width": "100%",
+            "alignment": "center",
+            "align_text": "center",
+            "text_size": "medium",
+            "text_color": "inherit",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "m-button--primary",
+            "button_size": "",
+            "block_custom_class": "",
+            "animations": "inherit"
+          }
+        },
+        "text_kfzHiW": {
+          "type": "text",
+          "settings": {
+            "title": "",
+            "subheading": "",
+            "text": "<p><strong>Cookies Information<br/><br/></strong>We use cookies when you visit our site, but you can control these through your browser settings. You can learn how to manage cookies on your devices below.<strong><br/></strong></p><p><strong>What are the different types of cookies and what do we use them for?<br/></strong><br/>(1) Functionality cookies: These cookies allow you to browse the site and use it’s features, such as “Add to Bag”. <br/><br/>(2) Analysis cookies: With these cookies, we can analyse how many customers come to our site and how they use it. We use this information to understand what works and doesn’t work for customers in order to constantly improve site functionality and the shopping experience.<br/><br/>(3) Customer preference cookies: These cookies help our site to remember your preferences (location, currency, etc.) in order to better your shopping experience.<br/><br/>(4) Marketing cookies: We use these to deliver ads which are relevant to you, to limit the number of times that you see an ad, and to measure the effectiveness of our marketing campaigns.</p><p> </p><p><strong>How can you manage cookies on your browser?<br/></strong><br/>Cookies get stored on your device. Most browsers allow you to manage cookies in the help section of your browser. Please note that if you block all cookies, you may no longer have access to all parts of our site.</p>",
+            "width": "100%",
+            "alignment": "center",
+            "align_text": "left",
+            "text_size": "medium",
+            "text_color": "black",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "m-button--primary",
+            "button_size": "",
+            "block_custom_class": "",
+            "animations": "inherit"
+          }
+        }
+      },
+      "block_order": [
+        "text_qTXdyD",
+        "text_kfzHiW"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_size": "h3",
+        "subheading": "",
+        "description": "",
+        "header_alignment": "center",
+        "container": "container-fluid",
+        "color_scheme": "",
+        "content_color_scheme": "",
+        "enable_parallax": false,
+        "parallax_direction": "vertical",
+        "gap": 0,
+        "gap_mobile": 0,
+        "use_scroll_mobile": false,
+        "padding_top": 50,
+        "padding_bottom": 0,
+        "custom_class": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "custom_content_wzPtji"
+  ]
+}

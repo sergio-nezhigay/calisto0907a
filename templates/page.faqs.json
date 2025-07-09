@@ -1,0 +1,250 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "breadcrumb_RHyjx4": {
+      "type": "breadcrumb",
+      "settings": {
+        "container": "container",
+        "text_alignment": "center",
+        "hide_current": false,
+        "hide_on_mb": false,
+        "animations": "inherit"
+      }
+    },
+    "custom_content_tAfTRN": {
+      "type": "custom-content",
+      "settings": {
+        "heading": "FAQs",
+        "heading_size": "h2",
+        "subheading": "",
+        "description": "",
+        "header_alignment": "center",
+        "container": "container-fluid",
+        "color_scheme": "",
+        "content_color_scheme": "",
+        "enable_parallax": false,
+        "parallax_direction": "vertical",
+        "gap": 30,
+        "gap_mobile": 16,
+        "use_scroll_mobile": false,
+        "padding_top": 30,
+        "padding_bottom": 30,
+        "custom_class": ""
+      }
+    },
+    "main": {
+      "type": "page-faqs",
+      "blocks": {
+        "custom-content": {
+          "type": "content",
+          "disabled": true,
+          "settings": {
+            "content": "<div class=\"mb-10\"><img src=\"https://cdn.shopify.com/s/files/1/0561/2742/2636/files/faqs.jpg?v=1620784288\"></div>\n<h3 class=\"font-medium text-xl mb-4\">Awkwardness gives me great comfort. I’ve never been cool, but I’ve felt cool. I’ve been in the cool place, but I wasn’t really cool – I was trying to pass for hip or cool.</h3>\n<p>A girl should be two things: classy and fabulous. I am convinced that there can be luxury in simplicity. I wanted to dress the woman who lives and works, not the woman in a painting. It’s hard to balance everything. It’s always challenging. My relationships with producers or photographers – these are relationships that took years. I can’t get sucked into that celebrity thing, because I think it’s just crass. My aim is to make the poor look rich.</p>"
+          }
+        },
+        "content_V3JwTt": {
+          "type": "content",
+          "settings": {
+            "content": "<h3> <b> ORDER FAQ </b> </h3>"
+          }
+        },
+        "accordion_LYNFcg": {
+          "type": "accordion",
+          "settings": {
+            "title": "How can I return an item(s)?",
+            "content": "<p>Not in love with your order? We want our customers to be 100% satisfied! If you'renot, we'd be happy to help you exchange for another item or process a return. Click <a href=\"https://returns.narvar.com/calypsa/returns?locale=en_US\">here</a>.</p>",
+            "open": false
+          }
+        },
+        "accordion_bRXkje": {
+          "type": "accordion",
+          "settings": {
+            "title": "Where is my order?",
+            "content": "<p>Track your order using your order number & email address, or the tracking number you received in your shipment confirmation email at: <a href=\"https://calypsa.aftership.com/\">https://calypsa.aftership.com/</a></p>",
+            "open": false
+          }
+        },
+        "accordion_icHRwT": {
+          "type": "accordion",
+          "settings": {
+            "title": "My package arrived incomplete.",
+            "content": "<p>Your order arrived, but not all the items are in the package? Don’t worry- the rest of your order is on it’s way!<br/>Occasionally, we need to send your order in two or more shipments. There are no additional shipping charges for subsequent shipments for the same order. All packages will be delivered within the estimated delivery time you chose at checkout. You can find tracking for all shipments related to your Calypsa purchase here, using your order number and email address/phone number:<br/><a href=\"https://calypsa.aftership.com/\">https://calypsa.aftership.com/</a></p><p>Click <a href=\"https://help.calypsa.com/en-US/my-package-arrived-incomplete-89212\">here</a> for more info.</p>",
+            "open": false
+          }
+        },
+        "accordion-2": {
+          "type": "accordion",
+          "settings": {
+            "title": "How long will it take to get my package?",
+            "content": "<p>We offer a variety of shipping options for domestic US orders, and FREE standard shipping for orders of $50 or more!</p><p><strong>Shipping Method:</strong> Standard Shipping <br/><strong>Estimated Delivery Time:</strong> 3-6 Business Days<br/><strong>Rate: </strong>$2.95<br/>FREE shipping on orders<br/>of $50 or more</p><p><strong>Shipping Method: </strong>Expedited*<br/><strong>Estimated Delivery Time:</strong> 2-4 Business Days<br/><strong>Rate: </strong>$4.95</p><p> </p><p>*For Expedited Shipping : Orders must be placed by 2PM EST to be shipped the same day. Orders placed after 2PM EST will not ship until the next business day.</p><p>Expedited shipping: exclusions apply, not all items are eligible for expedited shipping. Available shipping methods will be shown at checkout. </p><p>Please note that estimated delivery times are based on business days which are considered Monday-Friday and do not include holidays.</p><p>Occasionally, we need to send your order in two or more shipments. Our shipping charge applies only to the first package shipped. There are no additional shipping charges for subsequent shipments for the same order.</p><p>If you need assistance tracking your order, our customer service team is here to help! Give us a call at 1-877-957-2883, email us, or chat with us live during business hours.</p>",
+            "open": false
+          }
+        },
+        "accordion_7qMt8G": {
+          "type": "accordion",
+          "settings": {
+            "title": "I forgot to apply my discount code.",
+            "content": "<p>If you forgot to apply your discount code our customer service would be happy to help! Chat with us live or Leave us a message!</p>",
+            "open": false
+          }
+        },
+        "accordion_g4fPQt": {
+          "type": "accordion",
+          "settings": {
+            "title": "I need to change my address or an item in my order.",
+            "content": "<p>Our warehouse begins processing your order shortly after it is placed. Once an order is made, it is difficult to cancel or change. Please check your order carefully before it is placed, to prevent mistakes! If you have a specific request, please contact us as soon as possible, and we will do our best to process the change/cancellation.</p>",
+            "open": false
+          }
+        },
+        "accordion_eTEHDK": {
+          "type": "accordion",
+          "settings": {
+            "title": "How can I reset my password for my account?",
+            "content": "<p>To reset your password, just click “Forgot Password” on the log in page. Please use the email address that is associated with your account. You will receive an email within minutes with a link to reset your password! Please check all your inboxes in case the email with the reset link doesn’t make it to your main inbox. Click <a href=\"https://help.calypsa.com/en-US/how-do-i-reset-my-password-13448\">here</a> for more info.</p>",
+            "open": false
+          }
+        },
+        "content_HED8xx": {
+          "type": "content",
+          "settings": {
+            "content": "<h3> <b> PRODUCT FAQ </b> </h3>"
+          }
+        },
+        "accordion_HMbXzw": {
+          "type": "accordion",
+          "settings": {
+            "title": "Does this top come with a built in bra?",
+            "content": "<p>You can see all the styles with a built-in-bra on this page: <a href=\"https://calypsa.com/new-arrivals/built-in-bra-style.html\">Built in Bra Styles<br/></a>The other swim tops do not have any built in chest support, so that they can fit a wider range of body shapes and sizes. We would recommend purchasing a swim bra to wear underneath the swim tops!</p>",
+            "open": false
+          }
+        },
+        "accordion_3ADCQw": {
+          "type": "accordion",
+          "settings": {
+            "title": "Do the swim skirts have attached shorts?",
+            "content": "<p>Yes, all of the swim skirts (skorts) have attached shorts or leggings except for our wrap skirts.</p>",
+            "open": false
+          }
+        },
+        "accordion_GUCFKm": {
+          "type": "accordion",
+          "settings": {
+            "title": "Can more coverage still be stylish?",
+            "content": "<p>Sure!Here at Calypsa, our customers are at the forefront of our minds. Inventing swimwear that's comfortable, confidence boosting and protects you is what drives us. <br/>We believe that class, comfort, coverage and chic are not mutually exclusive. Every woman is unique and has her own individual style. There is no right way to be stylish. It's up to you and your impeccable taste in fashion. The industry is pushing this as well by introducing more diverse styles including more covered styles into the market. With our wide variety of styles, you can choose the length and coverage that suits you.</p>",
+            "open": false
+          }
+        },
+        "accordion_fLtrCq": {
+          "type": "accordion",
+          "settings": {
+            "title": "How effective is the sun protection?",
+            "content": "<p>Our swimwear’s rating is <a href=\"https://calypsa.com/sun-protection\">UPF 50+</a>, which is the highest possible rating for clothing! That means it only allows 1/50th of the UV radiation to pass through it, blocking 98% of harmful rays. Though our swimwear provides the highest possible protection a swimsuit can provide, we still recommend the use of sunscreen.</p>",
+            "open": false
+          }
+        },
+        "accordion_FQ6adR": {
+          "type": "accordion",
+          "settings": {
+            "title": "Can this be used outside of the water?",
+            "content": "<p>Absolutely! Our swimwear is very versatile and suitable for all kinds of activities! Many of our customers share stories and images of them wearing our swimwear for yoga, working out at the gym, hiking, getting coffee with friends and running errands! Our swimwear is designed in a way that it can be worn for any and every activity you are doing throughout your day.</p>",
+            "open": false
+          }
+        },
+        "accordion_3j9gjm": {
+          "type": "accordion",
+          "settings": {
+            "title": "Can you help me find my size?",
+            "content": "<p>Find out how to get your ideal size <a href=\"https://calypsa.com/size-guide-in\">here</a>.</p>",
+            "open": false
+          }
+        },
+        "accordion_qHJDAG": {
+          "type": "accordion",
+          "settings": {
+            "title": "Help me color match my top to a bottom?",
+            "content": "<p>Check what our designers recommend <a href=\"https://calypsa.com/color-guide\">here</a>.</p>",
+            "open": false
+          }
+        },
+        "accordion-5": {
+          "type": "accordion",
+          "disabled": true,
+          "settings": {
+            "title": "Is buying on-line safe?",
+            "content": "<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>",
+            "open": false
+          }
+        },
+        "accordion-3": {
+          "type": "accordion",
+          "disabled": true,
+          "settings": {
+            "title": "Do you ship internationally?",
+            "content": "<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>",
+            "open": false
+          }
+        },
+        "accordion-1": {
+          "type": "accordion",
+          "disabled": true,
+          "settings": {
+            "title": "What shipping methods are availbale?",
+            "content": "<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.<br/><br/>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>",
+            "open": true
+          }
+        },
+        "accordion-4": {
+          "type": "accordion",
+          "disabled": true,
+          "settings": {
+            "title": "What payment methods are accepted?",
+            "content": "<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</p>",
+            "open": false
+          }
+        }
+      },
+      "block_order": [
+        "custom-content",
+        "content_V3JwTt",
+        "accordion_LYNFcg",
+        "accordion_bRXkje",
+        "accordion_icHRwT",
+        "accordion-2",
+        "accordion_7qMt8G",
+        "accordion_g4fPQt",
+        "accordion_eTEHDK",
+        "content_HED8xx",
+        "accordion_HMbXzw",
+        "accordion_3ADCQw",
+        "accordion_GUCFKm",
+        "accordion_fLtrCq",
+        "accordion_FQ6adR",
+        "accordion_3j9gjm",
+        "accordion_qHJDAG",
+        "accordion-5",
+        "accordion-3",
+        "accordion-1",
+        "accordion-4"
+      ],
+      "settings": {
+        "container": "container",
+        "color_scheme": "",
+        "menu": "",
+        "custom_class": ""
+      }
+    }
+  },
+  "order": [
+    "breadcrumb_RHyjx4",
+    "custom_content_tAfTRN",
+    "main"
+  ]
+}

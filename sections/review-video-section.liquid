@@ -1,0 +1,418 @@
+<style>
+  #shopify-section-{{ section.id }} .real-review-section{
+    padding-block: 49px 79px;
+    overflow: hidden;
+  }
+  
+  #shopify-section-{{ section.id }} .real-review-section :is(h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6) {
+    color: inherit;
+  }
+  #shopify-section-{{ section.id }} .review-row {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: calc((100% - 1325px)/2);
+}
+  #shopify-section-{{ section.id }} .review-heading-wrapper {
+    width: 49%;
+    padding-right: 50px;
+  }
+  #shopify-section-{{ section.id }} .real-review-wrapper {
+    width: 51%;
+  }
+    #shopify-section-{{ section.id }} .review-content-wrap span {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+}
+  #shopify-section-{{ section.id }} .review-content-wrap a {
+    text-decoration: underline;
+}
+  #shopify-section-{{ section.id }} .review-heading-wrapper h2{
+    font-size: 40px;
+    line-height: 1.08333333333;
+    font-weight: 400;
+    color: #000;
+    margin:0;
+    letter-spacing: 0;
+     font-family: "Raleway", sans-serif;
+  }
+  #shopify-section-{{ section.id }} .review-heading-wrapper h2 :is(b,strong) {
+    color: #519A66;
+    font-weight: 400;
+  }
+  #shopify-section-{{ section.id }} .review-heading-wrapper .review-txt {
+    font-size: 16px;
+    margin-bottom: 15px;
+    letter-spacing: 0;
+    margin-top: 20px;
+  }
+  #shopify-section-{{ section.id }} .review-heading-wrapper .review-txt p {
+    margin-bottom: 0;
+    font-size: 16px;
+  }
+  #shopify-section-{{ section.id }} .review-heading-wrapper img {
+    display: block;
+  }
+   #shopify-section-{{ section.id }} .new-btn {
+    display: inline-flex;
+    font-size: 20px;
+    color: #fff;
+    background: linear-gradient(90deg, #15ABBA 0%, #D791B2 100%);
+    border-radius: 34px;
+    letter-spacing: 0;
+    max-width: 399px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    padding: 18px 10px;
+}
+  .review-content-wrap {
+    display: flex;
+    gap: 9px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+  
+  #shopify-section-{{ section.id }} .real-review-wrapper .new-btn { 
+    display: none;
+  }
+  
+ 
+   #shopify-section-{{ section.id }} .real-review-section .review-bottom-text {
+    margin-top: auto;
+}
+    #shopify-section-{{ section.id }} .real-review-section .review-text-box {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      padding-top: 30px;
+  }
+  #shopify-section-{{ section.id }} .real-review-slider .swiper-slide {
+    width: 177px;
+    height: auto;
+    min-height: 100%;
+  }
+  #shopify-section-{{ section.id }} .review-item{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  #shopify-section-{{ section.id }} .review-item .video-triger {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    display: flex;
+    cursor: pointer;
+  }
+  #shopify-section-{{ section.id }} .review-item.video {
+    aspect-ratio: 0.77 / 1;
+  }
+  #shopify-section-{{ section.id }} .review-item.video .video-wrapper{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 3;
+    transition: opacity ease-in-out 0.3s;
+  }
+  #shopify-section-{{ section.id }} .review-item :is(video,img) {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  #shopify-section-{{ section.id }} .review-item.video.played .video-wrapper{
+    opacity: 1;
+    visibility: visible;
+  }
+  .review-content-wrap strong {
+    display: block;
+}
+  .real-review-slider:not(.swiper-initialized) .swiper-slide{
+      width: calc(35% - 15px);
+      margin-right: 20px;
+    }
+  @media (max-width: 1300px) {
+    #shopify-section-{{ section.id }} .review-row {
+        padding-left: 16px;
+    }
+    #shopify-section-{{ section.id }} .review-content-wrap span {
+      font-size: 14px;
+  }
+    #shopify-section-{{ section.id }} .review-heading-wrapper {
+      padding-right: 40px;
+  }
+  }
+  @media (max-width: 991px) {
+    #shopify-section-{{ section.id }} .review-heading-wrapper {
+      width: 100%;
+      padding-right: 0;
+      text-align: center;
+    }
+    #shopify-section-{{ section.id }} .real-review-section .review-text-box {
+      padding: 34px 24px 10px;
+  }
+    #shopify-section-{{ section.id }} .review-row {
+      padding-left: 0;
+  }
+    #shopify-section-{{ section.id }} .real-review-section {
+        padding-block: 0 0;
+    }
+    .review-content-wrap {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        margin-bottom: 20px;
+        flex-direction: column;
+    }
+    #shopify-section-{{ section.id }} .review-heading-wrapper h2 {
+      font-size: 40px;
+      max-width: 385px;
+      width: 100%;
+      margin-inline: auto;
+    }
+    #shopify-section-{{ section.id }} .review-heading-wrapper img {
+      margin-inline: auto;
+      max-width: 117px;
+  }
+   #shopify-section-{{ section.id }} .review-content-wrap strong {
+      display: none;
+  }
+    #shopify-section-{{ section.id }} .review-heading-wrapper .review-txt {
+    font-size: 16px;
+    margin: 15px 0;
+    font-weight: 700;
+}
+    #shopify-section-{{ section.id }} .real-review-wrapper .new-btn { 
+      display: inline-flex;
+      padding: 12px;
+      max-width: 100%;
+      margin-top: 18px;
+   }
+    #shopify-section-{{ section.id }} .review-heading-wrapper .new-btn { 
+      /* display: none; */
+    }
+    #shopify-section-{{ section.id }} .real-review-wrapper {
+      width: 100%;
+    }
+    #shopify-section-{{ section.id }} .real-review-slider .swiper-slide {
+      width: 132px;
+    }
+    #shopify-section-{{ section.id }} .real-review-slider .swiper { 
+      margin-inline: -16px;
+      padding-inline: 16px;
+    }
+    #shopify-section-{{ section.id }} .review-item .video-triger svg{
+      width: 48px;
+      height: 47px;
+    }
+  }
+</style>
+<section data-section-id="{{ section.id }}" style="background: {{ section.settings.background }};color: {{ section.settings.txt_color }};"
+  class="real-review-section">
+    <div class="review-row">
+      <div class="review-heading-wrapper">
+        <div class="review-text-box">
+          <div class="review-content-wrap">
+          {%- if section.settings.review_image != blank -%}
+            <img
+              src="{{ section.settings.review_image | image_url }}"
+              class="review-img"
+              alt="{{ section.settings.review_image.alt | default: section.settings.heading | strip_html }}"
+              width="{{ section.settings.review_image.width }}"
+              height="{{ section.settings.review_image.height }}"
+              loading="lazy" />
+          {%- endif -%}
+          <span>{{ section.settings.review_text }}</span>
+          </div>
+          {%- if section.settings.heading != blank -%}
+            <h2 class="review-heading">{{ section.settings.heading }}</h2>
+          {%- endif -%}
+          <div class="review-bottom-text">
+           {%- if section.settings.txt != blank -%}
+            <div class="review-txt">
+             {{ section.settings.txt }}
+             </div>
+          {%- endif -%}
+          {%- if section.settings.btn_txt != blank -%}
+            <a class="new-btn" href="{{ section.settings.btn_url }}">{{ section.settings.btn_txt }}</a>
+          {%- endif -%}
+          </div>
+        </div>
+      </div>
+      <div class="real-review-wrapper">
+        <div class="real-review-slider">
+          <div class="swiper review-{{ section.id }}">
+            <div class="swiper-wrapper">
+              {%- for block in section.blocks -%}
+                <div class="swiper-slide">
+                  <div class="review-item video">
+                    {% if block.settings.video_poster != blank %}
+                        <img class="video-poster"
+                          src="{{ block.settings.video_poster |  image_url: width:900  }}"
+                          width="{{ block.settings.video_poster.width }}"
+                          height="{{ block.settings.video_poster.height }}"
+                          loading="lazy" />
+                      {% if block.settings.video != blank %}
+                        <div class="video-wrapper">{{ block.settings.video | video_tag: loop: true,muted: false,controls: true }}</div>
+                        <a href="#" class="video-triger">
+                          <svg width="66" height="65" viewBox="0 0 66 65" fill="none"><circle cx="32.7327" cy="32.4839" r="32.3655" fill="#737373" fill-opacity="0.5"/><path d="M47.812 31.1748C48.7593 31.7217 48.7593 33.089 47.812 33.6359L26.1429 46.1466C25.1956 46.6935 24.0115 46.0098 24.0115 44.916L24.0115 19.8947C24.0115 18.8009 25.1956 18.1172 26.1429 18.6641L47.812 31.1748Z" fill="white"/></svg>
+                        </a>
+                      {% endif %}
+                    {% endif %}
+                  </div>
+                </div>
+              {%- endfor -%}
+            </div>
+          </div>
+        </div>
+        {%- if section.settings.mobile_btn_txt != blank -%}
+          <a class="new-btn" href="{{ section.settings.mobile_btn_url }}">{{ section.settings.mobile_btn_txt }}</a>
+        {%- endif -%}
+
+          
+        
+      </div>
+    </div>
+</section>
+<script>
+window.addEventListener("load", (event) => {
+  var slider = new Swiper('.review-{{ section.id }}', {
+    slidesPerView: '2.2',
+    spaceBetween: 10,
+    navigation: {
+      nextEl: '.swiper-{{ section.id }}-next',
+      prevEl: '.swiper-{{ section.id }}-prev',
+    },
+    breakpoints: {
+      767: {
+         slidesPerView: '3.5',
+        spaceBetween: 12
+      },
+       992: {
+         slidesPerView: '2.5',
+        spaceBetween: 12
+      }
+    }
+  });
+
+  const playButtons = document.querySelectorAll('.review-item.video');
+  let currentPlayingVideo = null; // Track the currently playing video
+  
+  playButtons.forEach(playButton => {
+    playButton.addEventListener('click', function (event) {
+      event.preventDefault();
+
+      const videoWrapper = this;
+      if (!videoWrapper) return;
+
+      const video = videoWrapper.querySelector('video');
+      if (!video) return;
+
+      // If the clicked video is already playing, stop and reset it
+      if (currentPlayingVideo === video) {
+          videoWrapper.classList.remove('played');
+          video.pause();
+          video.currentTime = 0; // Reset video to the beginning
+          currentPlayingVideo = null;
+      } else {
+          // Stop currently playing video before playing the new one
+          if (currentPlayingVideo) {
+              currentPlayingVideo.pause();
+              currentPlayingVideo.currentTime = 0;
+              currentPlayingVideo.closest('.review-item.video')?.classList.remove('played');
+          }
+
+          // Play the new video
+          videoWrapper.classList.add('played');
+          video.play();
+          currentPlayingVideo = video;
+      }
+    });
+  });
+
+  
+});
+</script>
+
+{% schema %}
+{
+    "name": "Review Video Section",
+    "disabled_on": {
+        "groups": ["header", "footer"]
+    },
+    "settings": [
+      {
+        "type": "color_background",
+        "id": "background",
+        "label": "Background Color"
+      },
+      {
+        "type": "color",
+        "id": "txt_color",
+        "label": "Text Color"
+      },
+      
+      {
+        "type": "image_picker",
+        "id": "review_image",
+        "label": "Select Review Image"
+      },
+       {
+        "type": "inline_richtext",
+        "id": "review_text",
+        "label": "Review Text"
+      },
+      {
+        "type": "inline_richtext",
+        "id": "heading",
+        "label": "Heading",
+      },
+      {
+        "type": "richtext",
+        "id": "txt",
+        "label": "Text",
+      },
+      {
+        "type": "text",
+        "id": "btn_txt",
+        "label": "destop Button Text"
+      },
+      {
+        "type": "url",
+        "id": "btn_url",
+        "label": "destop Button Link"
+      }
+      
+    ],
+    "blocks": [
+        {
+            "type": "video",
+            "name": "Video Block",
+            "settings": [
+                {
+                  "type": "image_picker",
+                  "id": "video_poster",
+                  "label": "Select Image"
+                },
+                {
+                  "type": "video",
+                  "id": "video",
+                  "label": "Select Video"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "Review Video Section"
+        }
+    ]
+}
+{% endschema %}

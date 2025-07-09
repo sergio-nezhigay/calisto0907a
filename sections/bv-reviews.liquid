@@ -1,0 +1,21 @@
+{% assign selected_variant = product.variants | where: "option1", "M" | first %}
+{% if selected_variant == blank %}
+  {% assign selected_variant = product.variants | first %}
+{% endif %}
+
+<div data-bv-show="reviews" data-bv-product-id="{{ selected_variant.sku }}"></div>
+
+{% schema %}
+{
+  "name": "Bazaarvoice Reviews",
+  "tag": "section",
+  "class": "bazaarvoice-reviews",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Bazaarvoice Reviews",
+      "category": "Product"
+    }
+  ]
+}
+{% endschema %}

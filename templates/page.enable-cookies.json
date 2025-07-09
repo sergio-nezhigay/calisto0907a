@@ -1,0 +1,67 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "page",
+      "disabled": true,
+      "settings": {}
+    },
+    "custom_content_wzPtji": {
+      "type": "custom-content",
+      "blocks": {
+        "text_kfzHiW": {
+          "type": "text",
+          "settings": {
+            "title": "",
+            "subheading": "",
+            "text": "<ul><li>Please enable cookies in your web browser to continue.</li></ul><h4><strong>What are Cookies?</strong></h4><p>Cookies are short pieces of data that are sent to your computer when you visit a website. On later visits, this data is then returned to that website. Cookies allow us to recognize you automatically whenever you visit our site so that we can personalize your experience and provide you with better service. We also use cookies (and similar browser data, such as Flash cookies) for fraud prevention and other purposes. If your web browser is set to refuse cookies from our website, you will not be able to complete a purchase or take advantage of certain features of our website, such as storing items in your Shopping Cart or receiving personalized recommendations. As a result, we strongly encourage you to configure your web browser to accept cookies from our website.</p><h4><strong>Enabling Cookies</strong></h4><ul><li><a href=\"https://calypsa.com/enable-cookies#ie7\">Internet Explorer 7.x</a></li><li><a href=\"https://calypsa.com/enable-cookies#ie6\">Internet Explorer 6.x</a></li><li><a href=\"https://calypsa.com/enable-cookies#firefox\">Mozilla/Firefox</a></li><li><a href=\"https://calypsa.com/enable-cookies#opera\">Opera 7.x</a></li></ul><h4><strong>Internet Explorer 7.x</strong></h4><ol><li>Start Internet Explorer</li><li>Under the <strong>Tools</strong> menu, click <strong>Internet Options</strong></li><li>Click the <strong>Privacy</strong> tab</li><li>Click the <strong>Advanced</strong> button</li><li>Put a check mark in the box for <strong>Override Automatic Cookie Handling</strong>, put another check mark in the <strong>Always accept session cookies </strong>box</li><li>Click <strong>OK</strong></li><li>Click <strong>OK</strong></li><li>Restart Internet Explore</li></ol><p><a href=\"https://calypsa.com/enable-cookies#top\">Back to Top</a></p><h4><strong>Internet Explorer 6.x</strong></h4><ol><li>Select <strong>Internet Options</strong> from the Tools menu</li><li>Click on the <strong>Privacy</strong> tab</li><li>Click the <strong>Default</strong> button (or manually slide the bar down to <strong>Medium</strong>) under <strong>Settings</strong>. Click <strong>OK</strong></li></ol><p><a href=\"https://calypsa.com/enable-cookies#top\">Back to Top</a></p><h4><strong>Mozilla/Firefox</strong></h4><ol><li>Click on the <strong>Tools</strong>-menu in Mozilla</li><li>Click on the <strong>Options...</strong> item in the menu - a new window open</li><li>Click on the <strong>Privacy</strong> selection in the left part of the window. (See image below)</li><li>Expand the <strong>Cookies</strong> section</li><li>Check the <strong>Enable cookies</strong> and <strong>Accept cookies normally</strong> checkboxes</li><li>Save changes by clicking <strong>Ok</strong>.</li></ol><p><a href=\"https://calypsa.com/enable-cookies#top\">Back to Top</a></p><h4><strong>Opera 7.x</strong></h4><ol><li>Click on the <strong>Tools</strong> menu in Opera</li><li>Click on the <strong>Preferences...</strong> item in the menu - a new window open</li><li>Click on the <strong>Privacy</strong> selection near the bottom left of the window. (See image below)</li><li>The <strong>Enable cookies</strong> checkbox must be checked, and <strong>Accept all cookies</strong> should be selected in the \"<strong>Normal cookies</strong>\" drop-down</li><li>Save changes by clicking <strong>Ok</strong></li></ol><p><a href=\"https://calypsa.com/enable-cookies#top\">Back to Top</a></p>",
+            "width": "100%",
+            "alignment": "center",
+            "align_text": "left",
+            "text_size": "medium",
+            "text_color": "black",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "m-button--primary",
+            "button_size": "",
+            "block_custom_class": "",
+            "animations": "inherit"
+          }
+        }
+      },
+      "block_order": [
+        "text_kfzHiW"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_size": "h3",
+        "subheading": "",
+        "description": "",
+        "header_alignment": "center",
+        "container": "container-fluid",
+        "color_scheme": "",
+        "content_color_scheme": "",
+        "enable_parallax": false,
+        "parallax_direction": "vertical",
+        "gap": 0,
+        "gap_mobile": 0,
+        "use_scroll_mobile": false,
+        "padding_top": 50,
+        "padding_bottom": 0,
+        "custom_class": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "custom_content_wzPtji"
+  ]
+}

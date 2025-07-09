@@ -1,0 +1,47 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "parent": "product.json",
+  "context": {
+    "market": "au"
+  },
+  "sections": {
+    "product-details-tabs": {
+      "settings": {},
+      "blocks": {
+        "tab": {
+          "settings": {
+            "content": "<p><strong>Shipping</strong></p><p>FREE AU, NZ & SG standard shipping on orders of A$70 or more </p><p>Estimated A$9.70 flat rate for orders under A$70</p><p> </p><p>Australia- All Regions 8 -15 Business Days</p><p>New Zealand: 13 -30 Business Days</p><p>Singapore: 13 -30 Business Days</p><p>Available shipping options will be updated in checkout based on the shipping address entered</p><p><br/>Our team is available for any questions you might have.<br/>Contact us at <a href=\"https://calypsa.com/au/mailto:hello@calypsa.com\">hello@calypsa.com</a> anytime / chat with us live during business hours.</p><p><strong>Returns</strong></p><p><strong>We offer 2 easy options:</strong></p><ul><li>Receive a Calypsa store credit for the full price of your purchase*</li><li>Receive a full refund for your order*</li></ul><p>* Shipping and handling not included. Customers are responsible for the return shipping cost. <br/>* All bikini bottoms, Vacation suncare products and sunglasses are not eligible for returns or exchanges.</p><p><br/><a href=\"https://calypsa.gorgias.help/en-US/australia-return-policy-12958\"><span style=\"text-decoration:underline\">Learn More About Our Return Policy</span></a></p><p><a href=\"https://help.calypsa.com/en-US\"><span style=\"text-decoration:underline\">Need More Help? </span></a>+61 3 9000 0548</p>"
+          }
+        }
+      }
+    },
+    "main": {
+      "settings": {},
+      "blocks": {
+        "shipping_VBJFtx": {
+          "settings": {
+            "shipping_text": "<p>Free Shipping On all orders over $85</p>"
+          }
+        }
+      }
+    },
+    "icon_box_9UtNky": {
+      "settings": {},
+      "blocks": {
+        "iconbox_pJbJGA": {
+          "settings": {
+            "description": "<p>Enjoy FREE standard shipping on orders of $80+</p>"
+          }
+        }
+      }
+    }
+  }
+}

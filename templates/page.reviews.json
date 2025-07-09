@@ -1,0 +1,156 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "page",
+      "disabled": true,
+      "settings": {}
+    },
+    "custom_content_Q9xPPK": {
+      "type": "custom-content",
+      "blocks": {
+        "image_card_36E3Wg": {
+          "type": "image_card",
+          "settings": {
+            "width": "100%",
+            "color_scheme": "",
+            "content_position": "center_center",
+            "content_alignment": "center",
+            "text_size": "medium",
+            "text_color": "inherit",
+            "image": "shopify://shop_images/banner_ustomer_Reviews_DT.png",
+            "mobile_image": "shopify://shop_images/banner_Customer_Reviews_MB.png",
+            "link": "",
+            "title": "",
+            "subtitle": "",
+            "description": "",
+            "button_label": "",
+            "button_style": "m-button--primary",
+            "button_size": "",
+            "button_fixed": false,
+            "use_content_above": false,
+            "block_custom_class": "",
+            "animations": "inherit"
+          }
+        }
+      },
+      "block_order": [
+        "image_card_36E3Wg"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_size": "h3",
+        "subheading": "",
+        "description": "",
+        "header_alignment": "center",
+        "container": "container-fluid",
+        "color_scheme": "",
+        "content_color_scheme": "",
+        "enable_parallax": false,
+        "parallax_direction": "vertical",
+        "gap": 30,
+        "gap_mobile": 16,
+        "use_scroll_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "custom_class": ""
+      }
+    },
+    "custom_liquid_cYhz3X": {
+      "type": "custom-liquid",
+      "name": "Custom liquid",
+      "settings": {
+        "custom_liquid": "<!-- TrustBox widget - Grid -->\n<div class=\"trustpilot-widget\" data-locale=\"en-US\" data-template-id=\"539adbd6dec7e10e686debee\" data-businessunit-id=\"616da1d3b02a51b57fd86758\" data-style-height=\"500px\" data-style-width=\"100%\" data-stars=\"4,5\" data-review-languages=\"en\">\n  <a href=\"https://www.trustpilot.com/review/calypsa.com\" target=\"_blank\" rel=\"noopener\">Trustpilot</a>\n</div>\n<!-- End TrustBox widget -->",
+        "custom_class": ""
+      }
+    },
+    "empty_space_Vhc8LV": {
+      "type": "empty-space",
+      "name": "Empty space",
+      "settings": {
+        "container": "container-fluid",
+        "color_scheme": "",
+        "show_divider_line": true,
+        "divider_style": "solid",
+        "divider_height": 1,
+        "padding_top": 48,
+        "padding_bottom": 0,
+        "custom_class": ""
+      }
+    },
+    "rich_text_fxgkB4": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_XdA8px": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "",
+            "heading_size": "h2"
+          }
+        },
+        "text_PypxYV": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post.<br> Add details on availability, style, or even provide a review.</p>"
+          }
+        },
+        "button_Tz6D4Y": {
+          "type": "button",
+          "settings": {
+            "button_label": "Find the Perfect Fit – View Our Product Guide",
+            "button_link": "shopify://pages/product-guide",
+            "button_style": "m-button--primary",
+            "button_size": "m-button--large"
+          }
+        }
+      },
+      "block_order": [
+        "heading_XdA8px",
+        "text_PypxYV",
+        "button_Tz6D4Y"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "container": "container",
+        "color_scheme": "",
+        "content_alignment": "center",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "empty_space_YRafe4": {
+      "type": "empty-space",
+      "name": "Empty space",
+      "settings": {
+        "container": "container-fluid",
+        "color_scheme": "",
+        "show_divider_line": true,
+        "divider_style": "solid",
+        "divider_height": 1,
+        "padding_top": 48,
+        "padding_bottom": 0,
+        "custom_class": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "custom_content_Q9xPPK",
+    "custom_liquid_cYhz3X",
+    "empty_space_Vhc8LV",
+    "rich_text_fxgkB4",
+    "empty_space_YRafe4"
+  ]
+}

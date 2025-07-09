@@ -1,0 +1,496 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "page",
+      "disabled": true,
+      "settings": {}
+    },
+    "slider_wTzXyX": {
+      "type": "slider",
+      "blocks": {
+        "slider_item_f6eRPk": {
+          "type": "slider_item",
+          "settings": {
+            "background": "shopify://shop_images/2023_07_WHY_WOMEN_CHOOSE_CALYPSA_LP_V3-_Desktop__04.jpg",
+            "mb_background": "shopify://shop_images/2023_07_WHY_WOMEN_CHOOSE_CALYPSA_LP_V3-_Mobile__03.jpg",
+            "content_in_container": false,
+            "content_position": "center middle",
+            "text_alignment": "center",
+            "text_size": "medium",
+            "text_color": "black",
+            "subheading": "",
+            "title": "",
+            "description": "",
+            "image_link": "",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "m-button--primary",
+            "button_size": "",
+            "second_button_text": "",
+            "second_button_link": "",
+            "second_button_style": "m-button--primary",
+            "second_button_size": "",
+            "show_footer": false,
+            "footer_alignment": "end",
+            "footer_text": "New Collection",
+            "footer_button": "Shop Now",
+            "footer_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "slider_item_f6eRPk"
+      ],
+      "settings": {
+        "container": "container",
+        "slideshow_height": "adapt",
+        "show_overlay": false,
+        "dots_position": "bottom",
+        "dots_color": "dark",
+        "show_dots": true,
+        "show_arrows": false,
+        "autorotate": true,
+        "autorotate_speed": 3,
+        "use_content_above": false,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "slider_HkWLTB": {
+      "type": "slider",
+      "blocks": {
+        "slider_item_4tywbL": {
+          "type": "slider_item",
+          "settings": {
+            "background": "shopify://shop_images/2023_07_WHY_WOMEN_CHOOSE_CALYPSA_LP_V3-_Desktop_-Slice_07.jpg",
+            "mb_background": "shopify://shop_images/2023_07_WHY_WOMEN_CHOOSE_CALYPSA_LP_V3-_Mobile__04.jpg",
+            "content_in_container": false,
+            "content_position": "center middle",
+            "text_alignment": "center",
+            "text_size": "medium",
+            "text_color": "black",
+            "subheading": "",
+            "title": "",
+            "description": "",
+            "image_link": "",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "m-button--primary",
+            "button_size": "",
+            "second_button_text": "",
+            "second_button_link": "",
+            "second_button_style": "m-button--primary",
+            "second_button_size": "",
+            "show_footer": false,
+            "footer_alignment": "end",
+            "footer_text": "New Collection",
+            "footer_button": "Shop Now",
+            "footer_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "slider_item_4tywbL"
+      ],
+      "settings": {
+        "container": "container",
+        "slideshow_height": "adapt",
+        "show_overlay": false,
+        "dots_position": "bottom",
+        "dots_color": "dark",
+        "show_dots": true,
+        "show_arrows": false,
+        "autorotate": true,
+        "autorotate_speed": 3,
+        "use_content_above": false,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "slider_reRnAW": {
+      "type": "slider",
+      "blocks": {
+        "slider_item_mkqXFh": {
+          "type": "slider_item",
+          "settings": {
+            "background": "shopify://shop_images/2023_07_WHY_WOMEN_CHOOSE_CALYPSA_LP_V3-_Desktop_-Slice_08.jpg",
+            "mb_background": "shopify://shop_images/2023_07_WHY_WOMEN_CHOOSE_CALYPSA_LP_V3-_Mobile__05.jpg",
+            "content_in_container": false,
+            "content_position": "center middle",
+            "text_alignment": "center",
+            "text_size": "medium",
+            "text_color": "black",
+            "subheading": "",
+            "title": "",
+            "description": "",
+            "image_link": "",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "m-button--primary",
+            "button_size": "",
+            "second_button_text": "",
+            "second_button_link": "",
+            "second_button_style": "m-button--primary",
+            "second_button_size": "",
+            "show_footer": false,
+            "footer_alignment": "end",
+            "footer_text": "New Collection",
+            "footer_button": "Shop Now",
+            "footer_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "slider_item_mkqXFh"
+      ],
+      "settings": {
+        "container": "container",
+        "slideshow_height": "adapt",
+        "show_overlay": false,
+        "dots_position": "bottom",
+        "dots_color": "dark",
+        "show_dots": true,
+        "show_arrows": false,
+        "autorotate": true,
+        "autorotate_speed": 3,
+        "use_content_above": false,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "slider_zhqThg": {
+      "type": "slider",
+      "blocks": {
+        "slider_item_FAP7XQ": {
+          "type": "slider_item",
+          "settings": {
+            "background": "shopify://shop_images/2023_07_WHY_WOMEN_CHOOSE_CALYPSA_LP_V3-_Desktop_-Slice_09.jpg",
+            "mb_background": "shopify://shop_images/2023_07_WHY_WOMEN_CHOOSE_CALYPSA_LP_V3-_Mobile__06.jpg",
+            "content_in_container": false,
+            "content_position": "center middle",
+            "text_alignment": "center",
+            "text_size": "medium",
+            "text_color": "black",
+            "subheading": "",
+            "title": "",
+            "description": "",
+            "image_link": "",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "m-button--primary",
+            "button_size": "",
+            "second_button_text": "",
+            "second_button_link": "",
+            "second_button_style": "m-button--primary",
+            "second_button_size": "",
+            "show_footer": false,
+            "footer_alignment": "end",
+            "footer_text": "New Collection",
+            "footer_button": "Shop Now",
+            "footer_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "slider_item_FAP7XQ"
+      ],
+      "settings": {
+        "container": "container",
+        "slideshow_height": "adapt",
+        "show_overlay": false,
+        "dots_position": "bottom",
+        "dots_color": "dark",
+        "show_dots": true,
+        "show_arrows": false,
+        "autorotate": true,
+        "autorotate_speed": 3,
+        "use_content_above": false,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "slider_VtDyWy": {
+      "type": "slider",
+      "blocks": {
+        "slider_item_nzyURF": {
+          "type": "slider_item",
+          "settings": {
+            "background": "shopify://shop_images/Group_15.png",
+            "mb_background": "shopify://shop_images/2023_07_WHY_WOMEN_CHOOSE_CALYPSA_LP_V3-_Mobile__07.jpg",
+            "content_in_container": false,
+            "content_position": "center middle",
+            "text_alignment": "center",
+            "text_size": "medium",
+            "text_color": "black",
+            "subheading": "",
+            "title": "",
+            "description": "",
+            "image_link": "",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "m-button--primary",
+            "button_size": "",
+            "second_button_text": "",
+            "second_button_link": "",
+            "second_button_style": "m-button--primary",
+            "second_button_size": "",
+            "show_footer": false,
+            "footer_alignment": "end",
+            "footer_text": "New Collection",
+            "footer_button": "Shop Now",
+            "footer_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "slider_item_nzyURF"
+      ],
+      "settings": {
+        "container": "container",
+        "slideshow_height": "adapt",
+        "show_overlay": false,
+        "dots_position": "bottom",
+        "dots_color": "dark",
+        "show_dots": true,
+        "show_arrows": false,
+        "autorotate": true,
+        "autorotate_speed": 3,
+        "use_content_above": false,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "empty_space_ppAzxy": {
+      "type": "empty-space",
+      "settings": {
+        "container": "container-fluid",
+        "color_scheme": "",
+        "show_divider_line": false,
+        "divider_style": "solid",
+        "divider_height": 1,
+        "padding_top": 40,
+        "padding_bottom": 0,
+        "custom_class": ""
+      }
+    },
+    "slider_ckEDc7": {
+      "type": "slider",
+      "blocks": {
+        "slider_item_t4aiGV": {
+          "type": "slider_item",
+          "settings": {
+            "background": "shopify://shop_images/2023_07_WHY_WOMEN_CHOOSE_CALYPSA_LP_V3-_Desktop_-Slice_17.jpg",
+            "mb_background": "shopify://shop_images/Group_15_1.png",
+            "content_in_container": false,
+            "content_position": "center middle",
+            "text_alignment": "center",
+            "text_size": "medium",
+            "text_color": "black",
+            "subheading": "",
+            "title": "",
+            "description": "",
+            "image_link": "",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "m-button--primary",
+            "button_size": "",
+            "second_button_text": "",
+            "second_button_link": "",
+            "second_button_style": "m-button--primary",
+            "second_button_size": "",
+            "show_footer": false,
+            "footer_alignment": "end",
+            "footer_text": "New Collection",
+            "footer_button": "Shop Now",
+            "footer_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "slider_item_t4aiGV"
+      ],
+      "settings": {
+        "container": "container",
+        "slideshow_height": "adapt",
+        "show_overlay": false,
+        "dots_position": "bottom",
+        "dots_color": "dark",
+        "show_dots": true,
+        "show_arrows": false,
+        "autorotate": true,
+        "autorotate_speed": 3,
+        "use_content_above": false,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "slider_3WQw7k": {
+      "type": "slider",
+      "blocks": {
+        "slider_item_8PyDhx": {
+          "type": "slider_item",
+          "settings": {
+            "background": "shopify://shop_images/2023_07_WHY_WOMEN_CHOOSE_CALYPSA_LP_V3-_Desktop_-Slice_19.jpg",
+            "mb_background": "shopify://shop_images/2023_07_WHY_WOMEN_CHOOSE_CALYPSA_LP_V3-_Mobile__10.jpg",
+            "content_in_container": false,
+            "content_position": "center middle",
+            "text_alignment": "center",
+            "text_size": "medium",
+            "text_color": "black",
+            "subheading": "",
+            "title": "",
+            "description": "",
+            "image_link": "",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "m-button--primary",
+            "button_size": "",
+            "second_button_text": "",
+            "second_button_link": "",
+            "second_button_style": "m-button--primary",
+            "second_button_size": "",
+            "show_footer": false,
+            "footer_alignment": "end",
+            "footer_text": "New Collection",
+            "footer_button": "Shop Now",
+            "footer_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "slider_item_8PyDhx"
+      ],
+      "settings": {
+        "container": "container",
+        "slideshow_height": "adapt",
+        "show_overlay": false,
+        "dots_position": "bottom",
+        "dots_color": "dark",
+        "show_dots": true,
+        "show_arrows": false,
+        "autorotate": true,
+        "autorotate_speed": 3,
+        "use_content_above": false,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "slider_cJyFqc": {
+      "type": "slider",
+      "settings": {
+        "container": "container",
+        "slideshow_height": "adapt",
+        "show_overlay": false,
+        "dots_position": "bottom",
+        "dots_color": "dark",
+        "show_dots": true,
+        "show_arrows": false,
+        "autorotate": true,
+        "autorotate_speed": 3,
+        "use_content_above": false,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "rich_text_gxUTYk": {
+      "type": "rich-text",
+      "blocks": {
+        "button_ptWxQb": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop all swimwear",
+            "button_link": "shopify://collections/all-1",
+            "button_style": "m-button--primary",
+            "button_size": ""
+          }
+        }
+      },
+      "block_order": [
+        "button_ptWxQb"
+      ],
+      "settings": {
+        "container": "container",
+        "color_scheme": "",
+        "content_alignment": "center",
+        "padding_top": 0,
+        "padding_bottom": 60,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "slider_VeMXwf": {
+      "type": "slider",
+      "blocks": {
+        "slider_item_e6hUtj": {
+          "type": "slider_item",
+          "settings": {
+            "background": "shopify://shop_images/2023_07_WHY_WOMEN_CHOOSE_CALYPSA_LP_V3-_Desktop_-Slice_02.jpg",
+            "mb_background": "shopify://shop_images/2023_07_WHY_WOMEN_CHOOSE_CALYPSA_LP_V3-_Mobile__02.jpg",
+            "content_in_container": false,
+            "content_position": "center middle",
+            "text_alignment": "center",
+            "text_size": "medium",
+            "text_color": "black",
+            "subheading": "",
+            "title": "",
+            "description": "",
+            "image_link": "",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "m-button--primary",
+            "button_size": "",
+            "second_button_text": "",
+            "second_button_link": "",
+            "second_button_style": "m-button--primary",
+            "second_button_size": "",
+            "show_footer": false,
+            "footer_alignment": "end",
+            "footer_text": "New Collection",
+            "footer_button": "Shop Now",
+            "footer_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "slider_item_e6hUtj"
+      ],
+      "settings": {
+        "container": "w-full",
+        "slideshow_height": "adapt",
+        "show_overlay": false,
+        "dots_position": "bottom",
+        "dots_color": "dark",
+        "show_dots": true,
+        "show_arrows": false,
+        "autorotate": true,
+        "autorotate_speed": 3,
+        "use_content_above": false,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "slider_wTzXyX",
+    "slider_HkWLTB",
+    "slider_reRnAW",
+    "slider_zhqThg",
+    "slider_VtDyWy",
+    "empty_space_ppAzxy",
+    "slider_ckEDc7",
+    "slider_3WQw7k",
+    "slider_cJyFqc",
+    "rich_text_gxUTYk",
+    "slider_VeMXwf"
+  ]
+}

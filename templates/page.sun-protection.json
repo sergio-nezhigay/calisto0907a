@@ -1,0 +1,330 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "page",
+      "disabled": true,
+      "settings": {}
+    },
+    "image_with_text_2_9nkJzN": {
+      "type": "image-with-text-2",
+      "settings": {
+        "color_scheme": "",
+        "container": "w-full",
+        "hero_size": "adapt",
+        "show_overlay": false,
+        "image": "shopify://shop_images/UPF_50_Sun.png",
+        "image_link": "shopify://collections/sun-protection-swimwear",
+        "parallax": false,
+        "parallax_direction": "vertical",
+        "content_in_container": false,
+        "content_position": "center middle",
+        "text_alignment": "center",
+        "text_size": "medium",
+        "text_color": "white",
+        "title": "",
+        "subtitle": "",
+        "text": "",
+        "button_label": "",
+        "button_link": "shopify://collections/sun-protection-swimwear",
+        "button_style": "m-button--primary",
+        "button_size": "",
+        "text_alignment_mobile": "center",
+        "mb_image": "shopify://shop_images/UPF_50_Sun_430_x_507.png",
+        "use_content_above": false,
+        "custom_class": "",
+        "animations": "inherit",
+        "enable_bg_zoom_effect": true
+      }
+    },
+    "rich_text_rtFWhh": {
+      "type": "rich-text",
+      "blocks": {
+        "text_TitrXk": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Ultraviolet Protection Factor (or “UPF”) rating measures the UV protection provided by a fabric.<br/>It is similar to the SPF rating system used for sunscreen products. This rating indicates how much<br/>UV radiation a fabric allows to reach your skin.</p><p>Calypsa’s swimwear’s rating is UPF 50+, which is the highest possible rating. That means it only allows<br/>1/50th of the UV radiation to pass through it — blocking 98% of harmful rays. However, the use of<br/>sunscreen is still recommended, no clothing can completely block out UV rays.<br/>UV radiation a fabric allows to reach your skin.</p><p>Note: there are several factors that may affect the level of UV protection. Most fabrics<br/>lose some of their UV protection if the garment is stretched out or worn, or if it has<br/>been washed repeatedly. Also, when the garment is damp or wet, the amount of<br/>UV protection is typically reduced. Lighter colors also tend to lose more of their sun<br/>protection when damp or wet than darker colors.</p>"
+          }
+        },
+        "button_eKzj7z": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style": "m-button--link",
+            "button_size": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_TitrXk",
+        "button_eKzj7z"
+      ],
+      "settings": {
+        "container": "container",
+        "color_scheme": "",
+        "content_alignment": "center",
+        "padding_top": 0,
+        "padding_bottom": 28,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "image_with_text_2_pRGez3": {
+      "type": "image-with-text-2",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "container": "container",
+        "hero_size": "adapt",
+        "show_overlay": false,
+        "image": "shopify://shop_images/01_6.png",
+        "image_link": "",
+        "parallax": false,
+        "parallax_direction": "vertical",
+        "content_in_container": false,
+        "content_position": "center middle",
+        "text_alignment": "center",
+        "text_size": "medium",
+        "text_color": "white",
+        "title": "",
+        "subtitle": "",
+        "text": "",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "m-button--primary",
+        "button_size": "",
+        "text_alignment_mobile": "center",
+        "mb_image": "shopify://shop_images/1_8.png",
+        "use_content_above": false,
+        "custom_class": "",
+        "animations": "inherit",
+        "enable_bg_zoom_effect": true
+      }
+    },
+    "rich_text_FFLCk6": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_WDbHGH": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "h2"
+          }
+        },
+        "text_TzAgm7": {
+          "type": "text",
+          "settings": {
+            "text": ""
+          }
+        },
+        "button_E7jwrc": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style": "m-button--link",
+            "button_size": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_WDbHGH",
+        "text_TzAgm7",
+        "button_E7jwrc"
+      ],
+      "disabled": true,
+      "settings": {
+        "container": "container",
+        "color_scheme": "",
+        "content_alignment": "center",
+        "padding_top": 32,
+        "padding_bottom": 32,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "image_with_text_2_6karQQ": {
+      "type": "image-with-text-2",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "container": "container",
+        "hero_size": "adapt",
+        "show_overlay": false,
+        "image": "shopify://shop_images/02_5.png",
+        "image_link": "",
+        "parallax": false,
+        "parallax_direction": "vertical",
+        "content_in_container": false,
+        "content_position": "center middle",
+        "text_alignment": "center",
+        "text_size": "medium",
+        "text_color": "white",
+        "title": "",
+        "subtitle": "",
+        "text": "",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "m-button--primary",
+        "button_size": "",
+        "text_alignment_mobile": "center",
+        "mb_image": "shopify://shop_images/2_10.png",
+        "use_content_above": false,
+        "custom_class": "",
+        "animations": "inherit",
+        "enable_bg_zoom_effect": true
+      }
+    },
+    "rich_text_C3rkW9": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_d36mPG": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "h2"
+          }
+        },
+        "text_3F8cD8": {
+          "type": "text",
+          "settings": {
+            "text": ""
+          }
+        },
+        "button_NTnEHD": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style": "m-button--link",
+            "button_size": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_d36mPG",
+        "text_3F8cD8",
+        "button_NTnEHD"
+      ],
+      "disabled": true,
+      "settings": {
+        "container": "container",
+        "color_scheme": "",
+        "content_alignment": "center",
+        "padding_top": 52,
+        "padding_bottom": 52,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "image_with_text_2_QLWdbH": {
+      "type": "image-with-text-2",
+      "settings": {
+        "color_scheme": "",
+        "container": "w-full",
+        "hero_size": "adapt",
+        "show_overlay": false,
+        "image": "shopify://shop_images/3_9.png",
+        "image_link": "shopify://collections/sun-protection-swimwear",
+        "parallax": false,
+        "parallax_direction": "vertical",
+        "content_in_container": false,
+        "content_position": "center middle",
+        "text_alignment": "center",
+        "text_size": "medium",
+        "text_color": "white",
+        "title": "",
+        "subtitle": "",
+        "text": "",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "m-button--primary",
+        "button_size": "",
+        "text_alignment_mobile": "center",
+        "mb_image": "shopify://shop_images/3_8.png",
+        "use_content_above": false,
+        "custom_class": "",
+        "animations": "inherit",
+        "enable_bg_zoom_effect": true
+      }
+    },
+    "rich_text_VAL8dA": {
+      "type": "rich-text",
+      "blocks": {
+        "text_xXzahK": {
+          "type": "text",
+          "settings": {
+            "text": "<h4>Staying safe in the sun is easy in our collection of UPF 50+ swimwear!﻿</h4>"
+          }
+        }
+      },
+      "block_order": [
+        "text_xXzahK"
+      ],
+      "settings": {
+        "container": "container",
+        "color_scheme": "",
+        "content_alignment": "center",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "rich_text_bqUzwd": {
+      "type": "rich-text",
+      "blocks": {
+        "button_BYbwHJ": {
+          "type": "button",
+          "settings": {
+            "button_label": "SHOP NOW",
+            "button_link": "shopify://collections/sun-protection-swimwear",
+            "button_style": "m-button--primary",
+            "button_size": "m-button--large"
+          }
+        },
+        "subheading_7GHHNL": {
+          "type": "subheading",
+          "settings": {
+            "subheading": ""
+          }
+        }
+      },
+      "block_order": [
+        "button_BYbwHJ",
+        "subheading_7GHHNL"
+      ],
+      "settings": {
+        "container": "container",
+        "color_scheme": "",
+        "content_alignment": "center",
+        "padding_top": 52,
+        "padding_bottom": 52,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_with_text_2_9nkJzN",
+    "rich_text_rtFWhh",
+    "image_with_text_2_pRGez3",
+    "rich_text_FFLCk6",
+    "image_with_text_2_6karQQ",
+    "rich_text_C3rkW9",
+    "image_with_text_2_QLWdbH",
+    "rich_text_VAL8dA",
+    "rich_text_bqUzwd"
+  ]
+}

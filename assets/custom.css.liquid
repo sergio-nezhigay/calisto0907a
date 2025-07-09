@@ -1,0 +1,133 @@
+{% comment %}
+  All custom CSS in this file will be kept when updating the theme
+  Write your custom CSS below
+{% endcomment %}
+.swiper-pagination-fraction {
+  bottom: 0;
+  top: 0;
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  .f-incart__product-image {
+    padding-top: 10px;
+  }
+  .f-incart__product-info {
+    gap: 5px;
+  }
+  .f-incart .f-incart__product-info {
+    flex-direction: column;
+  }
+  .f-incart__product-info > div:last-child {
+    flex-direction: row;
+    align-items: center;
+  }
+  .f-incart__product .foxkit-card__prices {
+    flex: 1;
+    justify-content: flex-start;
+  }
+}
+.f-menu__item--mega.f-menu__item-parent:nth-child(3)
+  .f-menu__submenu.f-menu__submenu--level-1 {
+  width: 50%;
+}
+.f-menu__item--mega .f-menu__submenu--full-width {
+  width: auto;
+}
+.f-menu__item--mega.f-menu__item-parent
+  .f-menu__submenu.f-menu__submenu--level-1 {
+  left: 50% !important;
+  transform: translateX(-50%);
+  animation: none !important;
+}
+.m-section__subheading,
+.m-richtext__subtitle {
+  font-weight: 500;
+  font-size: 18px;
+}
+.m-section__header {
+  --m-section-header-spacing-bottom: 40px;
+}
+.m-button--link {
+  --btn-link-border: 1px;
+}
+.main-product__block-price .installment-shoppay {
+  display: none;
+}
+.f-menu__arrow {
+  width: 100% !important;
+  transform: none !important;
+  justify-content: end !important;
+  padding-right: 16px;
+}
+.f-menu__arrow svg {
+  transform: rotate(90deg);
+}
+.f-menu__banner {
+  --f-banner-ratio: 0.6666666666666666 !important;
+}
+.f-menu--horizontal {
+  justify-content: center;
+}
+.foxkit-popup__coupon .foxkit-button--primary {
+  margin-top: 0 !important;
+}
+
+.swiper-container.show_variant_image #product-gallery {
+    display: flex;
+}
+
+.swiper-container #product-gallery {
+    display: none;
+}
+
+.show_variant_image > .plussize_featured_image {
+    display: none;
+}
+
+responsive-image.m-image1.plus_size_image {
+    width: var(--image-width, 100%);
+    vertical-align: middle;
+}
+
+.m-product-option--node__soldout:not([data-option-position="1"]) {
+  /* display: none; */
+}
+
+.m-product-option--node__soldout .m-product-option--node__label:before {
+  //background: linear-gradient(45deg, transparent calc(50% - 1px), rgb(var(--color-border)) 50%, transparent calc(50% + 1px)), linear-gradient(-45deg, transparent calc(50% - 1px), rgb(var(--color-border)) 50%, transparent calc(50% + 1px))  no-repeat;
+}
+
+.m-product-card__label {
+    padding-top: 7px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+
+@media (max-width: 768px) {
+  
+  .metafield-rich_text_field p{
+        font-size: 14px;
+  }
+}
+
+/* Trustpilot widget positioning - desktop only */
+@media screen and (min-width: 1024px) {
+  .m-footer--block-content > .trustpilot-widget {
+    padding-top: 105px;
+  }
+}
+
+.tp-widget-wrapper {
+  text-align: left;
+}
+
+/* Trustpilot widget mobile fix - simple approach */
+@media screen and (max-width: 767px) {
+  .trustpilot-widget {
+    overflow-x: auto;
+    white-space: nowrap;
+    margin-top: 15px;
+  }
+}

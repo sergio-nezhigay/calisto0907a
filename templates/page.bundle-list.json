@@ -1,0 +1,279 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "page",
+      "disabled": true,
+      "settings": {}
+    },
+    "rich_text_jG3tr6": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_TahNb7": {
+          "type": "heading",
+          "settings": {
+            "heading": "Swimwear Sets",
+            "heading_size": "h2"
+          }
+        },
+        "text_gVefwN": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<h4><strong>Looking for an easy match?</strong></h4><p>Our swimwear sets take the guesswork out of getting dressed. Each set includes perfectly paired tops and bottoms designed for comfort, coverage, and confidence — with UPF 50+ protection and quick-dry fabric. Available in sizes XS–6X, these sets are made to move with you.</p>"
+          }
+        },
+        "button_ELhhrQ": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Shop Collection",
+            "button_link": "",
+            "button_style": "m-button--link",
+            "button_size": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_TahNb7",
+        "text_gVefwN",
+        "button_ELhhrQ"
+      ],
+      "disabled": true,
+      "name": "Rich text",
+      "settings": {
+        "container": "container",
+        "color_scheme": "",
+        "content_alignment": "center",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "bundle_product_list_item_H4tkAC": {
+      "type": "bundle-product-list-item",
+      "blocks": {
+        "product_mEdy9R": {
+          "type": "product",
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_DSC_3013.jpg",
+            "hover_image": "shopify://shop_images/Edited-6436.jpg",
+            "heading": "Racerback Swim Bra+ Midi Swim Skort With Bike Shorts | Plus Size",
+            "link": "shopify://pages/plus-racerback-swim-bra-midi-swim-skort-with-bike-shorts"
+          }
+        },
+        "product_extJTW": {
+          "type": "product",
+          "settings": {
+            "image": "shopify://shop_images/Untitled_design_18.png",
+            "hover_image": "shopify://shop_images/Untitled_design_19.png",
+            "heading": "Loose Fit Adele Swim Top + Long Bike Swim Shorts",
+            "link": "shopify://pages/loose-fit-adele-swim-top-long-bike-swim-shorts"
+          }
+        },
+        "product_DE9Giy": {
+          "type": "product",
+          "settings": {
+            "image": "shopify://shop_images/Untitled_design_5_a675dd99-8e82-4dea-b037-25930e0ac76e.png",
+            "hover_image": "shopify://shop_images/Untitled_design_4_a0dbba01-a579-4fc5-bb70-50920d8030c0.png",
+            "heading": "Maya Tankini Swim Top With Built-in Bra + Short Swim Skort With Shorts | Plus Size",
+            "link": "shopify://pages/maya-tankini-top-w-b-short-swim-skort-ps-bundle"
+          }
+        },
+        "product_Ktxxhw": {
+          "type": "product",
+          "settings": {
+            "image": "shopify://shop_images/Untitled_design_12.png",
+            "hover_image": "shopify://shop_images/Untitled_design_13.png",
+            "heading": "Short Sleeve Adele Swim Top + Midi Swim Skort With Bike Shorts",
+            "link": "shopify://pages/short-sleeve-adele-swim-top-midi-swim-skort-with-bike-shorts"
+          }
+        },
+        "product_fhYhTi": {
+          "type": "product",
+          "settings": {
+            "image": "shopify://shop_images/Untitled_design_14.png",
+            "hover_image": "shopify://shop_images/Untitled_design_15.png",
+            "heading": "Maya Tankini Swim Top With Built-in Bra + Short Swim Skort With Shorts",
+            "link": "shopify://pages/maya-tankini-w-built-in-bra-short-swim-skort-with-shorts-bundle"
+          }
+        },
+        "product_z7pRft": {
+          "type": "product",
+          "settings": {
+            "image": "shopify://shop_images/Untitled_design_5.png",
+            "hover_image": "shopify://shop_images/Untitled_design.png",
+            "heading": "Maya Tankini Swim Top With Built-in Bra + Mid Thigh Swim Shorts",
+            "link": "shopify://pages/maya-tankini-top-mid-thigh-shorts-bundle"
+          }
+        },
+        "product_KdrDwt": {
+          "type": "product",
+          "settings": {
+            "image": "shopify://shop_images/Untitled_design_10.png",
+            "hover_image": "shopify://shop_images/Untitled_design_11.png",
+            "heading": "Closed Back Maya Swim Top + Swim Shorts",
+            "link": "shopify://pages/closed-back-maya-swim-top-swim-shorts"
+          }
+        },
+        "product_DaDftC": {
+          "type": "product",
+          "settings": {
+            "image": "shopify://shop_images/Untitled_design_4_ee028c24-48a9-4857-b9ab-cdc052e268e4.png",
+            "hover_image": "shopify://shop_images/Untitled_design_5_5e1f8c39-0178-40ba-ac42-ce1d3475e256.png",
+            "heading": "Maya Tankini Swim Top With Built-in Bra + Mid Thigh Swim Shorts | Plus Size",
+            "link": "shopify://pages/plus-size-maya-tankini-swim-top-with-built-in-bra-mid-thigh-swim-shorts"
+          }
+        },
+        "product_XWUDaE": {
+          "type": "product",
+          "settings": {
+            "image": "shopify://shop_images/Untitled_design_2.png",
+            "hover_image": "shopify://shop_images/Untitled_design_4.png",
+            "heading": "Short Sleeve Adele Swim Top + Capri Swim Leggings",
+            "link": "shopify://pages/short-sleeve-adele-swim-top-capri-swim-leggings"
+          }
+        },
+        "product_p6ewY3": {
+          "type": "product",
+          "settings": {
+            "image": "shopify://shop_images/Untitled_design_7.png",
+            "hover_image": "shopify://shop_images/Untitled_design_6.png",
+            "heading": "Maya Tankini Swim Top With Built-in Bra + Flowy Swim Skort With Shorts",
+            "link": "shopify://pages/maya-tankini-top-w-built-in-bra-flowy-skort-with-shorts-bundle"
+          }
+        },
+        "product_MmTbkW": {
+          "type": "product",
+          "settings": {
+            "image": "shopify://shop_images/Untitled_design_13_6b80dbc0-bcdf-4727-b6d8-9dbbaefe802c.png",
+            "hover_image": "shopify://shop_images/Untitled_design_15_48f6dc0f-3919-4006-a1ad-fa1d8d1280a8.png",
+            "heading": "Closed Back Maya Swim Top + Swim Shorts | Plus Size",
+            "link": "shopify://pages/plus-closed-back-maya-swim-top-swim-shorts"
+          }
+        },
+        "product_rpGUgC": {
+          "type": "product",
+          "settings": {
+            "image": "shopify://shop_images/Untitled_design_8.png",
+            "hover_image": "shopify://shop_images/Untitled_design_9.png",
+            "heading": "Maya Tankini Swim Top With Built-in Bra + Long Bike Swim Shorts",
+            "link": "shopify://pages/maya-tankini-top-w-b-long-bike-shorts-bundle"
+          }
+        },
+        "product_XM8YGc": {
+          "type": "product",
+          "settings": {
+            "image": "shopify://shop_images/Untitled_design_21_835049af-3ca6-4649-9a9d-13c990e4be53.png",
+            "hover_image": "shopify://shop_images/Untitled_design_22.png",
+            "heading": "Loose Fit Adele Swim Top + Long Bike Swim Shorts | Plus Size",
+            "link": "shopify://pages/plus-loose-fit-adele-swim-top-long-bike-swim-shorts"
+          }
+        },
+        "product_U9KRxX": {
+          "type": "product",
+          "settings": {
+            "image": "shopify://shop_images/Untitled_design_11_5d5d8f70-eb58-4d4f-b044-5ec008840f38.png",
+            "hover_image": "shopify://shop_images/Untitled_design_12_c8d77a94-a068-4067-8959-de1c037ede93.png",
+            "heading": "Maya Tankini Swim Top With Built-in Bra + Long Bike Swim Shorts | Plus Size",
+            "link": "shopify://pages/maya-tankini-top-w-b-long-bike-shorts-ps-bundle"
+          }
+        },
+        "product_qJmyVH": {
+          "type": "product",
+          "settings": {
+            "image": "shopify://shop_images/Untitled_design_18_41beb925-630e-4363-83e3-37b70b7f0d02.png",
+            "hover_image": "shopify://shop_images/Untitled_design_16_0af2f04d-7cb7-4cf2-ac18-e299d4a6c098.png",
+            "heading": "Short Sleeve Adele Swim Top + Midi Swim Skort With Bike Shorts | Plus Size",
+            "link": "shopify://pages/plus-short-sleeve-adele-swim-top-midi-swim-skort-with-bike-shorts"
+          }
+        },
+        "product_6frECJ": {
+          "type": "product",
+          "settings": {
+            "image": "shopify://shop_images/Untitled_design_17.png",
+            "hover_image": "shopify://shop_images/Untitled_design_16.png",
+            "heading": "Closed Back Maya Swim Top + Midi Swim Skort With Bike Shorts",
+            "link": "shopify://pages/closed-back-maya-swim-top-midi-swim-skort-with-bike-shorts"
+          }
+        },
+        "product_VP68X4": {
+          "type": "product",
+          "settings": {
+            "image": "shopify://shop_images/Untitled_design_19_519e2f9c-60a2-4fc8-9d0d-77acdf2bb64c.png",
+            "hover_image": "shopify://shop_images/Untitled_design_20_9809ae8e-99fb-4719-a9bb-c77c9b8418ce.png",
+            "heading": "Closed Back Maya Swim Top + Midi Swim Skort With Bike Shorts | Plus Size",
+            "link": "shopify://pages/plus-closed-back-maya-swim-top-midi-swim-skort-with-bike-shorts"
+          }
+        },
+        "product_twk6tW": {
+          "type": "product",
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_DSC_5499.jpg",
+            "hover_image": "shopify://shop_images/B0BMZ6FPR2.MAIN.jpg",
+            "heading": "Racerback Swim Bra+ Midi Swim Skort With Bike Shorts",
+            "link": "shopify://pages/racerback-swim-bra-midi-swim-skort-with-bike-shorts"
+          }
+        },
+        "product_bCczPd": {
+          "type": "product",
+          "settings": {
+            "image": "shopify://shop_images/Untitled_design_10_686af7b5-e223-4e04-8569-4a48282120a1.png",
+            "hover_image": "shopify://shop_images/Untitled_design_9_db4d946b-7c31-499a-b79b-6bd7a3021e23.png",
+            "heading": "Maya Tankini Swim Top With Built-in Bra + Flowy Swim Skort With Shorts | Plus Size",
+            "link": "shopify://pages/maya-tankini-top-w-built-in-bra-flowy-skort-with-shorts-ps-bundle"
+          }
+        },
+        "product_kQd78W": {
+          "type": "product",
+          "settings": {
+            "image": "shopify://shop_images/Untitled_design_6_d02a7212-6a42-4bdb-a2e3-8a32a590ed2f.png",
+            "hover_image": "shopify://shop_images/Untitled_design_7_2235e035-3010-44e5-9a02-4753fad7cc1e.png",
+            "heading": "Short Sleeve Adele Swim Top + Capri Swim Leggings | Plus Size",
+            "link": "shopify://pages/plus-short-sleeve-adele-swim-top-capri-swim-leggings"
+          }
+        }
+      },
+      "block_order": [
+        "product_mEdy9R",
+        "product_extJTW",
+        "product_DE9Giy",
+        "product_Ktxxhw",
+        "product_fhYhTi",
+        "product_z7pRft",
+        "product_KdrDwt",
+        "product_DaDftC",
+        "product_XWUDaE",
+        "product_p6ewY3",
+        "product_MmTbkW",
+        "product_rpGUgC",
+        "product_XM8YGc",
+        "product_U9KRxX",
+        "product_qJmyVH",
+        "product_6frECJ",
+        "product_VP68X4",
+        "product_twk6tW",
+        "product_bCczPd",
+        "product_kQd78W"
+      ],
+      "name": "Bundle List",
+      "settings": {
+        "heading": "Swimwear Sets"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_jG3tr6",
+    "bundle_product_list_item_H4tkAC"
+  ]
+}

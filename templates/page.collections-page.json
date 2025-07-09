@@ -1,0 +1,143 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "page",
+      "disabled": true,
+      "settings": {}
+    },
+    "image_with_text_2_9nkJzN": {
+      "type": "image-with-text-2",
+      "settings": {
+        "color_scheme": "",
+        "container": "w-full",
+        "hero_size": "adapt",
+        "show_overlay": false,
+        "image": "shopify://shop_images/DT_Hero_banner.png",
+        "image_link": "",
+        "parallax": false,
+        "parallax_direction": "vertical",
+        "content_in_container": false,
+        "content_position": "center middle",
+        "text_alignment": "center",
+        "text_size": "medium",
+        "text_color": "white",
+        "title": "",
+        "subtitle": "",
+        "text": "",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "m-button--primary",
+        "button_size": "",
+        "text_alignment_mobile": "center",
+        "mb_image": "shopify://shop_images/DT_Hero_banner_1.png",
+        "use_content_above": false,
+        "custom_class": "",
+        "animations": "inherit",
+        "enable_bg_zoom_effect": true
+      }
+    },
+    "brands_list_bz6pM3": {
+      "type": "brands-list",
+      "blocks": {
+        "image_eiVXyy": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/DT_surf_style.png",
+            "image_by_url": "",
+            "image_link": "shopify://collections/loose-fitting-tops",
+            "max_width": "547px"
+          }
+        },
+        "image_6QtKtx": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/DT_caly.png",
+            "image_by_url": "",
+            "image_link": "shopify://collections/swim-shorts",
+            "max_width": "547px"
+          }
+        },
+        "image_hR9LRG": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/DT_Flying_colors.png",
+            "image_by_url": "",
+            "image_link": "shopify://collections/skorts-with-attached-leggings",
+            "max_width": "547px"
+          }
+        },
+        "image_8wyB8x": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/DT_barbados_blue.png",
+            "image_by_url": "",
+            "image_link": "shopify://collections/tankini",
+            "max_width": "547px"
+          }
+        },
+        "image_zbVGbU": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/DT_aloha_flowers.png",
+            "image_by_url": "",
+            "image_link": "shopify://collections/multi-way-wear",
+            "max_width": "547px"
+          }
+        },
+        "image_QRXpEK": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/DT_navy.png",
+            "image_by_url": "",
+            "image_link": "shopify://collections/all-swimwear",
+            "max_width": "547px"
+          }
+        }
+      },
+      "block_order": [
+        "image_eiVXyy",
+        "image_6QtKtx",
+        "image_hR9LRG",
+        "image_8wyB8x",
+        "image_zbVGbU",
+        "image_QRXpEK"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_size": "h3",
+        "subheading": "",
+        "header_alignment": "center",
+        "container": "container-fluid",
+        "color_scheme": "",
+        "item_per_row": 3,
+        "column_gap": 30,
+        "row_gap": 30,
+        "column_gap_mobile": 10,
+        "row_gap_mobile": 10,
+        "enable_slider": false,
+        "show_nav": false,
+        "show_pagination": false,
+        "autorotate": false,
+        "autorotate_speed": 3,
+        "padding_top": 40,
+        "padding_bottom": 0,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_with_text_2_9nkJzN",
+    "brands_list_bz6pM3"
+  ]
+}

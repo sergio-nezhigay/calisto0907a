@@ -1,0 +1,223 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slider_YECfFa": {
+      "type": "slider",
+      "blocks": {
+        "slider_item_LajmYC": {
+          "type": "slider_item",
+          "settings": {
+            "background": "shopify://shop_images/CALYPSA_Strip_2880_x_105.png",
+            "mb_background": "shopify://shop_images/calypsa_mobile_strip.png",
+            "content_in_container": false,
+            "content_position": "center middle",
+            "text_alignment": "center",
+            "text_size": "medium",
+            "text_color": "black",
+            "subheading": "",
+            "title": "",
+            "description": "",
+            "image_link": "shopify://collections/all-swimwear",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "m-button--primary",
+            "button_size": "",
+            "second_button_text": "",
+            "second_button_link": "",
+            "second_button_style": "m-button--primary",
+            "second_button_size": "",
+            "show_footer": false,
+            "footer_alignment": "end",
+            "footer_text": "New Collection",
+            "footer_button": "Shop Now",
+            "footer_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "slider_item_LajmYC"
+      ],
+      "disabled": true,
+      "settings": {
+        "container": "w-full",
+        "slideshow_height": "adapt",
+        "show_overlay": false,
+        "dots_position": "bottom",
+        "dots_color": "dark",
+        "show_dots": true,
+        "show_arrows": false,
+        "autorotate": false,
+        "autorotate_speed": 5,
+        "use_content_above": false,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "collection-header": {
+      "type": "collection-page-header",
+      "settings": {
+        "color_scheme": "default",
+        "container": "container-fluid",
+        "layout": "inside",
+        "image_position": "background",
+        "enable_parallax": false,
+        "parallax_direction": "vertical",
+        "text_alignment": "center",
+        "text_color": "inherit",
+        "upper_title": false,
+        "show_desc": true,
+        "collection_all_desc": "",
+        "padding_top": 10,
+        "padding_bottom": 26,
+        "enable_bg_zoom_effect": true
+      }
+    },
+    "main": {
+      "type": "main-collection-product-grid",
+      "blocks": {
+        "banner_promotion_8nVmcR": {
+          "type": "banner_promotion",
+          "settings": {
+            "color_scheme": "scheme-09e5b5b4-774c-4b6c-8025-416ced49cc74",
+            "text_size": "medium",
+            "text_color": "black",
+            "image": "shopify://shop_images/DSC08938.jpg",
+            "link": "shopify://collections/all-swimwear",
+            "content_position": "center_center",
+            "content_alignment": "right",
+            "title": "Image cardhhhhh",
+            "subtitle": "",
+            "button_label": "Shop now",
+            "button_style": "m-button--white",
+            "button_size": "",
+            "button_fixed": false
+          }
+        }
+      },
+      "block_order": [
+        "banner_promotion_8nVmcR"
+      ],
+      "custom_css": [
+        ".m-banner-promotion {order: 3 !important; margin-top: 30px; margin-bottom: 0;}",
+        ".m-collection-filters-form {margin-bottom: 0;}"
+      ],
+      "settings": {
+        "container": "container-fluid",
+        "grid_layout": "grid",
+        "grid_columns": "4",
+        "show_columns_switcher": false,
+        "pagination_limit": 48,
+        "paginate_type": "loadmore",
+        "show_sorting": true,
+        "show_filter": true,
+        "filters_type": "storefront_filters",
+        "sidebar": "fixed",
+        "sidebar_title": "",
+        "limit_height_widget": false,
+        "limit_height": 300,
+        "change_product_variant_on_fitlering": true,
+        "show_product_count": true,
+        "collapsed_groups": "Product type, Brand, Vendor",
+        "color_swatches": "color,colour,couleur,farbe",
+        "color_swatches_design": "inline",
+        "plus_collections": "plus-size-swimwear,plus-size-bras,plus-size-swim-skorts,plus-size-swim-bottoms,plus-size-swim-tops,plus-size-swim-tunics-dresses"
+      }
+    },
+    "recent-viewed": {
+      "type": "recent-viewed-products",
+      "disabled": true,
+      "settings": {
+        "container": "container-fluid",
+        "color_scheme": "",
+        "heading": "Recently Viewed Products",
+        "heading_tag": "h2",
+        "heading_size": "h3",
+        "text_align": "left",
+        "product_title_tag": "h3",
+        "limit": 8,
+        "columns": 5,
+        "column_gap": 30,
+        "pcard_layout": "",
+        "pcard_image_ratio": "",
+        "show_vendor": false,
+        "hide_title": false,
+        "enable_slider": true,
+        "show_pagination": false,
+        "show_navigation": false,
+        "mobile_disable_slider": false,
+        "use_scroll_mobile": true,
+        "item_gap_mobile": 16,
+        "padding_top": 40,
+        "padding_bottom": 100,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "bundle_product_list_item_XmXRVP": {
+      "type": "bundle-product-list-item",
+      "blocks": {
+        "product_wJxbXD": {
+          "type": "product",
+          "settings": {
+            "image": "shopify://shop_images/image_10.jpg",
+            "hover_image": "shopify://shop_images/girl_bikini_coral_1_-modli-cropped-264-4-2689-3397.png",
+            "heading": "Sample Product 1",
+            "link": "#"
+          }
+        },
+        "product_gV9knY": {
+          "type": "product",
+          "settings": {
+            "image": "shopify://shop_images/070622-calypsa-0792-Lily.jpg",
+            "hover_image": "shopify://shop_images/B0CSP2RF2K.MAIN.jpg",
+            "heading": "Sample Product 2",
+            "link": "#"
+          }
+        },
+        "product_xteQxh": {
+          "type": "product",
+          "settings": {
+            "image": "shopify://shop_images/082922-calypsa-2024_1.jpg",
+            "hover_image": "shopify://shop_images/B0CSP2RF2K.MAIN.jpg",
+            "heading": "Sample Product 3",
+            "link": "#"
+          }
+        },
+        "product_z8H438": {
+          "type": "product",
+          "settings": {
+            "image": "shopify://shop_images/dsc_5685_2.jpg",
+            "hover_image": "shopify://shop_images/Copy_of_Plus_Pool_Front.jpg",
+            "heading": "Sample Product 4",
+            "link": "#"
+          }
+        }
+      },
+      "block_order": [
+        "product_wJxbXD",
+        "product_gV9knY",
+        "product_xteQxh",
+        "product_z8H438"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "Bundle your swimsuit"
+      }
+    }
+  },
+  "order": [
+    "slider_YECfFa",
+    "collection-header",
+    "main",
+    "recent-viewed",
+    "bundle_product_list_item_XmXRVP"
+  ]
+}

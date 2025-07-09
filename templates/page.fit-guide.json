@@ -1,0 +1,293 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "page",
+      "disabled": true,
+      "settings": {}
+    },
+    "image_with_text_2_9nkJzN": {
+      "type": "image-with-text-2",
+      "settings": {
+        "color_scheme": "",
+        "container": "w-full",
+        "hero_size": "adapt",
+        "show_overlay": false,
+        "image": "shopify://shop_images/Hero_banner_15.png",
+        "image_link": "",
+        "parallax": false,
+        "parallax_direction": "vertical",
+        "content_in_container": false,
+        "content_position": "center middle",
+        "text_alignment": "center",
+        "text_size": "medium",
+        "text_color": "white",
+        "title": "",
+        "subtitle": "",
+        "text": "",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "m-button--primary",
+        "button_size": "",
+        "text_alignment_mobile": "center",
+        "mb_image": "shopify://shop_images/MB_hero_cover_14.png",
+        "use_content_above": false,
+        "custom_class": "",
+        "animations": "inherit",
+        "enable_bg_zoom_effect": true
+      }
+    },
+    "empty_space_jyXGAJ": {
+      "type": "empty-space",
+      "settings": {
+        "container": "container-fluid",
+        "color_scheme": "",
+        "show_divider_line": false,
+        "divider_style": "solid",
+        "divider_height": 1,
+        "padding_top": 30,
+        "padding_bottom": 30,
+        "custom_class": ""
+      }
+    },
+    "custom_liquid_Ea7Am3": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"four-columns\">\n    <div class=\"column\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0680/5939/8391/files/bust.png?v=1730377024\" alt=\"Image 1\">\n        <p><strong>Bust</strong></p>\n        <p>Measure over the fullest part of your bust, in your best-fitting bra</p>\n    </div>\n    <div class=\"column\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0680/5939/8391/files/waist_28.png?v=1730377143\" alt=\"Image 2\">\n        <p><strong>Waist</strong></p>\n        <p>Measure at your natural waistline, at the narrowest point.</p>\n    </div>\n    <div class=\"column\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0680/5939/8391/files/hips.png?v=1730377049\" alt=\"Image 3\">\n        <p><strong>Hips</strong></p>\n        <p>Stand with your legs together and measure over the widest portion of your hips: this typically includes the fullest part of your rear.</p>\n    </div>\n    <div class=\"column\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0680/5939/8391/files/inseam_30.png?v=1730377223\" alt=\"Image 4\">\n        <p><strong>Inseam</strong></p>\n        <p>Lay your favorite leggings on a flat surface and measure from the crotch downwards, following the inner seam.</p>\n    </div>\n</div>\n\n<style>\n    .four-columns {\n        display: flex;\n        justify-content: space-between;\n        margin: 0 10px; /* Add margin on the sides of the entire container */\n    }\n    .column {\n        flex: 1;\n        text-align: left;  /* Align text to the left */\n        padding: 10px;\n        margin: 0 10px; /* Add margin on the sides of each column */\n    }\n    .column img {\n        max-width: 100%;\n        height: auto;\n    }\n\n    /* Media query for mobile view */\n    @media (max-width: 768px) {\n        .four-columns {\n            flex-direction: column; /* Stack columns vertically */\n        }\n        .column {\n            margin: 10px 0; /* Add vertical margin between stacked columns */\n        }\n    }\n</style>",
+        "custom_class": ""
+      }
+    },
+    "rich_text_bqUzwd": {
+      "type": "rich-text",
+      "blocks": {
+        "button_BYbwHJ": {
+          "type": "button",
+          "settings": {
+            "button_label": "Size Guide",
+            "button_link": "shopify://pages/size-guide",
+            "button_style": "m-button--secondary",
+            "button_size": "m-button--large"
+          }
+        }
+      },
+      "block_order": [
+        "button_BYbwHJ"
+      ],
+      "settings": {
+        "container": "container",
+        "color_scheme": "",
+        "content_alignment": "center",
+        "padding_top": 52,
+        "padding_bottom": 52,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "brands_list_r6DVfY": {
+      "type": "brands-list",
+      "blocks": {
+        "image_4hLiNY": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Lindsey.png",
+            "image_by_url": "",
+            "image_link": "",
+            "max_width": "350px"
+          }
+        },
+        "image_EJmbWG": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Scarlett_1.png",
+            "image_by_url": "",
+            "image_link": "",
+            "max_width": "350px"
+          }
+        },
+        "image_MXVeCP": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Nevena_1.png",
+            "image_by_url": "",
+            "image_link": "",
+            "max_width": "350px"
+          }
+        },
+        "image_UqJVra": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Brooke.png",
+            "image_by_url": "",
+            "image_link": "",
+            "max_width": "350px"
+          }
+        },
+        "image_QUmbFY": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Model_18.png",
+            "image_by_url": "",
+            "image_link": "",
+            "max_width": "350px"
+          }
+        },
+        "image_dA93aK": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Model_20.png",
+            "image_by_url": "",
+            "image_link": "",
+            "max_width": "350px"
+          }
+        },
+        "image_ALkHPH": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Model_9_1.png",
+            "image_by_url": "",
+            "image_link": "",
+            "max_width": "350px"
+          }
+        },
+        "image_DPKELi": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Model_10_1.png",
+            "image_by_url": "",
+            "image_link": "",
+            "max_width": "350px"
+          }
+        },
+        "image_CnhgT6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Model_11.png",
+            "image_by_url": "",
+            "image_link": "",
+            "max_width": "350px"
+          }
+        },
+        "image_FcBhKM": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Model_12.png",
+            "image_by_url": "",
+            "image_link": "",
+            "max_width": "350px"
+          }
+        },
+        "image_hPWrER": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Model_13.png",
+            "image_by_url": "",
+            "image_link": "",
+            "max_width": "350px"
+          }
+        },
+        "image_PbjRwg": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Model_14.png",
+            "image_by_url": "",
+            "image_link": "",
+            "max_width": "350px"
+          }
+        },
+        "image_JC9hMH": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Model_15.png",
+            "image_by_url": "",
+            "image_link": "",
+            "max_width": "350px"
+          }
+        },
+        "image_xbwayp": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Model_16.png",
+            "image_by_url": "",
+            "image_link": "",
+            "max_width": "350px"
+          }
+        },
+        "image_KpPTnj": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Model_17.png",
+            "image_by_url": "",
+            "image_link": "",
+            "max_width": "350px"
+          }
+        },
+        "image_jmFMjx": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Model_19.png",
+            "image_by_url": "",
+            "image_link": "",
+            "max_width": "350px"
+          }
+        }
+      },
+      "block_order": [
+        "image_4hLiNY",
+        "image_EJmbWG",
+        "image_MXVeCP",
+        "image_UqJVra",
+        "image_QUmbFY",
+        "image_dA93aK",
+        "image_ALkHPH",
+        "image_DPKELi",
+        "image_CnhgT6",
+        "image_FcBhKM",
+        "image_hPWrER",
+        "image_PbjRwg",
+        "image_JC9hMH",
+        "image_xbwayp",
+        "image_KpPTnj",
+        "image_jmFMjx"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "OUR MODELS",
+        "heading_size": "h2",
+        "subheading": "View our models below for sizing reference",
+        "header_alignment": "center",
+        "container": "container-fluid",
+        "color_scheme": "",
+        "item_per_row": 5,
+        "column_gap": 20,
+        "row_gap": 30,
+        "column_gap_mobile": 10,
+        "row_gap_mobile": 10,
+        "enable_slider": false,
+        "show_nav": false,
+        "show_pagination": false,
+        "autorotate": false,
+        "autorotate_speed": 2,
+        "padding_top": 40,
+        "padding_bottom": 0,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_with_text_2_9nkJzN",
+    "empty_space_jyXGAJ",
+    "custom_liquid_Ea7Am3",
+    "rich_text_bqUzwd",
+    "brands_list_r6DVfY"
+  ]
+}

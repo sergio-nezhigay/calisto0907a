@@ -1,0 +1,61 @@
+{%- comment -%}
+    It creates a style tag and it restricts an image from growing larger than its max resolution.
+    Accepts:
+    - max_width: {Number} Max width of the image container
+    - max_height: {Number} Max height of the image container
+    - image: {Object} Image object
+    - image_class: {String} class name of the <img />
+    - image_attributes: {String}  additional HTML attributes of the <img />
+    - wrapper_class: {String} class name of the <div> wrapper
+    - wrapper_attributes: {String} additional HTML attributes of the <div> wrapper
+
+    Usage:
+    In your liquid template file, copy the following line
+    - {% include 'responsive-image' with image: featured_image, image_class: "css-class", wrapper_class: "wrapper-css-class", max_width: 700, max_height: 800 %}
+{%- endcomment -%}
+
+{%- comment -%} Added incremental number to avoid conflict styling code when the same images are using this snippet {%- endcomment -%}
+
+{%- capture style -%}
+  {% assign asp_rat = aspect_ratio | default: image.aspect_ratio %}
+  {% if asp_rat == 'original' %}
+    --aspect-ratio: {{ image.aspect_ratio }};
+  {% else %}
+    --aspect-ratio: {{ asp_rat }};
+  {% endif %}
+  {% if max_width %}
+    --image-width: {{ max_width }};
+  {% endif %}
+  {% if image_width %}
+    --image-width: {{ image_width }};
+  {% endif %}
+{%- endcapture -%}
+
+<responsive-image class="m-image {{ wrapper_class }}"  {{ wrapper_attributes }} style="{{ style | strip | strip_newlines }}">
+  {% comment %}theme-check-disable ImgLazyLoading{% endcomment %}
+  <img
+      srcset="{%- if image.width >= 165 -%}{% assign img_url = image | image_url: width: 165 %}{% render 'hs-image-transform' with img: img_url %} 165w,{%- endif -%}
+          {%- if image.width >= 360 -%}{% assign img_url = image | image_url: width: 360 %}{% render 'hs-image-transform' with img: img_url %} 360w,{%- endif -%}
+          {%- if image.width >= 533 -%}{% assign img_url = image | image_url: width: 533 %}{% render 'hs-image-transform' with img: img_url %} 533w,{%- endif -%}
+          {%- if image.width >= 720 -%}{% assign img_url = image | image_url: width: 720 %}{% render 'hs-image-transform' with img: img_url %} 720w,{%- endif -%}
+          {%- if image.width >= 940 -%}{% assign img_url = image | image_url: width: 940 %}{% render 'hs-image-transform' with img: img_url %} 940w,{%- endif -%}
+          {%- if image.width >= 1066 -%}{% assign img_url = image | image_url: width: 1066 %}{% render 'hs-image-transform' with img: img_url %} 1066w,{%- endif -%}
+          {%- if image.width >= 1500 -%}{% assign img_url = image | image_url: width: 1500 %}{% render 'hs-image-transform' with img: img_url %} 1500w,{%- endif -%}
+          {%- if image.width >= 1780 -%}{% assign img_url = image | image_url: width: 1780 %}{% render 'hs-image-transform' with img: img_url %} 1780w,{%- endif -%}
+          {%- if image.width >= 2000 -%}{% assign img_url = image | image_url: width: 2000 %}{% render 'hs-image-transform' with img: img_url %} 2000w,{%- endif -%}
+          {% assign img_url = image | image_url %}{% render 'hs-image-transform' with img: img_url %} {{ image.width }}w"
+      src="{% assign img_url = image | image_url: width: 360 %}{% render 'hs-image-transform' with img: img_url %}"
+      sizes="(min-width: {{ settings.container_width }}px) {{ settings.container_width | minus: 130 | divided_by: 4 }}px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
+      alt="{{ alt | default: image.alt | escape }}"
+      {% unless lazy_load == false %}loading="lazy"{% endunless %}
+      class="{{ image_class }}"
+      width="{{ image.width }}"
+      height="{{ image.height }}"
+      {{ image_attributes }}
+  >
+  {% comment %}theme-check-enable ImgLazyLoading{% endcomment %}
+  <noscript>
+    {% assign img_url = image | image_url: width: 2048, height: 2048 %}
+    <img class="{{ image_class }}" loading="lazy" width="" height="" src="{% render 'hs-image-transform' with img: img_url %}" alt="{{ alt | default: image.alt | escape }}">
+  </noscript>
+</responsive-image>

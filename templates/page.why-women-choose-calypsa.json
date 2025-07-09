@@ -1,0 +1,145 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "page",
+      "settings": {}
+    },
+    "product_tabs_LUkqQa": {
+      "type": "product-tabs",
+      "blocks": {
+        "tab_PXXRxz": {
+          "type": "tab",
+          "settings": {
+            "title": "Shop Now",
+            "collection": "best-sellers"
+          }
+        }
+      },
+      "block_order": [
+        "tab_PXXRxz"
+      ],
+      "name": "Product tabs",
+      "settings": {
+        "heading": "Check Out Our Bestsellers!",
+        "heading_size": "h3",
+        "subheading": "",
+        "description": "",
+        "header_alignment": "center",
+        "container": "container-fluid",
+        "color_scheme": "",
+        "tab_header": "horizontal",
+        "limit": 4,
+        "show_button": false,
+        "button_type": "link",
+        "button_label": "View all",
+        "button_style": "m-button--primary",
+        "button_size": "",
+        "pcard_layout": "",
+        "pcard_image_ratio": "",
+        "show_vendor": false,
+        "items_per_row": 4,
+        "item_gap": 30,
+        "enable_slider": true,
+        "show_navigation": true,
+        "show_pagination": false,
+        "mobile_disable_slider": false,
+        "use_scroll_mobile": true,
+        "item_gap_mobile": 16,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "empty_space_TcPLKn": {
+      "type": "empty-space",
+      "name": "Empty space",
+      "settings": {
+        "container": "container-fluid",
+        "color_scheme": "",
+        "show_divider_line": true,
+        "divider_style": "solid",
+        "divider_height": 1,
+        "padding_top": 24,
+        "padding_bottom": 0,
+        "custom_class": ""
+      }
+    },
+    "empty_space_VLmqdC": {
+      "type": "empty-space",
+      "name": "Empty space",
+      "settings": {
+        "container": "container-fluid",
+        "color_scheme": "",
+        "show_divider_line": true,
+        "divider_style": "solid",
+        "divider_height": 1,
+        "padding_top": 24,
+        "padding_bottom": 0,
+        "custom_class": ""
+      }
+    },
+    "custom_content_CRUcgA": {
+      "type": "custom-content",
+      "blocks": {
+        "text_y8eqRp": {
+          "type": "text",
+          "settings": {
+            "title": "",
+            "subheading": "Citation:",
+            "text": "<p>1. Hebl, M. R. (2004). The Swimsuit Becomes Us All: Ethnicity, Gender, and Vulnerability to Self-Objectification. Personality and Social Psychology Bulletin, 30(10), 1322–1331. doi:10.1177/0146167204264052<br/>2. Barbara L. Fredrickson; Tomi-Ann Roberts (1997). OBJECTIFICATION THEORY : Toward Understanding Women's Lived Experiences and Mental Health Risks. , 21(2), 173–206. doi:10.1111/j.1471-6402.1997.tb00108.x</p>",
+            "width": "100%",
+            "alignment": "center",
+            "align_text": "left",
+            "text_size": "small",
+            "text_color": "inherit",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "m-button--primary",
+            "button_size": "",
+            "block_custom_class": "",
+            "animations": "inherit"
+          }
+        }
+      },
+      "block_order": [
+        "text_y8eqRp"
+      ],
+      "name": "Custom content",
+      "settings": {
+        "heading": "",
+        "heading_size": "h3",
+        "subheading": "",
+        "description": "",
+        "header_alignment": "center",
+        "container": "container-fluid",
+        "color_scheme": "",
+        "content_color_scheme": "",
+        "enable_parallax": false,
+        "parallax_direction": "vertical",
+        "gap": 30,
+        "gap_mobile": 16,
+        "use_scroll_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "custom_class": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "product_tabs_LUkqQa",
+    "empty_space_TcPLKn",
+    "custom_content_CRUcgA",
+    "empty_space_VLmqdC"
+  ]
+}

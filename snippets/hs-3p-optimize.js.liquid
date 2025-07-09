@@ -1,0 +1,13 @@
+{%comment%}DO NOT MODIFY.Any changes made here may be overwritten by Hyperspeed.{%endcomment%}(function(){var hsUrls={{shop.metaobjects['app--2675107--hyperspeed_script_settings']['app--2675107--hyperspeed-script-settings-cl2u6y24'].scripts.value.app_cache_js|json}};var insertBeforeBackup=Node.prototype.insertBefore;var currentPageType=getPageType();function getPageType(){var currentPage="{{ template.name }}";if(currentPage==='index'){return'HOME';}else if(currentPage==='collection'){return'COLLECTIONS';}else if(currentPage==='product'){return'PRODUCT';}else if(currentPage==='cart'){return'CART';}else{return'OTHER';}}
+function isWhitelistedPage(script){return script.pages.includes(currentPageType);}
+function getCachedScriptUrl(url){var result=(hsUrls||[]).find(function(el){var compareUrl=el.original_url;if(url.substring(0,6)==="https:"&&el.original_url.substring(0,2)==="//"){compareUrl="https:"+el.original_url;}
+return url==compareUrl;});return result;}
+function loadScript(scriptInfo){if(isWhitelistedPage(scriptInfo)){var s=document.createElement('script');s.type='text/javascript';s.async=true;s.src=scriptInfo.original_url;var x=document.getElementsByTagName('script')[0];insertBeforeBackup.apply(x.parentNode,[s,x]);}}
+var userEvents={touch:["touchmove","touchend"],mouse:["mousemove","click","keydown","scroll"]};function isTouch(){var touchIdentifiers=" -webkit- -moz- -o- -ms- ".split(" ");if("ontouchstart"in window||window.DocumentTouch&&document instanceof DocumentTouch){return true;}
+var query=["(",touchIdentifiers.join("touch-enabled),("),"hsterminal",")"].join("");return window.matchMedia(query).matches;}
+var actionEvents=isTouch()?userEvents.touch:userEvents.mouse;function loadOnUserAction(){(hsUrls||[]).filter(function(url){return url.load_method==='ON_ACTION';}).forEach(function(scriptInfo){loadScript(scriptInfo)})
+actionEvents.forEach(function(userEvent){document.removeEventListener(userEvent,loadOnUserAction);});}
+Node.prototype.insertBefore=function(newNode,refNode){if(newNode.type!=="text/javascript"&&newNode.type!=="application/javascript"&&newNode.type!=="application/ecmascript"){return insertBeforeBackup.apply(this,arguments);}
+var scriptInfo=getCachedScriptUrl(newNode.src);if(!scriptInfo){return insertBeforeBackup.apply(this,arguments);}
+if(isWhitelistedPage(scriptInfo)&&scriptInfo.load_method!=='ON_ACTION'){var s=document.createElement('script');s.type='text/javascript';s.async=true;s.src=scriptInfo.original_url;insertBeforeBackup.apply(this,[s,refNode]);}}
+document.addEventListener("DOMContentLoaded",function(){actionEvents.forEach(function(userEvent){document.addEventListener(userEvent,loadOnUserAction);});});})();

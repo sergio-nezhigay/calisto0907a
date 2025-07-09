@@ -1,0 +1,883 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "page",
+      "disabled": true,
+      "settings": {}
+    },
+    "image_with_text_2_qaYBwB": {
+      "type": "image-with-text-2",
+      "settings": {
+        "color_scheme": "",
+        "container": "w-full",
+        "hero_size": "adapt",
+        "show_overlay": false,
+        "image": "shopify://shop_images/Shop_by_activity_banner.png",
+        "image_link": "",
+        "parallax": false,
+        "parallax_direction": "vertical",
+        "content_in_container": false,
+        "content_position": "center middle",
+        "text_alignment": "center",
+        "text_size": "medium",
+        "text_color": "white",
+        "title": "",
+        "subtitle": "",
+        "text": "",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "m-button--primary",
+        "button_size": "",
+        "text_alignment_mobile": "center",
+        "mb_image": "shopify://shop_images/DT_Hero_cover_2.png",
+        "use_content_above": false,
+        "custom_class": "",
+        "animations": "inherit",
+        "enable_bg_zoom_effect": true
+      }
+    },
+    "rich_text_ypAxLp": {
+      "type": "rich-text",
+      "blocks": {
+        "text_xBN8QD": {
+          "type": "text",
+          "settings": {
+            "text": "<p>For the ones who'll be</p>"
+          }
+        },
+        "heading_xiqQmW": {
+          "type": "heading",
+          "settings": {
+            "heading": "HIKING, KAYAKING AND SWIMMING ALL AT ONCE",
+            "heading_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "text_xBN8QD",
+        "heading_xiqQmW"
+      ],
+      "settings": {
+        "container": "container",
+        "color_scheme": "",
+        "content_alignment": "center",
+        "padding_top": 32,
+        "padding_bottom": 32,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "brands_list_aAp3QT": {
+      "type": "brands-list",
+      "blocks": {
+        "image_WxJHLa": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_110.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/half-zip-adele-swim-top-1",
+            "max_width": "200px"
+          }
+        },
+        "image_KaDQq7": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_72_e7b41704-f398-4e09-8613-aa1894aa70c1.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/adele-swim-top",
+            "max_width": "200px"
+          }
+        },
+        "image_Py7jeE": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_59.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/full-zip-nora-swim-top",
+            "max_width": "200px"
+          }
+        },
+        "image_ryYiky": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_81.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/maya-swim-top",
+            "max_width": "200px"
+          }
+        },
+        "image_qkUceb": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_62.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/racerback-swim-bra",
+            "max_width": "200px"
+          }
+        },
+        "image_4eaQKg": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_63.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/half-zip-adele-swim-top-1",
+            "max_width": "200px"
+          }
+        },
+        "image_qMw8iU": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_61.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/adjustable-strap-swim-bra",
+            "max_width": "200px"
+          }
+        },
+        "image_TM9MCx": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_64.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/sadie-swim-top",
+            "max_width": "200px"
+          }
+        },
+        "image_RNiwgz": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_58.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/full-zip-nora-swim-top",
+            "max_width": "200px"
+          }
+        },
+        "image_YCKEzy": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_56.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/racerback-swim-bra",
+            "max_width": "200px"
+          }
+        },
+        "image_hx4rcC": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_60.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/adele-swim-top",
+            "max_width": "200px"
+          }
+        },
+        "image_xkpm3j": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_125.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/woo-hoo",
+            "max_width": "200px"
+          }
+        },
+        "image_P4BYCt": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_57.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/half-zip-adele-swim-top-1",
+            "max_width": "200px"
+          }
+        }
+      },
+      "block_order": [
+        "image_WxJHLa",
+        "image_KaDQq7",
+        "image_Py7jeE",
+        "image_ryYiky",
+        "image_qkUceb",
+        "image_4eaQKg",
+        "image_qMw8iU",
+        "image_TM9MCx",
+        "image_RNiwgz",
+        "image_YCKEzy",
+        "image_hx4rcC",
+        "image_xkpm3j",
+        "image_P4BYCt"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_size": "h3",
+        "subheading": "",
+        "header_alignment": "center",
+        "container": "container-fluid",
+        "color_scheme": "",
+        "item_per_row": 6,
+        "column_gap": 10,
+        "row_gap": 10,
+        "column_gap_mobile": 10,
+        "row_gap_mobile": 10,
+        "enable_slider": true,
+        "show_nav": true,
+        "show_pagination": false,
+        "autorotate": false,
+        "autorotate_speed": 3,
+        "padding_top": 20,
+        "padding_bottom": 0,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "rich_text_RKkxnt": {
+      "type": "rich-text",
+      "blocks": {
+        "text_pKtmhm": {
+          "type": "text",
+          "settings": {
+            "text": "<p>For the ones who'll be</p>"
+          }
+        },
+        "heading_Eid8zL": {
+          "type": "heading",
+          "settings": {
+            "heading": "VACATIONING",
+            "heading_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "text_pKtmhm",
+        "heading_Eid8zL"
+      ],
+      "settings": {
+        "container": "container",
+        "color_scheme": "",
+        "content_alignment": "center",
+        "padding_top": 32,
+        "padding_bottom": 32,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "brands_list_WtwFVH": {
+      "type": "brands-list",
+      "blocks": {
+        "image_wrqF47": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_117_0c7e38b9-aade-4183-8bdf-c637256359cc.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/full-zip-nora-swim-top",
+            "max_width": "200px"
+          }
+        },
+        "image_jCBfHR": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_71_84f45241-5f60-4e89-a82f-8346b1bedfef.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/the-santorini-2-way-wear",
+            "max_width": "200px"
+          }
+        },
+        "image_LxfVKD": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_76_7a9a6b8a-27aa-4c26-87cd-c6758605c7e3.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/adjustable-strap-swim-bra",
+            "max_width": "200px"
+          }
+        },
+        "image_pp8BW8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_68_88fa5b12-e51d-4af1-826a-c01c552698a5.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/full-zip-nora-swim-top",
+            "max_width": "200px"
+          }
+        },
+        "image_GcmQ7J": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_73.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/maya-swim-top",
+            "max_width": "200px"
+          }
+        },
+        "image_mHaAXi": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_67_81afd163-df2e-499e-8dc1-aa8ccc5afeab.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/halter-maya-swim-top",
+            "max_width": "200px"
+          }
+        },
+        "image_RhPCBH": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_65_3d798a4c-cb6f-4a2a-b8d7-9c228cd21d9a.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/layla-crop-swim-top",
+            "max_width": "200px"
+          }
+        },
+        "image_bHqedA": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_88_89023b80-daee-45ab-86d3-acdc15f4b61c.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/layla-crop-swim-top",
+            "max_width": "200px"
+          }
+        },
+        "image_FUGCNr": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_66_a914954c-4799-4c60-b0d2-cd93c6d86097.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/full-zip-nora-swim-top",
+            "max_width": "200px"
+          }
+        },
+        "image_MpCaHU": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_77_4010d724-9261-4675-9c34-ff2165dc7ff6.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/lena-swim-top",
+            "max_width": "200px"
+          }
+        },
+        "image_xihAmq": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_83_e1661759-b301-4c1c-867f-6bc9a9b851e2.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/maya-swim-top",
+            "max_width": "200px"
+          }
+        }
+      },
+      "block_order": [
+        "image_wrqF47",
+        "image_jCBfHR",
+        "image_LxfVKD",
+        "image_pp8BW8",
+        "image_GcmQ7J",
+        "image_mHaAXi",
+        "image_RhPCBH",
+        "image_bHqedA",
+        "image_FUGCNr",
+        "image_MpCaHU",
+        "image_xihAmq"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_size": "h3",
+        "subheading": "",
+        "header_alignment": "center",
+        "container": "container-fluid",
+        "color_scheme": "",
+        "item_per_row": 6,
+        "column_gap": 10,
+        "row_gap": 10,
+        "column_gap_mobile": 10,
+        "row_gap_mobile": 10,
+        "enable_slider": true,
+        "show_nav": true,
+        "show_pagination": false,
+        "autorotate": false,
+        "autorotate_speed": 3,
+        "padding_top": 20,
+        "padding_bottom": 0,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "rich_text_j6X9NC": {
+      "type": "rich-text",
+      "blocks": {
+        "text_fFwzVH": {
+          "type": "text",
+          "settings": {
+            "text": "<p>For the ones who'll be</p>"
+          }
+        },
+        "heading_zJWH9d": {
+          "type": "heading",
+          "settings": {
+            "heading": "LOUNGING BY THE POOL OR BEACH",
+            "heading_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "text_fFwzVH",
+        "heading_zJWH9d"
+      ],
+      "settings": {
+        "container": "container",
+        "color_scheme": "",
+        "content_alignment": "center",
+        "padding_top": 32,
+        "padding_bottom": 32,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "brands_list_YBUTRV": {
+      "type": "brands-list",
+      "blocks": {
+        "image_Cje6jt": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_69.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/zoey-crop-swim-top",
+            "max_width": "200px"
+          }
+        },
+        "image_efPmap": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_70.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/zoey-crop-swim-top",
+            "max_width": "200px"
+          }
+        },
+        "image_AB6get": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_79.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/maya-swim-top",
+            "max_width": "200px"
+          }
+        },
+        "image_JwGGW8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_97.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/half-zip-adele-swim-top-1",
+            "max_width": "200px"
+          }
+        },
+        "image_87mBQB": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_98.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/maya-swim-top",
+            "max_width": "200px"
+          }
+        },
+        "image_6QMKEe": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_111.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/racerback-swim-bra",
+            "max_width": "200px"
+          }
+        },
+        "image_gYCgcW": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_112.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/racerback-swim-bra",
+            "max_width": "200px"
+          }
+        },
+        "image_36c7XR": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_113.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/racerback-swim-bra",
+            "max_width": "200px"
+          }
+        },
+        "image_ThLzE9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_114.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/full-zip-nora-swim-top",
+            "max_width": "200px"
+          }
+        },
+        "image_kKWyW6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_118.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/adele-swim-top",
+            "max_width": "200px"
+          }
+        },
+        "image_Ny6fGp": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_126.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/layla-crop-swim-top",
+            "max_width": "200px"
+          }
+        }
+      },
+      "block_order": [
+        "image_Cje6jt",
+        "image_efPmap",
+        "image_AB6get",
+        "image_JwGGW8",
+        "image_87mBQB",
+        "image_6QMKEe",
+        "image_gYCgcW",
+        "image_36c7XR",
+        "image_ThLzE9",
+        "image_kKWyW6",
+        "image_Ny6fGp"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_size": "h3",
+        "subheading": "",
+        "header_alignment": "center",
+        "container": "container-fluid",
+        "color_scheme": "",
+        "item_per_row": 6,
+        "column_gap": 10,
+        "row_gap": 10,
+        "column_gap_mobile": 10,
+        "row_gap_mobile": 10,
+        "enable_slider": true,
+        "show_nav": true,
+        "show_pagination": false,
+        "autorotate": false,
+        "autorotate_speed": 3,
+        "padding_top": 20,
+        "padding_bottom": 0,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "rich_text_J6CjJU": {
+      "type": "rich-text",
+      "blocks": {
+        "text_NGDPye": {
+          "type": "text",
+          "settings": {
+            "text": "<p>For the ones who'll be</p>"
+          }
+        },
+        "heading_AtMxaD": {
+          "type": "heading",
+          "settings": {
+            "heading": "OUT ON THE TOWN / RUNNING ERRANDS",
+            "heading_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "text_NGDPye",
+        "heading_AtMxaD"
+      ],
+      "settings": {
+        "container": "container",
+        "color_scheme": "",
+        "content_alignment": "center",
+        "padding_top": 32,
+        "padding_bottom": 32,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "brands_list_GcFUMX": {
+      "type": "brands-list",
+      "blocks": {
+        "image_RtyHyE": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_124.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/half-zip-adele-swim-top-1",
+            "max_width": "200px"
+          }
+        },
+        "image_CR3Qzk": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_115.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/racerback-swim-bra",
+            "max_width": "200px"
+          }
+        },
+        "image_rinrxB": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_80.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/adele-swim-top",
+            "max_width": "200px"
+          }
+        },
+        "image_a9yY6i": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_74.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/racerback-swim-bra",
+            "max_width": "200px"
+          }
+        },
+        "image_eHzWwC": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_78.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/margaux-swim-top",
+            "max_width": "200px"
+          }
+        },
+        "image_iMaUja": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_75.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/racerback-swim-bra",
+            "max_width": "200px"
+          }
+        }
+      },
+      "block_order": [
+        "image_RtyHyE",
+        "image_CR3Qzk",
+        "image_rinrxB",
+        "image_a9yY6i",
+        "image_eHzWwC",
+        "image_iMaUja"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_size": "h3",
+        "subheading": "",
+        "header_alignment": "center",
+        "container": "container-fluid",
+        "color_scheme": "",
+        "item_per_row": 6,
+        "column_gap": 10,
+        "row_gap": 10,
+        "column_gap_mobile": 10,
+        "row_gap_mobile": 10,
+        "enable_slider": true,
+        "show_nav": true,
+        "show_pagination": false,
+        "autorotate": false,
+        "autorotate_speed": 3,
+        "padding_top": 20,
+        "padding_bottom": 0,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "rich_text_p7kcg7": {
+      "type": "rich-text",
+      "blocks": {
+        "text_j8W4iL": {
+          "type": "text",
+          "settings": {
+            "text": ""
+          }
+        },
+        "heading_BFYq6K": {
+          "type": "heading",
+          "settings": {
+            "heading": "FAMILY FUN",
+            "heading_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "text_j8W4iL",
+        "heading_BFYq6K"
+      ],
+      "settings": {
+        "container": "container",
+        "color_scheme": "",
+        "content_alignment": "center",
+        "padding_top": 48,
+        "padding_bottom": 32,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "brands_list_AyWm9m": {
+      "type": "brands-list",
+      "blocks": {
+        "image_AMfYBP": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_89.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/layla-crop-swim-top",
+            "max_width": "200px"
+          }
+        },
+        "image_ekXr4w": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_90.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/adele-swim-top",
+            "max_width": "200px"
+          }
+        },
+        "image_ATMJVn": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_91.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/daphne-swim-top",
+            "max_width": "200px"
+          }
+        },
+        "image_VfPXVF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_92.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/maya-swim-top-with-removable-cups",
+            "max_width": "200px"
+          }
+        },
+        "image_wqnWJ3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_93.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/layla-crop-swim-top",
+            "max_width": "200px"
+          }
+        },
+        "image_Pnd46e": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_94.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/lena-swim-top",
+            "max_width": "200px"
+          }
+        },
+        "image_GdgzMG": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_95.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/racerback-swim-bra",
+            "max_width": "200px"
+          }
+        },
+        "image_9DLM6E": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_96.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/nora-swim-top-1",
+            "max_width": "200px"
+          }
+        },
+        "image_8TyAfp": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_100.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/half-zip-adele-swim-top-1",
+            "max_width": "200px"
+          }
+        },
+        "image_xf9wBf": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_116.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/half-zip-adele-swim-top-1",
+            "max_width": "200px"
+          }
+        },
+        "image_weM9Uz": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_127.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/maya-swim-top",
+            "max_width": "200px"
+          }
+        }
+      },
+      "block_order": [
+        "image_AMfYBP",
+        "image_ekXr4w",
+        "image_ATMJVn",
+        "image_VfPXVF",
+        "image_wqnWJ3",
+        "image_Pnd46e",
+        "image_GdgzMG",
+        "image_9DLM6E",
+        "image_8TyAfp",
+        "image_xf9wBf",
+        "image_weM9Uz"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_size": "h3",
+        "subheading": "",
+        "header_alignment": "center",
+        "container": "container-fluid",
+        "color_scheme": "",
+        "item_per_row": 6,
+        "column_gap": 10,
+        "row_gap": 10,
+        "column_gap_mobile": 10,
+        "row_gap_mobile": 10,
+        "enable_slider": true,
+        "show_nav": true,
+        "show_pagination": false,
+        "autorotate": false,
+        "autorotate_speed": 3,
+        "padding_top": 20,
+        "padding_bottom": 0,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_with_text_2_qaYBwB",
+    "rich_text_ypAxLp",
+    "brands_list_aAp3QT",
+    "rich_text_RKkxnt",
+    "brands_list_WtwFVH",
+    "rich_text_j6X9NC",
+    "brands_list_YBUTRV",
+    "rich_text_J6CjJU",
+    "brands_list_GcFUMX",
+    "rich_text_p7kcg7",
+    "brands_list_AyWm9m"
+  ]
+}

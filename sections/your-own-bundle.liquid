@@ -1,0 +1,882 @@
+{{ 'product.css' | asset_url | stylesheet_tag }}
+{{ 'your-own-bundle.css' | asset_url | stylesheet_tag }}
+
+<div class="bundle--wrapper--container">
+
+  {%- liquid 
+    assign container = section.settings.container
+    if container == 'w-full'
+      assign container = 'container-full'
+    endif
+    assign show_thumbnails = section.settings.show_thumbnails
+    assign image_placement = section.settings.image_placement
+
+    assign animation_effect = settings.animations
+    assign animated = false
+    if animation_effect != 'none'
+      assign animated = true
+      if section.settings.animations != 'inherit'
+        assign animation_effect = section.settings.animations
+      endif
+    endif
+
+    assign breadcrumb_justify = 'start'
+
+
+    assign page_title = section.settings.page_title
+    assign header_discount_code_text = section.settings.header_discount_code_text
+    assign bottom_saving_message = section.settings.bottom_saving_message
+    assign scroll_text = section.settings.scroll_text
+  -%}
+
+  {% capture class %}
+    {% if section.settings.show_quantity_selector %}
+      show_quantity_selector
+    {% else %}
+      hide_quantity_selector
+    {% endif %}
+  {% endcapture %}
+
+  {%- capture separator -%}
+      <span aria-hidden="true" class="m-breadcrumb--separator">
+        <!-- <svg class="m-svg-icon--small m-rlt-reverse-x" fill="currentColor" stroke="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path d="M17.525 36.465l-7.071 7.07c-4.686 4.686-4.686 12.284 0 16.971L205.947 256 10.454 451.494c-4.686 4.686-4.686 12.284 0 16.971l7.071 7.07c4.686 4.686 12.284 4.686 16.97 0l211.051-211.05c4.686-4.686 4.686-12.284 0-16.971L34.495 36.465c-4.686-4.687-12.284-4.687-16.97 0z"/></svg> -->
+        /
+      </span>
+  {%- endcapture -%}
+  
+  {%- capture home -%}
+      <a href="{{ routes.root_url }}" class="m-breadcrumb--item" title="{{ 'general.breadcrumbs.home_link_title' | t }}">
+          {{ 'general.breadcrumbs.home' | t }}
+      </a>
+  {%- endcapture -%}
+  {%- capture productname -%}
+    {%- assign pro_title = ""  -%}
+    {%- for block in section.blocks -%}
+      {%- assign productdetails = block.settings.featured_product -%}
+      {%- assign pro_title = pro_title | append: productdetails.title -%}
+      {% unless forloop.last %}{% assign pro_title = pro_title | append: " with " %}{% endunless %}
+    {%- endfor -%}
+    {{ pro_title }}
+  {%- endcapture -%}
+
+  {% unless template == 'index' %}
+    <nav
+      class="m-breadcrumb m:w-full"
+      role="navigation"
+      aria-label="breadcrumbs"
+    >
+      <div class="{{ container }}">
+        <div class="m-breadcrumb--wrapper m:flex m:items-center m:justify-{{ breadcrumb_justify | default: 'start' }}">
+            {{ home }}
+  
+          {% if template.name == 'product' %}
+            {% liquid
+              assign current_collection = null
+              if collection
+                assign current_collection = collection
+              elsif product and product.collections.size > 0
+                assign current_collection = product.collections.first
+              endif
+            %}
+            {% if current_collection %}
+              {{ separator }}
+              {% if current_collection.handle %}
+                {% capture url %}/collections/{{ current_collection.handle }}{% endcapture %}
+                <a href="{{ url }}" class="m-breadcrumb--item">{{ current_collection.title }}</a>
+              {% endif %}
+            {% endif %}
+            {% unless hide_current == true %}
+              {{ separator }}
+              <span class="m-breadcrumb--item-current m-breadcrumb--item">{{ product.title }}</span>
+            {% endunless %}
+          {% elsif template.name == 'collection' and collection.handle %}
+            {{ separator }}
+            {% if current_tags %}
+              {% capture url %}{{ routes.collections_url }}/{{ collection.handle }}{% endcapture %}
+              <a href="{{ url }}" class="m-breadcrumb--item">{{ collection.title }}</a>
+              {{ separator }}
+              <span class="m-breadcrumb--item m-breadcrumb--item-current">{{ current_tags | join: ' + ' }}</span>
+            {% else %}
+              <span class="m-breadcrumb--item m-breadcrumb--item-current">{{ collection.title }}</span>
+            {% endif %}
+  
+          {% elsif template.name == 'blog' %}
+            {{ separator }}
+            {% if current_tags %}
+              <a href="{{ blog.url }}" class="m-breadcrumb--item">{{ blog.title }}</a>
+              {{ separator }}
+              <span class="m-breadcrumb--item m-breadcrumb--item-current">{{ current_tags | join: ' + ' }}</span>
+            {% else %}
+              <span class="m-breadcrumb--item-current m-breadcrumb--item">{{ blog.title }}</span>
+            {% endif %}
+  
+          {% elsif template == 'article' %}
+            {{ separator }}
+            <a href="{{ blog.url }}" class="m-breadcrumb--item">{{ blog.title }}</a>
+  
+          {% elsif template contains 'page' %}
+            {{ separator }}
+            <span class="m-breadcrumb--item-current m-breadcrumb--item">{{ page.title }}</span>
+          
+          {% endif %}
+
+          {%- if productname != blank -%}
+            {{ separator }}
+            <span class="m-breadcrumb--item-current m-breadcrumb--item">{{ productname }}</span>
+          {%- endif -%}
+        </div>
+      </div>
+    </nav>
+  {% endunless %}
+
+  
+  <div
+    id="m-featured-product-{{ section.id }}"
+    data-section-id="{{ section.id }}"
+    class="m-section m-featured-product {{ section.settings.custom_class }} {{ class | strip_newlines }}"
+  >
+    <div class="{{ container }} m-section-my">
+      
+      {%- for block in section.blocks -%}
+
+        {%- liquid
+        
+            assign product = block.settings.featured_product
+            assign first_3d_model = product.media | where: 'media_type', 'model' | first
+            assign product_form_id = 'product-form-' | append: block.id
+            assign product_form_class = 'product-form-' | append: block.id
+
+            if product == empty
+              assign section_onboarding = true
+            endif
+            assign current_variant = product.selected_or_first_available_variant
+
+            
+            assign product_indicator_icon = block.settings.product_indicator_icon
+            assign product_indicator_text = block.settings.product_indicator_text
+            assign enable_review_icon = block.settings.enable_review_icon
+      
+        -%}
+
+        {%- capture productindicator -%}
+          {%- if product_indicator_icon != blank or product_indicator_text != blank -%}
+          <div class="product_indicator_wrapper">
+          {%- for item in section.blocks -%}
+            {%- if product_indicator_icon == item.settings.product_indicator_icon -%}
+              <div class="product_indicator indicator__content-{{ forloop.index }}">
+                {% if  product_indicator_icon != blank %}<span class="indicator_icon"><img src="{{ product_indicator_icon | image_url }}" width="auto" height="37px" alt="{{ product_indicator_text }}"></span>{% endif %}
+                {% if  product_indicator_text != blank %}<span class="indicator_text">{{ product_indicator_text }}</span>{% endif %}
+              </div>
+            {%- elsif product_indicator_icon != item.settings.product_indicator_icon -%}
+              <div class="product_icon__seperator">
+                <span class="right--arrow">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" viewBox="0 0 37 37" fill="none">
+                    <path d="M18.5 0C14.8411 0 11.2643 1.08501 8.22196 3.11781C5.17965 5.15062 2.80846 8.03992 1.40824 11.4204C0.00801575 14.8008 -0.358346 18.5205 0.355481 22.1092C1.06931 25.6978 2.83126 28.9942 5.41853 31.5815C8.0058 34.1687 11.3022 35.9307 14.8908 36.6445C18.4795 37.3583 22.1992 36.992 25.5796 35.5918C28.9601 34.1915 31.8494 31.8204 33.8822 28.778C35.915 25.7357 37 22.159 37 18.5C36.9948 13.5951 35.0441 8.89254 31.5758 5.42424C28.1075 1.95594 23.4049 0.00517968 18.5 0ZM23.7761 19.5068L16.6607 26.6222C16.5285 26.7544 16.3715 26.8593 16.1987 26.9309C16.026 27.0024 15.8408 27.0392 15.6539 27.0392C15.4669 27.0392 15.2817 27.0024 15.109 26.9309C14.9362 26.8593 14.7792 26.7544 14.647 26.6222C14.5148 26.49 14.4099 26.333 14.3384 26.1603C14.2668 25.9875 14.23 25.8024 14.23 25.6154C14.23 25.4284 14.2668 25.2432 14.3384 25.0705C14.4099 24.8977 14.5148 24.7408 14.647 24.6086L20.7574 18.5L14.647 12.3914C14.38 12.1244 14.23 11.7622 14.23 11.3846C14.23 11.007 14.38 10.6448 14.647 10.3778C14.9141 10.1108 15.2762 9.96074 15.6539 9.96074C16.0315 9.96074 16.3937 10.1108 16.6607 10.3778L23.7761 17.4932C23.9084 17.6253 24.0133 17.7823 24.085 17.955C24.1566 18.1278 24.1934 18.313 24.1934 18.5C24.1934 18.687 24.1566 18.8722 24.085 19.045C24.0133 19.2177 23.9084 19.3747 23.7761 19.5068Z" fill="#15ABBA" fill-opacity="0.5"/>
+                  </svg>
+                </span>
+              </div>
+              <div class="product_indicator text_image_gray indicator__content-{{ forloop.index }}">
+                {% if  item.settings.product_indicator_icon != blank %}<span class="indicator_icon"><img src="{{ item.settings.product_indicator_icon | image_url }}" alt="{{ product_indicator_text }}" width="auto" height="37px"></span>{% endif %}
+                {% if  item.settings.product_indicator_text != blank %}<span class="indicator_text">{{ item.settings.product_indicator_text }}</span>{% endif %}
+              </div>
+            {%- endif -%}
+          {%- endfor -%}
+          </div>
+          {%- endif -%}
+        {%- endcapture -%}
+
+        {%- if forloop.first -%}
+
+            <div class="header__body">
+              <div class="heading__wrapper">
+                <h2 class="main_title"> {% if page_title != blank %}{{ page_title }} {% else %}{{ page.title }}{% endif %}</h2>
+                {%- if product_indicator_icon != blank or product_indicator_text != blank -%}
+
+                  {{ productindicator }}
+                  
+                {%- endif -%}
+              </div>
+              {%- if header_discount_code_text != blank-%}
+              <div class="heading__discount__text">
+                <h4>{{ header_discount_code_text }}</h4>
+              </div>
+              {%- endif -%}
+            </div>
+        {%- else -%}
+          {{ productindicator }}
+        {%- endif -%}
+
+        {%- if first_3d_model -%}
+          <link
+            id="ModelViewerStyle"
+            rel="stylesheet"
+            href="https://cdn.shopify.com/shopifycloud/model-viewer-ui/assets/v1.0/model-viewer-ui.css"
+            media="print"
+            onload="this.media='all'"
+          >
+        {%- endif -%}
+
+        <div
+          class="m-main-product--wrapper m:flex m:flex-wrap{% if image_placement == 'right' %} md:m:flex-row-reverse{% endif %}"
+          data-view="featured-product"
+          style="--column-gap: {{ section.settings.column_gap }}px; --column-gap-mobile: {{ section.settings.column_gap_mobile }}px;"
+        >
+          <div class="m:column m:w-full m-main-product--media m:w-full md:m:w-1/2">
+            {% unless section_onboarding %}
+              {% render 'product-media',
+                section: section,
+                media_layout: 'layout-4',
+                product: product,
+                show_thumbnails: show_thumbnails
+              %}
+            {% else %}
+              <div
+                class="{% if animated %} m-scroll-trigger animate--{{ animation_effect }}{% endif %}"
+                style="--aspect-ratio: 1/1;"
+              >
+                {{ 'product-1' | placeholder_svg_tag: 'm-placeholder-svg m:object-cover' }}
+              </div>
+            {% endunless %}
+
+            {%- if forloop.last -%}
+            <div class="product-tabs__wrapper mobile-hide">
+              {%- for i in (1..4) -%}
+                  {% capture accordion_title %}accordion_title_{{i}}{% endcapture %}
+                  {% capture accordion_text %}accordion_text_{{i}}{% endcapture %}
+                  {%- if section.settings[accordion_title] != blank -%}
+                  <div class="product-tabs accordion-wrap">
+                    <h6 class="title">
+                      {{ section.settings[accordion_title] }}
+                      <span class="icon plus">
+                        <?xml version="1.0" encoding="UTF-8"?>
+                        <svg width="16.125px" height="16.875px" viewBox="0 0 16.125 16.875" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g id="🖥️-Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Desktop_Product-Page" transform="translate(-659.937500, -2647.562500)">
+                                    <g id="ant-design:plus-outlined" transform="translate(656.000000, 2644.000000)">
+                                        <rect id="ViewBox" x="0" y="0" width="24" height="24"></rect>
+                                        <path d="M11.296875,3.5625 L12.703125,3.5625 C12.828125,3.5625 12.890625,3.625 12.890625,3.75 L12.890625,20.25 C12.890625,20.375 12.828125,20.4375 12.703125,20.4375 L11.296875,20.4375 C11.171875,20.4375 11.109375,20.375 11.109375,20.25 L11.109375,3.75 C11.109375,3.625 11.171875,3.5625 11.296875,3.5625 Z" id="Path" fill="#000000" fill-rule="nonzero"></path>
+                                        <path d="M4.125,11.109375 L19.875,11.109375 C20,11.109375 20.0625,11.171875 20.0625,11.296875 L20.0625,12.703125 C20.0625,12.828125 20,12.890625 19.875,12.890625 L4.125,12.890625 C4,12.890625 3.9375,12.828125 3.9375,12.703125 L3.9375,11.296875 C3.9375,11.171875 4,11.109375 4.125,11.109375 Z" id="Path" fill="#000000" fill-rule="nonzero"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                      </span>
+                      <span class="icon minus">
+                        <?xml version="1.0" encoding="UTF-8"?>
+                        <svg width="17.25px" height="1.78125px" viewBox="0 0 17.25 1.78125" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g id="🖥️-Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Desktop_Product-Page" transform="translate(-714.375000, -2655.109375)">
+                                    <g id="ant-design:minus-outlined" transform="translate(711.000000, 2644.000000)">
+                                        <rect id="ViewBox" x="0" y="0" width="24" height="24"></rect>
+                                        <path d="M20.4375,11.109375 L3.5625,11.109375 C3.459375,11.109375 3.375,11.19375 3.375,11.296875 L3.375,12.703125 C3.375,12.80625 3.459375,12.890625 3.5625,12.890625 L20.4375,12.890625 C20.540625,12.890625 20.625,12.80625 20.625,12.703125 L20.625,11.296875 C20.625,11.19375 20.540625,11.109375 20.4375,11.109375 Z" id="Path" fill="#000000" fill-rule="nonzero"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                      </span>
+                    </h6>
+                    <div class="accordion-content">
+                       {{ section.settings[accordion_text] | richtext }}
+                    </div>           
+                  </div>
+                {%- endif -%}
+              {%- endfor -%}
+            </div>
+            {%- endif -%}
+          </div>
+          <div class="m:column m:w-full m-main-product--info m:w-full md:m:w-1/2">
+            <div class="m-product-info--wrapper m:text-color-body{% if animated %} m-scroll-trigger animate--{{ animation_effect }}{% endif %}">
+              {% comment %}
+              {% if enable_review_icon %}
+                <div class="m-product-reviews-icon">
+                  <a href="#" aria-label="Review icon" class="review_scroll">
+                  <span><svg xmlns="http://www.w3.org/2000/svg" width="115" height="18" viewBox="0 0 115 18" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.38687 0.475402C8.59282 -0.158467 9.48958 -0.158468 9.69554 0.475401L11.3582 5.59259C11.4503 5.87607 11.7145 6.06799 12.0125 6.06799H17.3931C18.0596 6.06799 18.3367 6.92086 17.7975 7.31261L13.4445 10.4752C13.2034 10.6504 13.1025 10.9609 13.1946 11.2444L14.8573 16.3616C15.0632 16.9955 14.3377 17.5226 13.7985 17.1308L9.4456 13.9682C9.20447 13.793 8.87794 13.793 8.6368 13.9682L4.28386 17.1308C3.74466 17.5226 3.01917 16.9955 3.22512 16.3616L4.8878 11.2444C4.97991 10.9609 4.87901 10.6504 4.63787 10.4752L0.284926 7.31261C-0.254275 6.92086 0.0228364 6.06799 0.689326 6.06799H6.06986C6.36792 6.06799 6.63209 5.87607 6.72419 5.59259L8.38687 0.475402ZM32.4671 0.475402C32.6731 -0.158467 33.5698 -0.158468 33.7758 0.475401L35.4385 5.59259C35.5306 5.87607 35.7948 6.06799 36.0928 6.06799H41.4733C42.1398 6.06799 42.4169 6.92086 41.8777 7.31261L37.5248 10.4752C37.2837 10.6504 37.1828 10.9609 37.2749 11.2444L38.9375 16.3616C39.1435 16.9955 38.418 17.5226 37.8788 17.1308L33.5259 13.9682C33.2847 13.793 32.9582 13.793 32.7171 13.9682L28.3641 17.1308C27.8249 17.5226 27.0994 16.9955 27.3054 16.3616L28.9681 11.2444C29.0602 10.9609 28.9593 10.6504 28.7181 10.4752L24.3652 7.31261C23.826 6.92086 24.1031 6.06799 24.7696 6.06799H30.1501C30.4482 6.06799 30.7124 5.87607 30.8045 5.59259L32.4671 0.475402ZM57.8561 0.475401C57.6501 -0.158468 56.7534 -0.158467 56.5474 0.475402L54.8847 5.59259C54.7926 5.87607 54.5285 6.06799 54.2304 6.06799H48.8499C48.1834 6.06799 47.9063 6.92086 48.4455 7.31261L52.7984 10.4752C53.0395 10.6504 53.1404 10.9609 53.0483 11.2444L51.3857 16.3616C51.1797 16.9955 51.9052 17.5226 52.4444 17.1308L56.7973 13.9682C57.0385 13.793 57.365 13.793 57.6061 13.9682L61.9591 17.1308C62.4983 17.5226 63.2238 16.9955 63.0178 16.3616L61.3551 11.2444C61.263 10.9609 61.3639 10.6504 61.6051 10.4752L65.958 7.31261C66.4972 6.92086 66.2201 6.06799 65.5536 6.06799H60.1731C59.875 6.06799 59.6109 5.87607 59.5187 5.59259L57.8561 0.475401ZM80.6277 0.475402C80.8336 -0.158467 81.7304 -0.158468 81.9363 0.475401L83.599 5.59259C83.6911 5.87607 83.9553 6.06799 84.2534 6.06799H89.6339C90.3004 6.06799 90.5775 6.92086 90.0383 7.31261L85.6853 10.4752C85.4442 10.6504 85.3433 10.9609 85.4354 11.2444L87.0981 16.3616C87.304 16.9955 86.5786 17.5226 86.0394 17.1308L81.6864 13.9682C81.4453 13.793 81.1187 13.793 80.8776 13.9682L76.5247 17.1308C75.9855 17.5226 75.26 16.9955 75.4659 16.3616L77.1286 11.2444C77.2207 10.9609 77.1198 10.6504 76.8787 10.4752L72.5257 7.31261C71.9865 6.92086 72.2636 6.06799 72.9301 6.06799H78.3107C78.6087 6.06799 78.8729 5.87607 78.965 5.59259L80.6277 0.475402ZM106.017 0.475401C105.811 -0.158468 104.914 -0.158467 104.708 0.475402L103.045 5.59259C102.953 5.87607 102.689 6.06799 102.391 6.06799H97.0104C96.3439 6.06799 96.0668 6.92086 96.606 7.31261L100.959 10.4752C101.2 10.6504 101.301 10.9609 101.209 11.2444L99.5462 16.3616C99.3402 16.9955 100.066 17.5226 100.605 17.1308L104.958 13.9682C105.199 13.793 105.526 13.793 105.767 13.9682L110.12 17.1308C110.659 17.5226 111.384 16.9955 111.178 16.3616L109.516 11.2444C109.424 10.9609 109.524 10.6504 109.766 10.4752L114.119 7.31261C114.658 6.92086 114.381 6.06799 113.714 6.06799H108.334C108.036 6.06799 107.771 5.87607 107.679 5.59259L106.017 0.475401Z" fill="#15ABBA"/>
+                  </svg></span>
+                  </a>
+                </div>
+              {% endif %}
+              {% endcomment %}
+        
+              <div class="m-product-info-content">
+                <div class="main-product__block main-product__block-title">
+                  <h2 class="m-product-title">
+                    <a href="{{ product.url }}">
+                      {% unless section_onboarding %}
+                        {{ product.title }}
+                      {% else %}
+                        {{ 'homepage.onboarding.product_title' | t }}
+                      {% endunless %}
+                    </a>
+                  </h2>
+                </div>
+                <div class="main-product__block main-product__block-price">
+                  {% unless section_onboarding %}
+                    {% render 'product-prices',
+                      price_text_size: 'm:text-xl md:m:text-2xl',
+                      product: product,
+                      use_variant: true
+                    %}
+                  {% else %}
+                    <span class="m:text-xl md:m:text-2xl">
+                      {{ 1999 | money }}
+                    </span>
+                  {% endunless %}
+                </div>
+              </div>
+
+
+              {% unless section_onboarding %}
+                <div class="main-product__block main-product__block-rating">
+                  {% render 'product-reviews-app__badge' %}
+                </div>
+  
+                <div class="material__wrapper">
+                {%- for i in (1..3) -%}
+                  {% capture info_icon %}info_icon_{{i}}{% endcapture %}
+                  {% capture info_title %}info_title_{{i}}{% endcapture %}
+                  {% capture info_content %}info_content_{{i}}{% endcapture %}
+                  {%- if block.settings[info_title] != blank -%}
+                  <div class="material__wrapper__container">
+                    {% if block.settings[info_icon] != blank %}
+                    <div class="material_icon">
+                      <img src="{{ block.settings[info_icon] | image_url }}" alt="{{ block.settings[info_title] }}" width="40" height="40" />
+                    </div>
+                    {% endif %}
+                    <div class="material_text_wrapper">
+                      <h5 class="material_title">{{ block.settings[info_title] }}</h5>
+                      <span class="material_content">{{ block.settings[info_content] }}</span>
+                    </div>
+                  </div>
+                  {%- endif -%}
+                {%- endfor -%}
+                </div>
+              {% else %}
+                <div class="main-product__block main-product__block-description">
+                  <div class="m-product-description">
+                    {{ 'homepage.onboarding.product_description' | t }}
+                  </div>
+                </div>
+              {% endunless %}
+
+              {% unless section_onboarding %}
+                {% render 'product-form',
+                  section_id: block.id,
+                  product: product,
+                  section: block,
+                  product_form_id: product_form_id,
+                  product_form_class: product_form_class,
+                  current_variant: current_variant,
+                  show_quantity_selector: section.settings.show_quantity_selector
+                %}
+
+                  {%- if forloop.first -%}
+
+                    <div class="footer__body">
+                      {%- if bottom_saving_message != blank-%}
+                      <div class="footer__discount__text">
+                        <span>{{ bottom_saving_message }}</span>
+                      </div>
+                      {%- endif -%}
+
+                      {% if scroll_text != blank %}
+                      <div class="bottom_scroll">
+                        <div class="down__scroll_arrow">
+                          <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M19.8975 12.3525C20.0028 12.458 20.062 12.6009 20.062 12.75C20.062 12.8991 20.0028 13.042 19.8975 13.1475L12.3975 20.6475C12.292 20.7528 12.1491 20.812 12 20.812C11.8509 20.812 11.708 20.7528 11.6025 20.6475L4.10251 13.1475C4.00315 13.0409 3.94905 12.8998 3.95163 12.7541C3.9542 12.6084 4.01323 12.4693 4.11629 12.3663C4.21935 12.2632 4.35839 12.2042 4.50411 12.2016C4.64984 12.1991 4.79088 12.2531 4.89751 12.3525L12 19.4541L19.1025 12.3525C19.208 12.2472 19.3509 12.188 19.5 12.188C19.6491 12.188 19.792 12.2472 19.8975 12.3525ZM11.6025 13.1475C11.708 13.2528 11.8509 13.312 12 13.312C12.1491 13.312 12.292 13.2528 12.3975 13.1475L19.8975 5.64751C19.9969 5.54088 20.051 5.39984 20.0484 5.25411C20.0458 5.10839 19.9868 4.96935 19.8837 4.86629C19.7807 4.76323 19.6416 4.7042 19.4959 4.70163C19.3502 4.69905 19.2091 4.75315 19.1025 4.85251L12 11.9541L4.89751 4.85251C4.79088 4.75315 4.64984 4.69905 4.50411 4.70163C4.35839 4.7042 4.21935 4.76323 4.11629 4.86629C4.01323 4.96935 3.9542 5.10839 3.95163 5.25411C3.94905 5.39984 4.00315 5.54088 4.10251 5.64751L11.6025 13.1475Z" fill="black"/>
+                          </svg></span>
+                        </div>
+                        <div class="bottom_scroll_text"><span>{{ scroll_text | default: 'Scroll to pick your bottom' }}</span></div>
+                      </div>
+                      {% endif %}
+                    </div>
+                  {%- else -%}
+                      <div class="product_bundle_price_wrapper">
+                        <div class="bundle__total_price">
+                          <span class="total_price_title">Bundle price: </span><span class="total_price">$37.00</span>
+                        </div>
+                        <div class="bundle__total_compare_price">
+                          <span>$77,90 </span>
+                        </div>
+                        <div class="bundle__total_save_price">
+                          <span>Save $49.00 </span>
+                        </div>
+                      </div>
+                      <div class="main-product__block main-product__block-buy_buttons">
+                        {% liquid
+                          assign btn_class = 'm-button--primary'
+                        %}
+                        <button
+                          type="button"
+                          name="bundle-button"
+                          data-add-bundle
+                          class="m-add-to-cart m-button {{ btn_class }}"
+                          data-atc-text="{{ 'products.product.add_to_cart' | t }}"
+                        >
+                          <span class="m-add-to-cart--text">
+                            {% if product.selected_or_first_available_variant.available %}
+                              {{ 'products.product.add_to_cart' | t }}
+                            {% endif %}
+                          </span>
+                        </button>
+                      </div>
+    
+                      <div class="shipping__wrapper">
+                      {%- for i in (1..3) -%}
+                        {% capture shipping_info_icon %}shipping_info_icon_{{i}}{% endcapture %}
+                        {% capture shipping_info_title %}shipping_info_title_{{i}}{% endcapture %}
+                        {% capture shipping_info_content %}shipping_info_content_{{i}}{% endcapture %}
+                        {%- if section.settings[shipping_info_title] != blank -%}
+                        <div class="shipping__wrapper__container">
+                          {% if section.settings[shipping_info_icon] != blank %}
+                          <div class="shipping_icon">
+                            <img src="{{ section.settings[shipping_info_icon] | image_url }}" alt="{{ section.settings[shipping_info_title] }}" width="40" height="40" />
+                          </div>
+                          {% endif %}
+                          <div class="shipping_text_wrapper">
+                            <h5 class="shipping_title">{{ section.settings[shipping_info_title] }}</h5>
+                            <span class="shipping_content">{{ section.settings[shipping_info_content] }}</span>
+                          </div>
+                        </div>
+                        {%- endif -%}
+                      {%- endfor -%}
+                      </div>
+    
+                      {%- if forloop.last -%}
+                        <div class="product-tabs__wrapper desktop-hide">
+                          {%- for i in (1..3) -%}
+                              {% capture accordion_title %}accordion_title_{{i}}{% endcapture %}
+                              {% capture accordion_text %}accordion_text_{{i}}{% endcapture %}
+                              {%- if section.settings[accordion_title] != blank -%}
+                              <div class="product-tabs accordion-wrap">
+                                <h6 class="title">
+                                  {{ section.settings[accordion_title] }}
+                                  <span class="icon plus">
+                                    <?xml version="1.0" encoding="UTF-8"?>
+                                    <svg width="16.125px" height="16.875px" viewBox="0 0 16.125 16.875" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <g id="🖥️-Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <g id="Desktop_Product-Page" transform="translate(-659.937500, -2647.562500)">
+                                                <g id="ant-design:plus-outlined" transform="translate(656.000000, 2644.000000)">
+                                                    <rect id="ViewBox" x="0" y="0" width="24" height="24"></rect>
+                                                    <path d="M11.296875,3.5625 L12.703125,3.5625 C12.828125,3.5625 12.890625,3.625 12.890625,3.75 L12.890625,20.25 C12.890625,20.375 12.828125,20.4375 12.703125,20.4375 L11.296875,20.4375 C11.171875,20.4375 11.109375,20.375 11.109375,20.25 L11.109375,3.75 C11.109375,3.625 11.171875,3.5625 11.296875,3.5625 Z" id="Path" fill="#000000" fill-rule="nonzero"></path>
+                                                    <path d="M4.125,11.109375 L19.875,11.109375 C20,11.109375 20.0625,11.171875 20.0625,11.296875 L20.0625,12.703125 C20.0625,12.828125 20,12.890625 19.875,12.890625 L4.125,12.890625 C4,12.890625 3.9375,12.828125 3.9375,12.703125 L3.9375,11.296875 C3.9375,11.171875 4,11.109375 4.125,11.109375 Z" id="Path" fill="#000000" fill-rule="nonzero"></path>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                  </span>
+                                  <span class="icon minus">
+                                    <?xml version="1.0" encoding="UTF-8"?>
+                                    <svg width="17.25px" height="1.78125px" viewBox="0 0 17.25 1.78125" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <g id="🖥️-Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <g id="Desktop_Product-Page" transform="translate(-714.375000, -2655.109375)">
+                                                <g id="ant-design:minus-outlined" transform="translate(711.000000, 2644.000000)">
+                                                    <rect id="ViewBox" x="0" y="0" width="24" height="24"></rect>
+                                                    <path d="M20.4375,11.109375 L3.5625,11.109375 C3.459375,11.109375 3.375,11.19375 3.375,11.296875 L3.375,12.703125 C3.375,12.80625 3.459375,12.890625 3.5625,12.890625 L20.4375,12.890625 C20.540625,12.890625 20.625,12.80625 20.625,12.703125 L20.625,11.296875 C20.625,11.19375 20.540625,11.109375 20.4375,11.109375 Z" id="Path" fill="#000000" fill-rule="nonzero"></path>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                  </span>
+                                </h6>
+                                <div class="accordion-content">
+                                   {{ section.settings[accordion_text] | richtext }}
+                                </div>           
+                              </div>
+                            {%- endif -%}
+                          {%- endfor -%}
+                        </div>
+                      {%- endif -%}
+                                  
+                  {%- endif -%}
+                
+              {% else %}
+                <div class="main-product__block main-product__block-buy_buttons">
+                  <button type="submit" class="m-add-to-cart m-button m-button--primary m:w-full">
+                    <span>{{ 'products.product.add_to_cart' | t }}</span>
+                  </button>
+                </div>
+              {% endunless %}
+            </div>
+          </div>
+          <script id="productData" type="application/json">
+            {{ product | json }}
+          </script>
+        </div>
+
+        {% if product.media.size > 0 %}
+          <script src="{{ 'product-media.js' | asset_url }}" defer="defer"></script>
+        {% endif %}
+        {%- if first_3d_model -%}
+          <script type="application/json" id="ModelJSON-{{ product.id }}">
+            {{ product.media | where: 'media_type', 'model' | json }}
+          </script>
+          <script src="{{ 'product-model.js' | asset_url }}" defer="defer"></script>
+        {%- endif -%}
+        {% if product.options_with_values.size > 0 %}
+          <script src="{{ 'variant-picker.js' | asset_url }}" defer="defer"></script>
+        {% endif %}
+        {% if product != blank %}
+          {% render 'product-data', product: product %}
+        {% endif %}
+      
+      {%- endfor -%}
+
+      <script src="{{ 'your-own-bundle.js' | asset_url }}" defer="defer"></script>
+    </div>
+  </div>
+
+</div>
+
+{% schema %}
+{
+  "name": "Your Own Bundle",
+  "class": "bundle-wrapper",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "header",
+      "content": "Main Header content"
+    },
+    {
+      "type": "text",
+      "id": "page_title",
+      "label": "Page Title"
+    },
+    {
+      "type": "text",
+      "id": "header_discount_code_text",
+      "label": "Header Discount Text & Code"
+    },
+    {
+      "type": "header",
+      "content": "First Product Bottom Content"
+    },
+    {
+      "type": "text",
+      "id": "bottom_saving_message",
+      "label": "Bottom Saving Discount Message",
+      "default": "You are saving 25% with bundle builder"
+    },
+    {
+      "type": "text",
+      "id": "scroll_text",
+      "label": "Bottom Scroll Text Message",
+      "default": "Scroll to pick your bottom"
+    },
+    {
+      "type": "header",
+      "content": "General"
+    },
+    {
+      "type": "select",
+      "id": "container",
+      "label": "Container type",
+      "default": "container",
+      "options": [
+        {
+          "value": "container-fluid",
+          "label": "Default"
+        },
+        {
+          "value": "w-full",
+          "label": "Full width"
+        },
+        {
+          "value": "container",
+          "label": "Use container box"
+        }
+      ]
+    },
+    {
+      "type": "range",
+      "id": "column_gap",
+      "label": "Item gap",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "default": 100,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "column_gap_mobile",
+      "label": "item gap mobile",
+      "min": 0,
+      "max": 50,
+      "step": 5,
+      "default": 30,
+      "unit": "px"
+    },
+    {
+      "type": "header",
+      "content": "Media"
+    },
+    {
+      "type": "select",
+      "id": "image_placement",
+      "label": "Media placement",
+      "options": [
+        {
+          "label": "Left",
+          "value": "left"
+        },
+        {
+          "label": "Right",
+          "value": "right"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_thumbnails",
+      "label": "Show gallery",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Product Accordion at bottom of last product",
+      "info": "This Accordion will only show at the bottom of the last product into the Product media section"
+    },
+    {
+      "type": "text",
+      "id": "accordion_title_1",
+      "label": "Accordion Title 1"
+    },
+    {
+      "type": "richtext",
+      "id": "accordion_text_1",
+      "label": "Accordion Content 1"
+    },
+    {
+      "type": "text",
+      "id": "accordion_title_2",
+      "label": "Accordion Title 2"
+    },
+    {
+      "type": "richtext",
+      "id": "accordion_text_2",
+      "label": "Accordion Content 2"
+    },
+    {
+      "type": "text",
+      "id": "accordion_title_3",
+      "label": "Accordion Title 3"
+    },
+    {
+      "type": "richtext",
+      "id": "accordion_text_3",
+      "label": "Accordion Content 3"
+    },
+    {
+      "type": "text",
+      "id": "accordion_title_4",
+      "label": "Accordion Title 4"
+    },
+    {
+      "type": "richtext",
+      "id": "accordion_text_4",
+      "label": "Accordion Content 4"
+    },
+    {
+      "type": "header",
+      "content": "Shipping Info At the bottom of last Product",
+      "info": "This Shipping info will only show at the bottom of the last product into the Product info"
+    },
+    {
+      "type": "image_picker",
+      "id": "shipping_info_icon_1",
+      "label": "Shipping Related Info Icon 1",
+      "info": "41 x 41px recommended"
+    },
+    {
+      "type": "text",
+      "id": "shipping_info_title_1",
+      "label": "Shipping Related Info Title 1"
+    },
+    {
+      "type": "textarea",
+      "id": "shipping_info_content_1",
+      "label": "Shipping Related Info Content 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "shipping_info_icon_2",
+      "label": "Shipping Related Info Icon 2",
+      "info": "41 x 41px recommended"
+    },
+    {
+      "type": "text",
+      "id": "shipping_info_title_2",
+      "label": "Shipping Related Info Title 2"
+    },
+    {
+      "type": "textarea",
+      "id": "shipping_info_content_2",
+      "label": "Shipping Related Info Content 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "shipping_info_icon_3",
+      "label": "Shipping Related Info Icon 3",
+      "info": "41 x 41px recommended"
+    },
+    {
+      "type": "text",
+      "id": "shipping_info_title_3",
+      "label": "Shipping Related Info Title 3"
+    },
+    {
+      "type": "textarea",
+      "id": "shipping_info_content_3",
+      "label": "Shipping Related Info Content 3"
+    },
+    {
+      "type": "header",
+      "content": "Others"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_quantity_selector",
+      "label": "Show quantity selector",
+      "default": false
+    },
+    {
+      "type": "text",
+      "id": "custom_class",
+      "label": "Custom classes"
+    },
+    {
+      "type": "header",
+      "content": "Animations"
+    },
+    {
+      "type": "select",
+      "id": "animations",
+      "label": "Visible in the view animation",
+      "default": "inherit",
+      "options": [
+        {
+          "value": "inherit",
+          "label": "Inherit global setting"
+        },
+        {
+          "value": "fade-in",
+          "label": "Fade in"
+        },
+        {
+          "value": "fade-in-up",
+          "label": "Fade in up"
+        },
+        {
+          "value": "fade-in-left",
+          "label": "Fade in left"
+        },
+        {
+          "value": "fade-in-right",
+          "label": "Fade in right"
+        }
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "type": "product-list",
+      "name": "Products",
+      "limit": 2,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "product_indicator_icon",
+          "label": "Product Indicator Icon"
+        },
+        {
+          "type": "text",
+          "id": "product_indicator_text",
+          "label": "Product Indicator Text"
+        },
+        {
+          "type": "product",
+          "id": "featured_product",
+          "label": "Product"
+        },
+        {
+          "type": "checkbox",
+          "id": "enable_review_icon",
+          "label": "Enable Reviews Icon"
+        },
+        {
+          "type": "header",
+          "content": "Product Material,Support info"
+        },
+        {
+          "type": "image_picker",
+          "id": "info_icon_1",
+          "label": "Info Icon 1",
+          "info": "41 x 41px recommended"
+        },
+        {
+          "type": "text",
+          "id": "info_title_1",
+          "label": "Info Title 1"
+        },
+        {
+          "type": "textarea",
+          "id": "info_content_1",
+          "label": "Info Content 1"
+        },
+        {
+          "type": "image_picker",
+          "id": "info_icon_2",
+          "label": "Info Icon 2",
+          "info": "41 x 41px recommended"
+        },
+        {
+          "type": "text",
+          "id": "info_title_2",
+          "label": "Info Title 2"
+        },
+        {
+          "type": "textarea",
+          "id": "info_content_2",
+          "label": "Info Content 2"
+        },
+        {
+          "type": "image_picker",
+          "id": "info_icon_3",
+          "label": "Info Icon 3",
+          "info": "41 x 41px recommended"
+        },
+        {
+          "type": "text",
+          "id": "info_title_3",
+          "label": "Info Title 3"
+        },
+        {
+          "type": "textarea",
+          "id": "info_content_3",
+          "label": "Info Content 3"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Your Own Bundle",
+      "category": "Product",
+      "settings": {},
+      "blocks": [
+        {
+          "type": "product-list"
+        },
+        {
+          "type": "product-list"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

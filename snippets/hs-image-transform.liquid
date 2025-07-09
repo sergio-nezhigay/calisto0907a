@@ -1,0 +1,13 @@
+{%- if width -%}
+  {%- assign img = img | img_url: width -%}
+{%- endif -%}
+{%- if settings.image_cdn_enabled -%}
+  {%- capture cdn_url -%}{{ settings.image_cdn_url }}/https://{%- endcapture -%}
+  {%- if img contains 'https://' -%}
+    {{- img | replace: 'https://', cdn_url -}}
+  {%- else -%}
+    {{- img | replace: '//', cdn_url -}}
+  {%- endif -%}
+{%- else -%}
+  {{- img -}}
+{%- endif -%}

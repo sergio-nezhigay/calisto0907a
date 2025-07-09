@@ -1,0 +1,326 @@
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<style>
+  .bundle-list{
+    padding:50px 0;
+  }
+  .bundle-list__grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    /* padding: 16px; */
+  }
+
+  .bundle-list__grid .swiper-wrapper{
+    padding-bottom:0;
+  }
+
+  .bundle-list__item {
+    background-color: #fff;
+    /* border: 1px solid #e5e5e5; */
+    border-radius: 8px;
+    /* padding: 16px; */
+    box-sizing: border-box;
+    transition: transform 0.3s;
+  }
+
+  .bundle-list__item:hover {
+    transform: translateY(-5px);
+  }
+
+  .bundle-list__image {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .bundle-list__image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1.2;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+    object-position: top;
+}
+
+  /* Hide the hover image by default */
+  .bundle-list__image .hover-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+  }
+
+
+  /* Show hover image on hover */
+  .bundle-list__image:hover .hover-image {
+    opacity: 1;
+  }
+
+  /* Optionally fade out the original image when hovering */
+  .bundle-list__image:hover img:not(.hover-image) {
+    opacity: 0;
+  }
+
+
+  .bundle-list__content h3 {
+    font-size: 16px;
+    margin-top: 12px;
+    text-align:left;
+    font-weight:500;
+  }
+  .heading__wrapper {
+    text-align:center;
+    padding-bottom:25px;
+  }
+
+  .heading__wrapper h2{
+    font-size:36px;
+  }
+  .bundle-list .swiper-slide {
+    height: auto;
+}
+  
+  .bundle-list__image a,
+  .bundle-list__image,
+  .bundle-list__image a img{
+    /* height: 100%; */
+}
+
+.bundle-list__grid .swiper-button-prev, 
+  .bundle-list__grid .swiper-button-next {
+    width: 27px;
+    height: 44px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 40%;
+    transform: translateY(-50%);
+    opacity:0;
+}
+  
+.bundle-list__grid .swiper-button-prev:hover, 
+  .bundle-list__grid .swiper-button-next:hover {
+    background-color: #000;
+    box-shadow: 0 0 0 .2rem rgb(34, 34, 34);
+}
+  .bundle-list__grid .swiper-button-prev:hover::after, 
+  .bundle-list__grid .swiper-button-next:hover::after {
+    color: #fff;
+}
+
+
+.bundle-list__grid .swiper-button-prev::after, 
+  .bundle-list__grid .swiper-button-next::after {
+    font-size: 15px;
+    color: #007aff;
+}
+
+.bundle-list__grid .swiper-button-prev {
+  left: 015px;
+}
+
+.bundle-list__grid .swiper-button-next {
+  right: 15px;
+}
+ .bundle-list .swiper-pagination{
+    position: relative;
+}
+  .bundle-list__grid:hover .swiper-button-next,
+  .bundle-list__grid:hover .swiper-button-prev{
+    opacity: 1;
+}
+
+
+  /* Desktop: 4 columns */
+  @media screen and (min-width: 769px) {
+    .bundle-list__item {
+      /* flex: 1 1 calc(25% - 18px); /* 4 columns with 24px gap */ */
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .bundle-list__content h3 {
+      font-size: 14px;
+  }
+    .bundle-list__grid .swiper-wrapper {
+    padding-bottom: 0;
+}
+    .bundle-list__image img {
+    aspect-ratio: 1/1.35;
+}
+   
+  }
+</style>
+<section class="bundle-list">
+  <div class="container">
+    <div class="heading__wrapper">
+      <h3>{{ section.settings.heading }}</h3>
+    </div>
+    <div class="bundle-list__grid swiper">
+      <div class="swiper-wrapper">
+        {% for block in section.blocks %}
+          <div class="bundle-list__item swiper-slide">
+            <div class="bundle-list__image">
+              <a href="{{ block.settings.link }}" aria-label="{{ block.settings.heading }}">
+                <img
+                  src="{{ block.settings.image | image_url: width: 600 }}"
+                  width="{{ block.settings.image.width }}"
+                  height="{{ block.settings.image.height }}"
+                  alt="{{ block.settings.heading | escape }}"
+                  loading="lazy"
+                >
+                <img
+                  src="{{ block.settings.hover_image | image_url: width: 600 }}"
+                  width="{{ block.settings.hover_image.width }}"
+                  height="{{ block.settings.hover_image.height }}"
+                  alt="{{ block.settings.heading | escape }}"
+                  loading="lazy"
+                  class="hover-image"
+                >
+              </a>
+            </div>
+            <div class="bundle-list__content">
+              <h3>
+                <a href="{{ block.settings.link }}">{{ block.settings.heading }}</a>
+              </h3>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+
+     {% if section.settings.enable_arrows %}
+      <div class="swiper-button-prev bundle-list__nav--prev"></div>
+      <div class="swiper-button-next bundle-list__nav--next"></div>
+    {% endif %}
+      <!-- Pagination -->
+      {% if section.settings.enable_dots %}
+        <div class="swiper-pagination"></div>
+      {% endif %}
+      
+    </div>
+   
+  </div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Swiper JS Init -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    new Swiper('.bundle-list__grid', {
+      slidesPerView: 2,
+      spaceBetween: 16,
+      pagination: {
+        el: '.bundle-list__grid .swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.bundle-list__nav--next',
+        prevEl: '.bundle-list__nav--prev',
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 2
+        },
+        992: {
+          slidesPerView: 4
+        }
+      }
+    });
+
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Bundle List Slider",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Bundle Grid"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_arrows",
+      "label": "Enable navigation arrows",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_dots",
+      "label": "Enable Dots",
+      "default": true
+    }
+  ],
+  "blocks": [
+    {
+      "type": "product",
+      "name": "Bundle Product",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "hover_image",
+          "label": "Hover Image"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Page Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Bundle List Slider",
+      "category": "Custom",
+      "blocks": [
+        {
+          "type": "product",
+          "settings": {
+            "heading": "Sample Product 1",
+            "link": "#"
+          }
+        },
+        {
+          "type": "product",
+          "settings": {
+            "heading": "Sample Product 2",
+            "link": "#"
+          }
+        },
+        {
+          "type": "product",
+          "settings": {
+            "heading": "Sample Product 3",
+            "link": "#"
+          }
+        },
+        {
+          "type": "product",
+          "settings": {
+            "heading": "Sample Product 4",
+            "link": "#"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

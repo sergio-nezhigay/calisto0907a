@@ -1,0 +1,493 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "page-about-us",
+      "settings": {}
+    },
+    "custom-content": {
+      "type": "custom-content",
+      "blocks": {
+        "image_card_4ggaJr": {
+          "type": "image_card",
+          "settings": {
+            "width": "100%",
+            "color_scheme": "",
+            "content_position": "center_center",
+            "content_alignment": "center",
+            "text_size": "medium",
+            "text_color": "inherit",
+            "image": "shopify://shop_images/01_Hero_banner_1__5.png",
+            "mobile_image": "shopify://shop_images/01_Hero_banner_14.png",
+            "link": "",
+            "title": "",
+            "subtitle": "",
+            "description": "",
+            "button_label": "",
+            "button_style": "m-button--primary",
+            "button_size": "",
+            "button_fixed": false,
+            "use_content_above": false,
+            "block_custom_class": "",
+            "animations": "inherit"
+          }
+        },
+        "text_zcXLLH": {
+          "type": "text",
+          "settings": {
+            "title": "OUR STORY",
+            "subheading": "",
+            "text": "<p>One simple item of clothing carries a heavy load of misery. Women dread buying a swimsuit so much that even thinking about trying one on, according to a recent Australian study, causes anxiety and depression. Almost 50% of women avoid going to a place/attending an event that requires wearing a swimsuit and no wonder, swimwear and activewear pieces seem to be shrinking, exposing women’s bodies and heightening their anxiety.<br/><br/>For years, the message was: alter your body to fit the clothes rather than altering the clothes to fit the body and the psyche.</p>",
+            "width": "50%",
+            "alignment": "center",
+            "align_text": "left",
+            "text_size": "medium",
+            "text_color": "inherit",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "m-button--primary",
+            "button_size": "",
+            "block_custom_class": "",
+            "animations": "inherit"
+          }
+        },
+        "4e1fb14f-ef60-4693-b6a2-2b26063e1b70": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/02_the_brand_story_1__1.png",
+            "link": "",
+            "width": "50%",
+            "alignment": "center",
+            "block_custom_class": "",
+            "animations": "inherit"
+          }
+        },
+        "text_kTWaGP": {
+          "type": "text",
+          "settings": {
+            "title": "",
+            "subheading": "",
+            "text": "<p>And yet, we want to jump in the pool, dive into the ocean, move, play and live our lives with energy, confidence and joy. We want to be carefree. Unstoppable even. There are ways to be confident without being loud or demonstrative. Self-confidence doesn’t have to mean self-exposure.</p>",
+            "width": "50%",
+            "alignment": "center",
+            "align_text": "left",
+            "text_size": "medium",
+            "text_color": "inherit",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "m-button--primary",
+            "button_size": "",
+            "block_custom_class": "",
+            "animations": "inherit"
+          }
+        },
+        "image_iwKxm3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/03_the_brand_story_1.png",
+            "link": "",
+            "width": "50%",
+            "alignment": "center",
+            "block_custom_class": "",
+            "animations": "inherit"
+          }
+        },
+        "f5e88f1f-ff68-4d03-b686-0cb9fe62fab1": {
+          "type": "text",
+          "settings": {
+            "title": "",
+            "subheading": "CALYPSA SET OUT TO MAKE SWIMWEAR THAT FEELS GOOD, THAT FITS WELL, THAT ISN’T CONSTRICTING, ANNOYING OR MISERABLE.",
+            "text": "<p>Calypsa allows you to focus on the pleasure of movement, of outdoors, of family, of warmth Because, really, when you’re at the beach or the pool, you want to feel absolutely, joyfully free. What does free feel like?</p><p>It feels like air. It moves with you. It doesn’t ride up, slip down, dig in, or bunch up. It protects you from the sun. It dries in a flash. It looks just as stylish on the beach as it does at lunch by the beach. It lets you express your own style, your own personality. Calypsa is dedicated to creating the kind of swimwear you’ve been hoping for and dreaming of. Swimwear that lets you run, play, relax, and just be.</p>",
+            "width": "100%",
+            "alignment": "center",
+            "align_text": "center",
+            "text_size": "medium",
+            "text_color": "black",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "m-button--primary",
+            "button_size": "",
+            "block_custom_class": "sf__about-block sf__about-block-text sf__about-block-text-1",
+            "animations": "inherit"
+          }
+        },
+        "image_card_FgKBTd": {
+          "type": "image_card",
+          "settings": {
+            "width": "100%",
+            "color_scheme": "",
+            "content_position": "center_center",
+            "content_alignment": "center",
+            "text_size": "medium",
+            "text_color": "inherit",
+            "image": "shopify://shop_images/04_top_1.png",
+            "mobile_image": "shopify://shop_images/04_top.png",
+            "link": "",
+            "title": "",
+            "subtitle": "",
+            "description": "",
+            "button_label": "",
+            "button_style": "m-button--primary",
+            "button_size": "",
+            "button_fixed": false,
+            "use_content_above": false,
+            "block_custom_class": "",
+            "animations": "inherit"
+          }
+        },
+        "9a3a8077-de29-4141-9162-b9484d4a85f8": {
+          "type": "html",
+          "disabled": true,
+          "settings": {
+            "code": "<div class=\"sf__about-custom-list\">\n  <h3>We are proudly<br> Australian.</h3>\n  <ul>\n    <li>\n      <span><img src=\"https://cdn.shopify.com/s/files/1/0561/2742/2636/files/icon1.svg?v=1627616411\"></span>\n      <div class=\"rte\">\n          <h4>Soft Fabric</h4>\n          <p class=\"text-color-subtext\">Get complimentary ground shipping on every<br> order.Don’t love it? Send it back, on us.</p>\n      </div>\n    </li>\n    <li>\n      <span><img src=\"https://cdn.shopify.com/s/files/1/0561/2742/2636/files/icon2_daf1b6c2-ef2e-416c-ae6a-a7ddd145b6c5.svg?v=1627616411\"></span>\n      <div class=\"rte\">\n          <h4>Lightweight</h4>\n          <p class=\"text-color-subtext\">Join Minimog Rewards to earn gift cards<br>\nand enjoy exclusive member benefits.</p>\n      </div>\n    </li>\n    <li>\n      <span><img src=\"https://cdn.shopify.com/s/files/1/0561/2742/2636/files/icon3.svg?v=1627616411\"></span>\n      <div class=\"rte\">\n          <h4>All Day Comfort</h4>\n          <p class=\"text-color-subtext\">We believe getting dressed should be the<br> easiest part of your day.</p>\n      </div>\n    </li>\n  </ul>\n</div>",
+            "width": "50%",
+            "block_custom_class": "sf__about-custom-html",
+            "animations": "inherit"
+          }
+        },
+        "28e3ce35-e364-43f3-ba87-18b633233063": {
+          "type": "text",
+          "settings": {
+            "title": "",
+            "subheading": "CALYPSA HAS OVER 75 ORIGINAL SWIMWEAR STYLES TO\nCHOOSE FROM SO YOU CAN WEAR IT YOUR WAY.",
+            "text": "<p>We designed and created over 75 original swimwear styles of tops and bottoms,<br/>made with you in mind. The uncomfortable tugging and pulling of swimwear no<br/>longer exists with our styles, the fit & styles are all yours to choose from.</p>",
+            "width": "100%",
+            "alignment": "center",
+            "align_text": "center",
+            "text_size": "medium",
+            "text_color": "black",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "m-button--primary",
+            "button_size": "",
+            "block_custom_class": "sf__about-block sf__about-block-text sf__about-block-text-2",
+            "animations": "inherit"
+          }
+        },
+        "image_card_9cc7Mp": {
+          "type": "image_card",
+          "settings": {
+            "width": "100%",
+            "color_scheme": "",
+            "content_position": "center_center",
+            "content_alignment": "center",
+            "text_size": "medium",
+            "text_color": "inherit",
+            "image": "shopify://shop_images/04_Bottom_1.png",
+            "mobile_image": "shopify://shop_images/04_Bottom.png",
+            "link": "",
+            "title": "",
+            "subtitle": "",
+            "description": "",
+            "button_label": "",
+            "button_style": "m-button--primary",
+            "button_size": "",
+            "button_fixed": false,
+            "use_content_above": false,
+            "block_custom_class": "",
+            "animations": "inherit"
+          }
+        },
+        "c6a8b57f-c54c-43f1-9771-9ea5d88a2f36": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "Our Team",
+            "subheading": "",
+            "text": "",
+            "width": "100%",
+            "alignment": "center",
+            "align_text": "center",
+            "text_size": "medium",
+            "text_color": "black",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "m-button--primary",
+            "button_size": "",
+            "block_custom_class": "sf__about-custom-heading",
+            "animations": "inherit"
+          }
+        },
+        "859f4ef2-676f-4587-9ae8-3a19ffa439dd": {
+          "type": "image_card",
+          "disabled": true,
+          "settings": {
+            "width": "33%",
+            "color_scheme": "",
+            "content_position": "bottom_left",
+            "content_alignment": "left",
+            "text_size": "medium",
+            "text_color": "black",
+            "link": "",
+            "title": "Edward Lindgren",
+            "subtitle": "<span class=\"text-color-subtext\">CHIEF OPERATING OFFICER</span>",
+            "description": "",
+            "button_label": "",
+            "button_style": "m-button--primary",
+            "button_size": "",
+            "button_fixed": false,
+            "use_content_above": false,
+            "block_custom_class": "sf__about-card-custom",
+            "animations": "inherit"
+          }
+        },
+        "a1a4a67f-c83f-4629-a006-e44f56c80bf5": {
+          "type": "image_card",
+          "disabled": true,
+          "settings": {
+            "width": "33%",
+            "color_scheme": "",
+            "content_position": "bottom_left",
+            "content_alignment": "left",
+            "text_size": "medium",
+            "text_color": "black",
+            "link": "",
+            "title": "Chineze Afamefuna",
+            "subtitle": "<span class=\"text-color-subtext\">MARKETING</span>",
+            "description": "",
+            "button_label": "",
+            "button_style": "m-button--primary",
+            "button_size": "",
+            "button_fixed": false,
+            "use_content_above": false,
+            "block_custom_class": "sf__about-card-custom",
+            "animations": "inherit"
+          }
+        },
+        "dc4597e9-ca80-4d0f-9e30-ff28c96dd3aa": {
+          "type": "image_card",
+          "disabled": true,
+          "settings": {
+            "width": "33%",
+            "color_scheme": "",
+            "content_position": "bottom_left",
+            "content_alignment": "left",
+            "text_size": "medium",
+            "text_color": "black",
+            "link": "",
+            "title": "Nado Husa",
+            "subtitle": "<span class=\"text-color-subtext\">CO-FOUNDER</span>",
+            "description": "",
+            "button_label": "",
+            "button_style": "m-button--primary",
+            "button_size": "",
+            "button_fixed": false,
+            "use_content_above": false,
+            "block_custom_class": "sf__about-card-custom",
+            "animations": "inherit"
+          }
+        },
+        "image_gmeN96": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/05_sizes_1.png",
+            "link": "",
+            "width": "50%",
+            "alignment": "center",
+            "block_custom_class": "",
+            "animations": "inherit"
+          }
+        },
+        "text_B3dGHC": {
+          "type": "text",
+          "settings": {
+            "title": "",
+            "subheading": "<b> PERFECT FOR EVERY-BODY </b>",
+            "text": "<p>All calypsa styles are available in sizes XS - 6X</p>",
+            "width": "50%",
+            "alignment": "center",
+            "align_text": "left",
+            "text_size": "medium",
+            "text_color": "inherit",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "m-button--primary",
+            "button_size": "",
+            "block_custom_class": "",
+            "animations": "inherit"
+          }
+        },
+        "image_DV8wFz": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/06_wherever_1.png",
+            "link": "",
+            "width": "50%",
+            "alignment": "center",
+            "block_custom_class": "",
+            "animations": "inherit"
+          }
+        },
+        "text_qzqtbW": {
+          "type": "text",
+          "settings": {
+            "title": "",
+            "subheading": "<b> WHEREVER YOUR DAY TAKES YOU </b>",
+            "text": "<p>Practical swimwear for endless activities. No need to change when you go from the beach, to the gym, to grab a coffee. Do it all in one suit!</p>",
+            "width": "50%",
+            "alignment": "center",
+            "align_text": "left",
+            "text_size": "medium",
+            "text_color": "inherit",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "m-button--primary",
+            "button_size": "",
+            "block_custom_class": "",
+            "animations": "inherit"
+          }
+        },
+        "html_LwxVV3": {
+          "type": "html",
+          "settings": {
+            "code": "<br>\n<br>",
+            "width": "100%",
+            "block_custom_class": "",
+            "animations": "inherit"
+          }
+        },
+        "html_KaDWXx": {
+          "type": "html",
+          "settings": {
+            "code": "<br>",
+            "width": "33%",
+            "block_custom_class": "",
+            "animations": "inherit"
+          }
+        },
+        "image_GV4wGV": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/07_Reviews.png",
+            "link": "",
+            "width": "33%",
+            "alignment": "center",
+            "block_custom_class": "",
+            "animations": "inherit"
+          }
+        },
+        "text_KyTBbj": {
+          "type": "text",
+          "settings": {
+            "title": "OVER 10,000 REVIEWS ON TRUSTPILOT WITH 4.7/5 STARS!",
+            "subheading": "",
+            "text": "",
+            "width": "100%",
+            "alignment": "center",
+            "align_text": "left",
+            "text_size": "medium",
+            "text_color": "inherit",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "m-button--primary",
+            "button_size": "",
+            "block_custom_class": "",
+            "animations": "inherit"
+          }
+        },
+        "text_mRQmNW": {
+          "type": "text",
+          "settings": {
+            "title": "<br>\n\nOVER 500 INFLUENCERS LOVE OUR PRODUCT",
+            "subheading": "",
+            "text": "",
+            "width": "100%",
+            "alignment": "center",
+            "align_text": "center",
+            "text_size": "medium",
+            "text_color": "inherit",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "m-button--primary",
+            "button_size": "",
+            "block_custom_class": "",
+            "animations": "inherit"
+          }
+        },
+        "image_card_kNiBCL": {
+          "type": "image_card",
+          "settings": {
+            "width": "50%",
+            "color_scheme": "",
+            "content_position": "center_center",
+            "content_alignment": "center",
+            "text_size": "medium",
+            "text_color": "inherit",
+            "image": "shopify://shop_images/08_Influencers_1.png",
+            "mobile_image": "shopify://shop_images/big-08_Influencers.png",
+            "link": "",
+            "title": "",
+            "subtitle": "",
+            "description": "",
+            "button_label": "",
+            "button_style": "m-button--primary",
+            "button_size": "",
+            "button_fixed": false,
+            "use_content_above": false,
+            "block_custom_class": "",
+            "animations": "inherit"
+          }
+        }
+      },
+      "block_order": [
+        "image_card_4ggaJr",
+        "text_zcXLLH",
+        "4e1fb14f-ef60-4693-b6a2-2b26063e1b70",
+        "text_kTWaGP",
+        "image_iwKxm3",
+        "f5e88f1f-ff68-4d03-b686-0cb9fe62fab1",
+        "image_card_FgKBTd",
+        "9a3a8077-de29-4141-9162-b9484d4a85f8",
+        "28e3ce35-e364-43f3-ba87-18b633233063",
+        "image_card_9cc7Mp",
+        "c6a8b57f-c54c-43f1-9771-9ea5d88a2f36",
+        "859f4ef2-676f-4587-9ae8-3a19ffa439dd",
+        "a1a4a67f-c83f-4629-a006-e44f56c80bf5",
+        "dc4597e9-ca80-4d0f-9e30-ff28c96dd3aa",
+        "image_gmeN96",
+        "text_B3dGHC",
+        "image_DV8wFz",
+        "text_qzqtbW",
+        "html_LwxVV3",
+        "html_KaDWXx",
+        "image_GV4wGV",
+        "text_KyTBbj",
+        "text_mRQmNW",
+        "image_card_kNiBCL"
+      ],
+      "custom_css": [
+        "@media (min-width: 1280px) {#m-custom__block--9a3a8077-de29-4141-9162-b9484d4a85f8 {padding-left: 100px; }}"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_size": "h3",
+        "subheading": "",
+        "description": "",
+        "header_alignment": "center",
+        "container": "container",
+        "color_scheme": "",
+        "content_color_scheme": "",
+        "enable_parallax": false,
+        "parallax_direction": "vertical",
+        "gap": 30,
+        "gap_mobile": 16,
+        "use_scroll_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "custom_class": "m-about-page"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "custom-content"
+  ]
+}

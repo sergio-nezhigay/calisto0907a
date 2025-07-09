@@ -1,0 +1,983 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "page",
+      "settings": {}
+    },
+    "product_tabs_ypM9qK": {
+      "type": "product-tabs",
+      "blocks": {
+        "tab_Mam6kY": {
+          "type": "tab",
+          "settings": {
+            "title": "Tankini",
+            "collection": "tankini"
+          }
+        },
+        "tab_rdYnED": {
+          "type": "tab",
+          "settings": {
+            "title": "3/4 Sleeves",
+            "collection": "3-4-sleeve-swim-tops"
+          }
+        },
+        "tab_dzBDVc": {
+          "type": "tab",
+          "settings": {
+            "title": "Short Sleeve",
+            "collection": "short-sleeve-swim-tops"
+          }
+        },
+        "tab_7AMrPT": {
+          "type": "tab",
+          "settings": {
+            "title": "Long Sleeves",
+            "collection": "long-sleeve-swim-tops"
+          }
+        }
+      },
+      "block_order": [
+        "tab_Mam6kY",
+        "tab_rdYnED",
+        "tab_dzBDVc",
+        "tab_7AMrPT"
+      ],
+      "name": "Swim Tops By Sleeve Length",
+      "settings": {
+        "heading": "Swim Tops By Sleeve Length",
+        "heading_size": "h3",
+        "subheading": "",
+        "description": "",
+        "header_alignment": "center",
+        "container": "container-fluid",
+        "color_scheme": "",
+        "tab_header": "horizontal",
+        "limit": 30,
+        "show_button": true,
+        "button_type": "link",
+        "button_label": "View all",
+        "button_style": "m-button--primary",
+        "button_size": "",
+        "pcard_layout": "",
+        "pcard_image_ratio": "",
+        "show_vendor": false,
+        "items_per_row": 4,
+        "item_gap": 30,
+        "enable_slider": true,
+        "show_navigation": true,
+        "show_pagination": false,
+        "mobile_disable_slider": false,
+        "use_scroll_mobile": true,
+        "item_gap_mobile": 16,
+        "padding_top": 60,
+        "padding_bottom": 0,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "product_tabs_bwBNnV": {
+      "type": "product-tabs",
+      "blocks": {
+        "tab_cBiHeX": {
+          "type": "tab",
+          "settings": {
+            "title": "Built-In Bra",
+            "collection": "built-in-bra-tops"
+          }
+        },
+        "tab_N3KJjW": {
+          "type": "tab",
+          "settings": {
+            "title": "Zippers",
+            "collection": "tops-with-zippers"
+          }
+        },
+        "tab_pejakm": {
+          "type": "tab",
+          "settings": {
+            "title": "Loose Fit",
+            "collection": "loose-fitting-tops"
+          }
+        },
+        "tab_iW8M93": {
+          "type": "tab",
+          "settings": {
+            "title": "Tight Fit",
+            "collection": "tight-fitting-tops"
+          }
+        }
+      },
+      "block_order": [
+        "tab_cBiHeX",
+        "tab_N3KJjW",
+        "tab_pejakm",
+        "tab_iW8M93"
+      ],
+      "name": "Swim Tops By Fit & Feature ",
+      "settings": {
+        "heading": "Swim Tops By Fit & Feature",
+        "heading_size": "h3",
+        "subheading": "",
+        "description": "",
+        "header_alignment": "center",
+        "container": "container-fluid",
+        "color_scheme": "",
+        "tab_header": "horizontal",
+        "limit": 8,
+        "show_button": false,
+        "button_type": "link",
+        "button_label": "View all",
+        "button_style": "m-button--primary",
+        "button_size": "",
+        "pcard_layout": "",
+        "pcard_image_ratio": "",
+        "show_vendor": false,
+        "items_per_row": 4,
+        "item_gap": 30,
+        "enable_slider": true,
+        "show_navigation": true,
+        "show_pagination": false,
+        "mobile_disable_slider": false,
+        "use_scroll_mobile": true,
+        "item_gap_mobile": 16,
+        "padding_top": 60,
+        "padding_bottom": 0,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "product_tabs_3fxwii": {
+      "type": "product-tabs",
+      "blocks": {
+        "tab_D9yfrR": {
+          "type": "tab",
+          "settings": {
+            "title": "Bikini Bottoms",
+            "collection": "bikini-bottoms"
+          }
+        },
+        "tab_FjpziQ": {
+          "type": "tab",
+          "settings": {
+            "title": "Swim Leggings",
+            "collection": "swim-leggings"
+          }
+        },
+        "tab_9RJGP4": {
+          "type": "tab",
+          "settings": {
+            "title": "Swim Shorts",
+            "collection": "swim-shorts"
+          }
+        },
+        "tab_GMcPD3": {
+          "type": "tab",
+          "settings": {
+            "title": "Board Shorts",
+            "collection": "board-shorts"
+          }
+        }
+      },
+      "block_order": [
+        "tab_D9yfrR",
+        "tab_FjpziQ",
+        "tab_9RJGP4",
+        "tab_GMcPD3"
+      ],
+      "name": "Swim Bottoms By Length",
+      "settings": {
+        "heading": "Swim Bottoms By Length",
+        "heading_size": "h3",
+        "subheading": "",
+        "description": "",
+        "header_alignment": "center",
+        "container": "container-fluid",
+        "color_scheme": "",
+        "tab_header": "horizontal",
+        "limit": 9,
+        "show_button": false,
+        "button_type": "link",
+        "button_label": "View all",
+        "button_style": "m-button--primary",
+        "button_size": "",
+        "pcard_layout": "",
+        "pcard_image_ratio": "",
+        "show_vendor": false,
+        "items_per_row": 4,
+        "item_gap": 30,
+        "enable_slider": true,
+        "show_navigation": true,
+        "show_pagination": false,
+        "mobile_disable_slider": false,
+        "use_scroll_mobile": true,
+        "item_gap_mobile": 16,
+        "padding_top": 60,
+        "padding_bottom": 0,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "product_tabs_mtBwFQ": {
+      "type": "product-tabs",
+      "blocks": {
+        "tab_jBfceh": {
+          "type": "tab",
+          "settings": {
+            "title": "Flowy Swim Skorts",
+            "collection": "flowy-swim-skorts"
+          }
+        },
+        "tab_JgHCrY": {
+          "type": "tab",
+          "settings": {
+            "title": "Short Swim Skorts",
+            "collection": "short-swim-skorts"
+          }
+        },
+        "tab_YTVPFQ": {
+          "type": "tab",
+          "settings": {
+            "title": "Knee Length Swim Skorts",
+            "collection": "knee-length-swim-skorts"
+          }
+        },
+        "tab_X6iXxT": {
+          "type": "tab",
+          "settings": {
+            "title": "Skorts With Attached Leggings",
+            "collection": "skorts-with-attached-leggings"
+          }
+        }
+      },
+      "block_order": [
+        "tab_jBfceh",
+        "tab_JgHCrY",
+        "tab_YTVPFQ",
+        "tab_X6iXxT"
+      ],
+      "name": "Swim Skorts By Style",
+      "settings": {
+        "heading": "Swim Skorts By Style",
+        "heading_size": "h3",
+        "subheading": "",
+        "description": "",
+        "header_alignment": "center",
+        "container": "container-fluid",
+        "color_scheme": "",
+        "tab_header": "horizontal",
+        "limit": 9,
+        "show_button": false,
+        "button_type": "link",
+        "button_label": "View all",
+        "button_style": "m-button--primary",
+        "button_size": "",
+        "pcard_layout": "",
+        "pcard_image_ratio": "",
+        "show_vendor": false,
+        "items_per_row": 4,
+        "item_gap": 30,
+        "enable_slider": true,
+        "show_navigation": true,
+        "show_pagination": false,
+        "mobile_disable_slider": false,
+        "use_scroll_mobile": true,
+        "item_gap_mobile": 16,
+        "padding_top": 60,
+        "padding_bottom": 0,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "custom_content_X8aQi6": {
+      "type": "custom-content",
+      "blocks": {
+        "text_hCiNkb": {
+          "type": "text",
+          "settings": {
+            "title": "Product Guide",
+            "subheading": "",
+            "text": "<p>We design all our swimwear with YOU in mind. Mix & Match with over 75 styles in sizes XXS-6X.<br/>Made for the perfect fit and to protect you from the sun with UPF 50+ Sun Protection.</p>",
+            "width": "100%",
+            "alignment": "center",
+            "align_text": "center",
+            "text_size": "medium",
+            "text_color": "inherit",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "m-button--primary",
+            "button_size": "",
+            "block_custom_class": "",
+            "animations": "inherit"
+          }
+        }
+      },
+      "block_order": [
+        "text_hCiNkb"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "",
+        "heading_size": "h3",
+        "subheading": "",
+        "description": "",
+        "header_alignment": "center",
+        "container": "container-fluid",
+        "color_scheme": "",
+        "content_color_scheme": "",
+        "enable_parallax": false,
+        "parallax_direction": "vertical",
+        "gap": 30,
+        "gap_mobile": 16,
+        "use_scroll_mobile": false,
+        "padding_top": 100,
+        "padding_bottom": 0,
+        "custom_class": ""
+      }
+    },
+    "brands_list_Dr66Vh": {
+      "type": "brands-list",
+      "blocks": {
+        "image_RccQjc": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Maya_Swim_Top_1.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/maya-swim-top",
+            "max_width": "200px"
+          }
+        },
+        "image_peg4qK": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Maya_Swim_Top_With_Removable_Cups_1.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/maya-swim-top-with-removable-cups",
+            "max_width": "200px"
+          }
+        },
+        "image_N6ekgX": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Group_103_2.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/loose-fit-maya-swim-top",
+            "max_width": "200px"
+          }
+        },
+        "image_BkwgFY": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Group_102_1.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/closed-back-maya-swim-top",
+            "max_width": "200px"
+          }
+        },
+        "image_FbctXH": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Group_104.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/scarlett-swim-top",
+            "max_width": "200px"
+          }
+        },
+        "image_ENX3RL": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Group_100_2.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/lexi-swim-tunic",
+            "max_width": "200px"
+          }
+        },
+        "image_8zVEyT": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Group_105.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/serena-swim-tunic",
+            "max_width": "200px"
+          }
+        },
+        "image_qcXADR": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Adjustable_Strap_Maya_Swim_Top_2.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/adjustable-strap-maya-swim-top",
+            "max_width": "200px"
+          }
+        }
+      },
+      "block_order": [
+        "image_RccQjc",
+        "image_peg4qK",
+        "image_N6ekgX",
+        "image_BkwgFY",
+        "image_FbctXH",
+        "image_ENX3RL",
+        "image_8zVEyT",
+        "image_qcXADR"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "Tankinis",
+        "heading_size": "h3",
+        "subheading": "",
+        "header_alignment": "center",
+        "container": "container-fluid",
+        "color_scheme": "",
+        "item_per_row": 6,
+        "column_gap": 10,
+        "row_gap": 10,
+        "column_gap_mobile": 10,
+        "row_gap_mobile": 10,
+        "enable_slider": true,
+        "show_nav": true,
+        "show_pagination": false,
+        "autorotate": false,
+        "autorotate_speed": 3,
+        "padding_top": 60,
+        "padding_bottom": 0,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "brands_list_jrXXXt": {
+      "type": "brands-list",
+      "blocks": {
+        "image_9Ypq47": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Group_121.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/adele-swim-top",
+            "max_width": "200px"
+          }
+        },
+        "image_9wpJgY": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Group_106.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/loose-fit-adele-swim-top-1",
+            "max_width": "200px"
+          }
+        },
+        "image_aArzQp": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Group_111_1.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/anna-swim-tunic",
+            "max_width": "200px"
+          }
+        },
+        "image_QhrnLC": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Group_109_1.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/daphne-swim-top",
+            "max_width": "200px"
+          }
+        },
+        "image_mHWLBH": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/V-neckline_Adele_Swim_Top_1.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/v-neck-adele-swim-top",
+            "max_width": "200px"
+          }
+        },
+        "image_LUVkcJ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Half-Zip_Adele.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/half-zip-adele-swim-top-1",
+            "max_width": "200px"
+          }
+        },
+        "image_Km6gUm": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Group_110.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/full-zip-adele-swim-top",
+            "max_width": "200px"
+          }
+        },
+        "image_rzNbBh": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Group_112.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/mock-neck-adele-swim-top",
+            "max_width": "200px"
+          }
+        }
+      },
+      "block_order": [
+        "image_9Ypq47",
+        "image_9wpJgY",
+        "image_aArzQp",
+        "image_QhrnLC",
+        "image_mHWLBH",
+        "image_LUVkcJ",
+        "image_Km6gUm",
+        "image_rzNbBh"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "Short Sleeve",
+        "heading_size": "h3",
+        "subheading": "",
+        "header_alignment": "center",
+        "container": "container-fluid",
+        "color_scheme": "",
+        "item_per_row": 6,
+        "column_gap": 10,
+        "row_gap": 10,
+        "column_gap_mobile": 10,
+        "row_gap_mobile": 10,
+        "enable_slider": true,
+        "show_nav": true,
+        "show_pagination": false,
+        "autorotate": false,
+        "autorotate_speed": 3,
+        "padding_top": 60,
+        "padding_bottom": 0,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "brands_list_UNLkym": {
+      "type": "brands-list",
+      "blocks": {
+        "image_XT8HNw": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Group_114.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/margaux-swim-top",
+            "max_width": "200px"
+          }
+        },
+        "image_nWmyrz": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Group_115.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/loose-fit-margaux-swim-top",
+            "max_width": "200px"
+          }
+        },
+        "image_ymnrzr": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Half-Zip_Nora_Swim_Top.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/half-zip-nora-swim-top",
+            "max_width": "200px"
+          }
+        },
+        "image_whCw3c": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Group_116.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/gia-swim-tunic",
+            "max_width": "200px"
+          }
+        },
+        "image_DKQAdw": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Group_125.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/nora-swim-top-1",
+            "max_width": "200px"
+          }
+        },
+        "image_gQNPBJ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Group_117.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/full-zip-nora-swim-top",
+            "max_width": "200px"
+          }
+        }
+      },
+      "block_order": [
+        "image_XT8HNw",
+        "image_nWmyrz",
+        "image_ymnrzr",
+        "image_whCw3c",
+        "image_DKQAdw",
+        "image_gQNPBJ"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "Long Sleeve",
+        "heading_size": "h3",
+        "subheading": "",
+        "header_alignment": "center",
+        "container": "container-fluid",
+        "color_scheme": "",
+        "item_per_row": 6,
+        "column_gap": 10,
+        "row_gap": 10,
+        "column_gap_mobile": 10,
+        "row_gap_mobile": 10,
+        "enable_slider": true,
+        "show_nav": true,
+        "show_pagination": false,
+        "autorotate": false,
+        "autorotate_speed": 3,
+        "padding_top": 60,
+        "padding_bottom": 0,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "brands_list_XLkqjN": {
+      "type": "brands-list",
+      "blocks": {
+        "image_WDg8wy": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Maya_Swim_Top_1.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/maya-swim-top",
+            "max_width": "200px"
+          }
+        },
+        "image_4RdXgw": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Maya_Swim_Top_With_Removable_Cups_1.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/maya-swim-top-with-removable-cups",
+            "max_width": "200px"
+          }
+        },
+        "image_Viyghj": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Group_102_1.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/closed-back-maya-swim-top",
+            "max_width": "200px"
+          }
+        },
+        "image_FKzUE4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Group_108_2.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/zoey-crop-swim-top",
+            "max_width": "200px"
+          }
+        },
+        "image_MiHPak": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Group_100_2.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/lexi-swim-tunic",
+            "max_width": "200px"
+          }
+        },
+        "image_JndhaJ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Group_101_1.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/layla-crop-swim-top",
+            "max_width": "200px"
+          }
+        },
+        "image_Hf8rtr": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Adjustable_Strap_Maya_Swim_Top_2.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/adjustable-strap-maya-swim-top",
+            "max_width": "200px"
+          }
+        }
+      },
+      "block_order": [
+        "image_WDg8wy",
+        "image_4RdXgw",
+        "image_Viyghj",
+        "image_FKzUE4",
+        "image_MiHPak",
+        "image_JndhaJ",
+        "image_Hf8rtr"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "Built-In Bra Styles",
+        "heading_size": "h3",
+        "subheading": "",
+        "header_alignment": "center",
+        "container": "container-fluid",
+        "color_scheme": "",
+        "item_per_row": 6,
+        "column_gap": 10,
+        "row_gap": 10,
+        "column_gap_mobile": 10,
+        "row_gap_mobile": 10,
+        "enable_slider": true,
+        "show_nav": true,
+        "show_pagination": false,
+        "autorotate": false,
+        "autorotate_speed": 3,
+        "padding_top": 60,
+        "padding_bottom": 0,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "brands_list_N6rnee": {
+      "type": "brands-list",
+      "blocks": {
+        "image_aNgmh9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Half-Zip_Nora_Swim_Top.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/half-zip-nora-swim-top",
+            "max_width": "200px"
+          }
+        },
+        "image_XPG9La": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Half-Zip_Adele.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/half-zip-adele-swim-top-1",
+            "max_width": "200px"
+          }
+        },
+        "image_tcBnyh": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Group_117.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/full-zip-nora-swim-top",
+            "max_width": "200px"
+          }
+        },
+        "image_Vijepf": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Group_110.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/full-zip-adele-swim-top",
+            "max_width": "200px"
+          }
+        }
+      },
+      "block_order": [
+        "image_aNgmh9",
+        "image_XPG9La",
+        "image_tcBnyh",
+        "image_Vijepf"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "Zippers",
+        "heading_size": "h3",
+        "subheading": "",
+        "header_alignment": "center",
+        "container": "container-fluid",
+        "color_scheme": "",
+        "item_per_row": 6,
+        "column_gap": 10,
+        "row_gap": 10,
+        "column_gap_mobile": 10,
+        "row_gap_mobile": 10,
+        "enable_slider": true,
+        "show_nav": true,
+        "show_pagination": false,
+        "autorotate": false,
+        "autorotate_speed": 3,
+        "padding_top": 60,
+        "padding_bottom": 0,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "brands_list_DxethC": {
+      "type": "brands-list",
+      "blocks": {
+        "image_xEBiVH": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Racerback_Swim_Bra_3.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/racerback-swim-bra",
+            "max_width": "200px"
+          }
+        },
+        "image_VyN8tA": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Racerback_Swim_Bra_4.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/longline-swim-bra",
+            "max_width": "200px"
+          }
+        },
+        "image_ATLfpw": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Group_120.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/adjustable-strap-clasp-swim-bra",
+            "max_width": "200px"
+          }
+        },
+        "image_QUk4WK": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Adjustable_Strap_Swim_Bra.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/adjustable-strap-swim-bra",
+            "max_width": "200px"
+          }
+        }
+      },
+      "block_order": [
+        "image_xEBiVH",
+        "image_VyN8tA",
+        "image_ATLfpw",
+        "image_QUk4WK"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "Swim Bras",
+        "heading_size": "h3",
+        "subheading": "",
+        "header_alignment": "center",
+        "container": "container-fluid",
+        "color_scheme": "",
+        "item_per_row": 6,
+        "column_gap": 10,
+        "row_gap": 10,
+        "column_gap_mobile": 10,
+        "row_gap_mobile": 10,
+        "enable_slider": false,
+        "show_nav": false,
+        "show_pagination": false,
+        "autorotate": false,
+        "autorotate_speed": 3,
+        "padding_top": 60,
+        "padding_bottom": 0,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "brands_list_364z6P": {
+      "type": "brands-list",
+      "blocks": {
+        "image_iX4EBb": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Group_106.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/loose-fit-adele-swim-top-1",
+            "max_width": "200px"
+          }
+        },
+        "image_6rGxaW": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Group_115.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/loose-fit-margaux-swim-top",
+            "max_width": "200px"
+          }
+        },
+        "image_ddifHi": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Group_103_2.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/loose-fit-maya-swim-top",
+            "max_width": "200px"
+          }
+        },
+        "image_WAEkXq": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Group_109_1.png",
+            "image_by_url": "",
+            "image_link": "shopify://products/daphne-swim-top",
+            "max_width": "200px"
+          }
+        }
+      },
+      "block_order": [
+        "image_iX4EBb",
+        "image_6rGxaW",
+        "image_ddifHi",
+        "image_WAEkXq"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "Loose Fit",
+        "heading_size": "h3",
+        "subheading": "",
+        "header_alignment": "center",
+        "container": "container-fluid",
+        "color_scheme": "",
+        "item_per_row": 6,
+        "column_gap": 10,
+        "row_gap": 10,
+        "column_gap_mobile": 10,
+        "row_gap_mobile": 10,
+        "enable_slider": false,
+        "show_nav": false,
+        "show_pagination": false,
+        "autorotate": false,
+        "autorotate_speed": 3,
+        "padding_top": 60,
+        "padding_bottom": 0,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "product_tabs_ypM9qK",
+    "product_tabs_bwBNnV",
+    "product_tabs_3fxwii",
+    "product_tabs_mtBwFQ",
+    "custom_content_X8aQi6",
+    "brands_list_Dr66Vh",
+    "brands_list_jrXXXt",
+    "brands_list_UNLkym",
+    "brands_list_XLkqjN",
+    "brands_list_N6rnee",
+    "brands_list_DxethC",
+    "brands_list_364z6P"
+  ]
+}
