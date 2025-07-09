@@ -45,15 +45,14 @@
     "@type": "Product",
     "name": {{ product.title | json }},
     "url": {{ request.origin | append: product.url | json }},
-    {%- if seo_media -%}
-      "image": [
-        {% assign seo_image_url = seo_media | image_url: width: seo_media.preview_image.width | prepend: "https:" %}
-        {% render 'hs-image-transform' with img: seo_image_url | json %}
-      ],
-    {%- endif -%}
+
+    {% if seo_media %}
+    "image":
+     {{ seo_media | image_url: width: seo_media.preview_image.width | prepend: "https:" | json }}
+    {% endif %}
     "description": {{ product.description | strip_html | json }},
     {% if product.selected_or_first_available_variant.sku != blank -%}
-      "sku": {{ product.selected_or_first_available_variant.sku | json }},
+    "sku": {{ product.selected_or_first_available_variant.sku | json }},
     {%- endif %}
     "brand": {
       "@type": "Brand",
